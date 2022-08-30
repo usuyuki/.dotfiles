@@ -1,0 +1,275 @@
+{
+  /* -------------------------------- language -------------------------------- */
+  "[go][makefile]": {
+    "editor.insertSpaces": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "apility.beautify-blade"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.tabSize": 2
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "[casl2]": {
+    "editor.defaultFormatter": "MaxfieldWalker.vscode-casl2-comet2"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /* -------------------------------- general -------------------------------- */
+  "security.workspace.trust.untrustedFiles": "open",
+  /* -------------------------------- appearance -------------------------------- */
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "simple-icons",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.tree.indent": 20,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'UDEV Gothic 35NF',monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.rulers": [80, 100, 120],
+  "editor.fontSize": 11,
+  "window.zoomLevel": -1,
+  /* -------------------------------- proofreading -------------------------------- */
+  "cSpell.allowCompoundWords": true,
+  "cSpell.userWords": [
+    "cabocha",
+    "csrf",
+    "directmessage",
+    "endcomponent",
+    "enderror",
+    "endfor",
+    "endforeach",
+    "endisset",
+    "endphp",
+    "endsection",
+    "endslot",
+    "kotonoha",
+    "Larastan",
+    "Laravel",
+    "list",
+    "magunitude",
+    "oldja",
+    "openapi",
+    "pydub",
+    "pygame",
+    "shinonome",
+    "sqlite",
+    "swiper",
+    "ulab",
+    "Usuyuki",
+    "utsunomiya",
+    "uucircle",
+    "u-laniwa",
+    "UUID"
+  ],
+  "japanese-proofreading.textlint.外来語カタカナ表記": false,
+  "japanese-proofreading.textlint.大かっこ［］": false,
+  "github.copilot.enable": {
+    "*": true
+  },
+  /* -------------------------------- terminal -------------------------------- */
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+      "args": [],
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "terminal.integrated.tabs.enabled": true,
+  /* -------------------------------- git ------------------------------- */
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "gitlens.defaultDateFormat": "YYYY/MM/DD, HH:MM",
+  "gitlens.defaultDateShortFormat": "YYYY/MM/DD",
+  "gitlens.defaultTimeFormat": "HH:MM",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.currentLine.details": false,
+  /* -------------------------------- remote ------------------------------- */
+  "remote.SSH.remotePlatform": {
+    "192.168.3.100": "linux",
+    "local_RaspberryPi": "linux",
+    "u-laniwa_oracle": "linux",
+    "u-laniwa_Oracle": "linux",
+    "usuyuki_global_raspberryPi": "linux",
+    "usuyuki_kagoya": "linux",
+    "usuyuki_local_raspberryPi": "linux",
+    "usuyuki_oracle_villa": "linux",
+    "usuyuki_sakura_sou": "linux",
+    "usuyuki_xserver": "linux",
+    "usuyuki-oracle-villa": "linux",
+    "usuyuki-sakura-sou": "linux"
+  },
+  /* -------------------------------- code-runner -------------------------------- */
+  "code-runner.executorMap": {
+    "ahk": "autohotkey",
+    "applescript": "osascript",
+    "autoit": "autoit3",
+    "bat": "cmd /c",
+    "c": "cd $dir && gcc -fexec-charset=CP932 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "clojure": "lein exec",
+    "coffeescript": "coffee",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "crystal": "crystal",
+    "csharp": "scriptcs",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "dart": "dart",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fsharp": "fsi",
+    "go": "go run",
+    "groovy": "groovy",
+    "haskell": "runhaskell",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "javascript": "node",
+    "julia": "julia",
+    "kit": "kitc --run",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "lisp": "sbcl --script",
+    "lua": "lua",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "ocaml": "ocaml",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "perl": "perl",
+    "perl6": "perl6",
+    "php": "php",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "python": "python -u",
+    "r": "Rscript",
+    "racket": "racket",
+    "ruby": "ruby",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "sass": "sass --style expanded",
+    "scala": "scala",
+    "scheme": "csi -script",
+    "scss": "scss --style expanded",
+    "shellscript": "bash",
+    "swift": "swift",
+    "typescript": "ts-node",
+    "v": "v run",
+    "vbscript": "cscript //Nologo"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.terminalRoot": "/",
+  /* -------------------------------- other extension ------------------------------- */
+  "blade.format.enable": true,
+  "casl2.allowNegativeValueForEffectiveAddress": true,
+  "go.toolsManagement.autoUpdate": true,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "jupyter.interactiveWindowMode": "perFile",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  // chocoでwinにphpインストールするとこのパスになる
+  "php.validate.executablePath": "C:\\tools/php81/php.exe",
+  "prettier.insertPragma": true
+}

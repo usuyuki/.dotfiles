@@ -1,0 +1,20 @@
+[alias]
+	f = fetch
+	po = push origin HEAD
+	am = commit --amend --no-edit
+	s = status
+	l = log --graph
+	d = diff
+	ds = diff --staged
+	c = checkout
+	c- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"
+	b = branch
+	pr = pull --rebase
+	psuh = push
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+	risu = stash -u
+	risu- = stash pop
+	urudo = commit --fixup
+	sukurudo = rebase --autosquash -i origin/main
+	furidasi = reset --soft HEAD
+	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
