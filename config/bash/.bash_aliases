@@ -23,5 +23,7 @@ alias cd...='cd ../../..'
 alias cd_='cd $_'
 
 # ls
+alias ll='ls -alF'
 
 alias rebash='exec $SHELL -l'
+

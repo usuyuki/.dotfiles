@@ -10,14 +10,15 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/init.
 
 
 # 必要なものをインストール
-sudo apt install -y make htop peco ripgrep 
+sh ~/.dotfiles/components/linux/debian/groceryStore.sh
+sh ~/.dotfiles/components/linux/debian/serverStore.sh
 
 # シンボリックリンク貼る
-
-sh ~/.dotfiles/components/link.sh
+sh ~/.dotfiles/components/linux/debian/link.sh
 
 # asdf設定
-sudo apt install -y curl git
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+sh ~/.dotfiles/components/linux/debian/asdf.sh
 
 yarn global add git-open
+#シェルの再起動
+exec $SHELL -l

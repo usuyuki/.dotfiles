@@ -1,1 +1,0 @@
-ln -fnsv ~/.dotfiles/config/bash/.bash_aliases ~/.bash_aliases
