@@ -7,7 +7,7 @@
 ## 更新したい
 
 ```
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/update_dotfiles.sh)"
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/update_dotfiles.sh)"
 ```
 
 ## 設定が間違ってないか確認したい
@@ -72,7 +72,7 @@ eval で読むシェルスクリプトはコメントアウトすると解析で
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/pios/setup.sh
 
 ```
 
