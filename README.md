@@ -21,6 +21,8 @@ sh ~/.dotfiles/setup/docker/setup.sh
 sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
 ```
 
+exec がうまく効かないので……
+
 でインストール手順を試す
 
 - ここが~/.dotfiles にマウントされている
@@ -61,7 +63,7 @@ https://github.com/s3igo/dotfiles
 ### ubuntu_daily
 
 ```
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/setup/ubuntu_daily/setup.sh)"
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
 ```
 
 > 普段使いで使う時の Ubuntu の設定
@@ -71,7 +73,7 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/setup/ubuntu_dai
 > サーバー用で使う時の Ubuntu の設定
 
 ```
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/setup/ubuntu_hosting/setup.sh)"
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
 ```
 
 ## 🐋

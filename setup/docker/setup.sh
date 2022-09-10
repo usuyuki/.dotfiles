@@ -22,4 +22,3 @@ echo "やることリスト";
 echo "- nvimで:PackerInstall";
 echo ". ~/.bashrc";
 
-#シェルの再起動
