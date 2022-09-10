@@ -14,7 +14,7 @@ sudo apt install -y make htop peco ripgrep
 
 # シンボリックリンク貼る
 
-sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+sh ~/.dotfiles/components/link.sh
 
 # asdf設定
 sudo apt install -y curl git

@@ -4,6 +4,11 @@
 
 まだとちゅう
 
+```
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/update.sh)"
+
+```
+
 # 概要
 
 # とても参考になる dotfiles 🥳
