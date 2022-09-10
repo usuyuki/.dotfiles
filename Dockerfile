@@ -3,7 +3,7 @@ RUN sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.l
 RUN apt -y update
 RUN apt -y upgrade
 RUN apt -y autoremove
-RUN apt -y install git curl sudo
+RUN apt -y install git curl sudo make
 
 
 

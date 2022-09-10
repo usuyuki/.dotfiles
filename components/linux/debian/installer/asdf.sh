@@ -7,13 +7,12 @@ echo "----------------------------"
 sudo apt install -y curl git
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 
+# bashrcに追記
+echo . $HOME/.asdf/asdf.sh >> ~/.bashrc
+echo . $HOME/.asdf/completions/asdf.bash >> ~/.bashrc
 
-
-#nodeインストール
-sudo apt -y install dirmngr gpg gawk
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs lts
-asdf global nodejs lts
+# bashrc再読み込み
+exec $SHELL -l
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
 echo "■■■■■■■■■■"

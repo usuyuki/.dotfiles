@@ -15,17 +15,24 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/updat
 ```
 dc up -d
 dc exec ubuntu bash
+cd .dotfiles && make docker
+sh ~/.dotfiles/setup/docker/setup.sh
+. ~/.bashrc
+sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
 ```
 
-にてインストール手順を試す
+でインストール手順を試す
 
 - ここが~/.dotfiles にマウントされている
 - docker だけど sudo できる一般ユーザー usuyuki が存在
 - sytstemctl 系だめ
 - echo 系もだめ
 
+### 作り直し
+
 ```
-dc down && dc up -d
+dc down && dc up -d && dc exec ubuntu bash
+sh ~/.dotfiles/setup/docker/setup.sh
 ```
 
 # 概要

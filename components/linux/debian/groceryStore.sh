@@ -8,13 +8,14 @@ echo "----------------------------"
 sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
 
 # aptだけで行けるやつ
-sudo apt install -y make htop peco ripgrep 
+sudo apt install -y make htop peco ripgrep make
 
 # neovimインストール
 sh ~/.dotfiles/components/linux/debian/installer/neovim.sh
 
-# neovimインストール
+# asdfで各種ツールインストール
 sh ~/.dotfiles/components/linux/debian/installer/asdf.sh
+sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
 echo "■■■■■■■■■■"
