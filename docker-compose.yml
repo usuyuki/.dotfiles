@@ -4,4 +4,6 @@ services:
     build: .
     tty: true
     volumes:
-      - ./:/.dotfiles
+      - ./:/home/usuyuki/.dotfiles
+    # command: /sbin/init
+    # privileged: true

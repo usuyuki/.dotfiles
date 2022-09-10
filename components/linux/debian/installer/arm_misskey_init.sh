@@ -1,3 +1,4 @@
+#!/bin/bash -eu
 # 参考記事
 # https://hide.ac/articles/iFwm5HDvH
 jobName="Setup Misskey"
@@ -26,9 +27,8 @@ git submodule update --init
 yarn install
 
 
-echo "----------------------------"
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
-echo "----------------------------"
+echo "■■■■■■■■■■"
 
 # この後手動でやること
 # ぽすぐれユーザー作成

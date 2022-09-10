@@ -1,3 +1,4 @@
+#!/bin/bash -eu
 # シンボリックリンク貼る
 jobName="Create symbolic link"
 echo "----------------------------"
@@ -17,6 +18,5 @@ ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
 mkdir ~/.config
 ln -fnsv ~/.dotfiles/config/neovim ~/.config/nvim
 
-echo "----------------------------"
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
-echo "----------------------------"
+echo "■■■■■■■■■■"

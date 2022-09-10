@@ -1,3 +1,4 @@
+#!/bin/bash -eu
 # サーバー用で使うソフトウェア
 jobName="Install server tools"
 echo "----------------------------"
@@ -10,6 +11,5 @@ sudo systemctl enable nginx
 
 # let's encryptのやつ
 apt install -y certbot python3-certbot-dns-cloudflare
-echo "----------------------------"
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
-echo "----------------------------"
+echo "■■■■■■■■■■"

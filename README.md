@@ -17,7 +17,12 @@ dc up -d
 dc exec ubuntu bash
 ```
 
-にてインストール手順を試す(ここがマウントされている)
+にてインストール手順を試す
+
+- ここが~/.dotfiles にマウントされている
+- docker だけど sudo できる一般ユーザー usuyuki が存在
+- sytstemctl 系だめ
+- echo 系もだめ
 
 ```
 dc down && dc up -d
