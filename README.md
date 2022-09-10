@@ -68,14 +68,6 @@ eval で読むシェルスクリプトはコメントアウトすると解析で
 
 ## 🐧
 
-### Raspberry Pi OS 64bit 🍓
-
-```
-
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/pios/setup.sh
-
-```
-
 ### ubuntu_daily
 
 ぎりぎり動く
@@ -97,6 +89,14 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 ```
 
 eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+
+```
+
+### ubuntu_hosting_arm
+
+```
+
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
 
 ```
 

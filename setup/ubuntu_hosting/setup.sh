@@ -9,10 +9,7 @@ sh ~/.dotfiles/components/linux/debian/serverStore.sh
 
 
 
-
-echo "■■■■■■■■■■"
-echo "やることリスト";
-echo "- nvimで:PackerInstall";
+# 必要事項のメッセージ
 sh ~/.dotfiles/components/independency/todo.sh
 #シェルの再起動
 exec $SHELL -l

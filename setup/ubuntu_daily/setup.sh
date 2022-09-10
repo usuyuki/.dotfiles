@@ -8,10 +8,9 @@ sh ~/.dotfiles/components/linux/debian/groceryStore.sh
 
 
 
+# 必要事項のメッセージ
+sh ~/.dotfiles/components/independency/todo.sh
 
-echo "■■■■■■■■■■"
-echo "やることリスト";
-echo "- nvimで:PackerInstall";
 
 #シェルの再起動
 exec $SHELL -l
