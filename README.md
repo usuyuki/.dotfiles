@@ -17,8 +17,9 @@ dc up -d
 dc exec ubuntu bash
 cd .dotfiles && make docker
 sh ~/.dotfiles/setup/docker/setup.sh
-. ~/.bashrc
+exec $SHELL -l
 sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
+
 ```
 
 exec がうまく効かないので……
@@ -33,8 +34,10 @@ exec がうまく効かないので……
 ### 作り直し
 
 ```
+
 dc down && dc up -d && dc exec ubuntu bash
 sh ~/.dotfiles/setup/docker/setup.sh
+
 ```
 
 # 概要
@@ -49,6 +52,10 @@ sh ~/.dotfiles/setup/docker/setup.sh
 
 https://github.com/s3igo/dotfiles
 
+# ちゅうい ⚠
+
+eval で読むシェルスクリプトはコメントアウトすると解析できなくなるので注意。
+
 # すたーと 🍮
 
 ## 🪟
@@ -57,25 +64,46 @@ https://github.com/s3igo/dotfiles
 
 > 普段使いで使う時の Windows の設定
 > 📝PowerShell から Chocolatey 経由でぶちこむスタイル
+> が、現状できていないので、pie in the sky
 
 ## 🐧
 
-### ubuntu_daily
+### Raspberry Pi OS 64bit 🍓
 
 ```
+
 eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+
+```
+
+### ubuntu_daily
+
+ぎりぎり動く
+
+```
+
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+
 ```
 
 > 普段使いで使う時の Ubuntu の設定
 
 ### ubuntu_hosting
 
+未完成
+
 > サーバー用で使う時の Ubuntu の設定
 
 ```
+
 eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+
 ```
 
 ## 🐋
 
 [docker](setup/ubuntu_hosting/setup.md)
+
+```
+
+```

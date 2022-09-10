@@ -8,6 +8,9 @@ sudo apt -y install build-essential git curl
 # マウントしているのでクローン不要
 #ここからこのリポジトリの中身が使える
 
+# 基本設定
+sh ~/.dotfiles/components/linux/debian/settings.sh
+
 # シンボリックリンク貼る
 sh ~/.dotfiles/components/linux/debian/link.sh
 
