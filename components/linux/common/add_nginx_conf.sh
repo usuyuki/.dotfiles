@@ -26,8 +26,8 @@ nginxconf="
 > }"
 
 echo "$nginxconf"
-touch /etc/nginx/sites-available/$sitedomain
-echo "$nginxconf" > /etc/nginx/sites-available/$sitedomain
+sudo touch /etc/nginx/sites-available/$sitedomain
+sudo echo "$nginxconf" > /etc/nginx/sites-available/$sitedomain
 
 sudo ln -s /etc/nginx/sites-available/$sitedomain /etc/nginx/sites-enabled/
 
