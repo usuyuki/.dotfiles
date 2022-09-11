@@ -13,5 +13,6 @@ sh ~/.dotfiles/components/linux/debian/serverStore.sh
 sh ~/.dotfiles/components/independency/todo.sh
 
 
+sudo apt -y autoremove
 #シェルの再起動
 exec $SHELL -l

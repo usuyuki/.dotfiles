@@ -12,20 +12,42 @@ sudo adduser --disabled-password --disabled-login misskey
 # postgresql
 sudo apt -y install postgresql
 psql --version
+#accountとDBつくる
+
 # redis (raspiでapt-repositryできる)
-sudo add-apt-repository ppa:chris-lea/redis-server
-sudo apt update
+# sudo add-apt-repository ppa:chris-lea/redis-server
+# sudo apt update
 sudo apt install -y redis-server
-systemctl start redis-server
-systemctl enable redis-server
+sudo systemctl start redis-server
+sudo systemctl enable redis-server
 # nginx→serverStoreでインストール済み
+
+
+#asdf設定(ユーザー単位で切られるので、dotfilesで全体に追加した後前提)
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+echo " " >> ~/.bashrc
+echo . $HOME/.asdf/asdf.sh >> ~/.bashrc
+echo . $HOME/.asdf/completions/asdf.bash >> ~/.bashrc
+
+exec $SHELL -l
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs latest
+asdf global nodejs latest
+asdf plugin add yarn
+asdf install yarn latest
+asdf global yarn latest
+
+
+
 
 # misskeyのインストール
 sudo su - misskey
+cd ~
 git clone https://github.com/Usuyuki/usuyukey.git
 cd usuyukey
 git submodule update --init
 yarn install
+
 
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";

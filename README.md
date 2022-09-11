@@ -100,6 +100,10 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 
 ```
 
+### Raspberry Pi
+
+apt-add-repository 系がことごとく失敗するので、普段使いはやめた
+
 ## 🐋
 
 [docker](setup/ubuntu_hosting/setup.md)
