@@ -92,6 +92,12 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 
 ```
 
+nginx 設定
+
+```
+sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
+```
+
 ### ubuntu_hosting_arm
 
 ```

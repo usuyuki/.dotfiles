@@ -1,8 +1,6 @@
 sitedomain=$1 #第一引数
 sudo mkdir /var/www/$sitedomain
 sudo chown -R $USER:$USER /var/www/$sitedomain
-sudo vim /etc/nginx/sites-available/$sitedomain
-
 nginxconf="
 > server {
 >     listen 80;
