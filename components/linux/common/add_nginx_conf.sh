@@ -1,4 +1,5 @@
 sitedomain=$1 #第一引数
+echo "$sitedomain を設定します"
 sudo mkdir /var/www/$sitedomain
 sudo chown -R $USER:$USER /var/www/$sitedomain
 nginxconf="
@@ -24,6 +25,7 @@ nginxconf="
 > 
 > }"
 
+echo "$nginxconf"
 
 echo "$nginxconf" > /etc/nginx/sites-available/$sitedomain
 
