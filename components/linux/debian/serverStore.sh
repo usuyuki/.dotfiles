@@ -17,11 +17,14 @@ sudo systemctl enable ufw
 
 
 # nginx
-sudo apt install -y nginx 
+sudo apt -y install nginx 
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
 sudo ufw allow 'Nginx HTTP'
+
+# cerbot
+sudo apt -y install certbot python3-certbot-nginx
 
 #mariadb
 sudo apt install -y mariadb-server
@@ -29,6 +32,9 @@ sudo mysql_secure_installation
 # ミスするとデータベース使えなくなるので注意、特にnが多いので
 
 # https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-20-04-ja
+
+
+
 
 #php
 sudo apt -y install php-fpm php-mysql

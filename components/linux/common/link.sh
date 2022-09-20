@@ -14,6 +14,9 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 # git系
 ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
 
+# vim系
+ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
+
 # neovim系
 mkdir ~/.config
 ln -fnsv ~/.dotfiles/config/neovim ~/.config/nvim

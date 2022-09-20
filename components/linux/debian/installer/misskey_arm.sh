@@ -9,6 +9,7 @@ echo "----------------------------"
 sudo adduser --disabled-password --disabled-login misskey
 #パスワードなしなので sudo su で入る
 # nodeインストール→省略(asdfで導入)
+sudo apt -y install ffmpeg
 # postgresql
 sudo apt -y install postgresql
 psql --version
