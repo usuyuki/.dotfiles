@@ -186,6 +186,13 @@
   "code-runner.runInTerminal": true,
   "code-runner.terminalRoot": "/",
   /* -------------------------------- other extension ------------------------------- */
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.hlsearch": true,
   "blade.format.enable": true,
   "casl2.allowNegativeValueForEffectiveAddress": true,
   "go.toolsManagement.autoUpdate": true,
