@@ -8,6 +8,8 @@
 
 ```
 eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/update_dotfiles.sh)"
+または
+df-up
 ```
 
 ## 設定が間違ってないか確認したい
@@ -15,7 +17,6 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 ```
 dc up -d
 dc exec ubuntu bash
-cd .dotfiles && make docker
 sh ~/.dotfiles/setup/docker/setup.sh
 exec $SHELL -l
 sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
