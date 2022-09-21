@@ -27,3 +27,5 @@ alias ll='ls -alF'
 
 alias rebash='exec $SHELL -l'
 
+# dotfiles更新
+alias df-up='eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/update_dotfiles.sh)"'
