@@ -4,19 +4,23 @@
 [alias]
 	f = fetch
 	po = push origin HEAD
-	am = commit --amend --no-edit
 	s = status
 	l = log --graph
 	d = diff
 	ds = diff --staged
 	c = checkout
 	c- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"
+	ad = add .
+	ap = add -p
+	cm = commit -m 
+	am = commit --amend --no-edit
 	b = branch
 	pr = pull --rebase
 	psuh = push
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	risu = stash -u
 	risu- = stash pop
+	rereset = reset --hard HEAD@{1}
 	urudo = commit --fixup
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
