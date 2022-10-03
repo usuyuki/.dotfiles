@@ -12,6 +12,12 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 df-up
 ```
 
+## シンボリックリンクだけ貼る
+
+```
+sh ~/.dotfiles/components/linux/common/link.sh
+```
+
 ## 設定が間違ってないか確認したい
 
 ```
