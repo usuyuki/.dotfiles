@@ -15,6 +15,7 @@
 	cm = commit -m 
 	am = commit --amend --no-edit
 	b = branch
+	po = pull origin
 	pr = pull --rebase
 	psuh = push
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
