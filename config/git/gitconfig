@@ -17,6 +17,7 @@
 	b = branch
 	po = pull origin
 	pr = pull --rebase
+	pom = pull origin main
 	psuh = push
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	risu = stash -u
