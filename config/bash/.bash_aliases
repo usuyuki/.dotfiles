@@ -11,6 +11,7 @@ alias runghc='stack runghc --'
 alias dc='docker-compose'
 alias nv='nvim'
 alias g='git'
+alias gs='git status'
 
 # ヨシ!系
 alias cp='cp -i'
