@@ -23,6 +23,7 @@ ln -fnsv ~/.dotfiles/config/neovim ~/.config/nvim
 
 #asdf系
 ln -fnsv ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
+ln -fnsv ~/.dotfiles/config/asdf/.asdfrc ~/.asdfrc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
 echo "■■■■■■■■■■"

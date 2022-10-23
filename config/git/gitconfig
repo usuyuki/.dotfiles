@@ -13,7 +13,8 @@
 	ad = add .
 	ap = add -p
 	cm = commit -m 
-	am = commit --amend --no-edit
+	cm- = commit --amend
+	cm-- = commit --amend --no-edit
 	b = branch
 	po = pull origin
 	pr = pull --rebase
@@ -24,6 +25,7 @@
 	risu- = stash pop
 	rereset = reset --hard HEAD@{1}
 	urudo = commit --fixup
+	re = rebase origin/main
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"

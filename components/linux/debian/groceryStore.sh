@@ -19,5 +19,11 @@ echo "止まったらctrl +d で抜けて進めます"
 sh ~/.dotfiles/components/linux/debian/installer/asdf.sh
 sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
 
+
+# pythonの仮想環境ツールpoetryのインストール
+curl -sSL https://install.python-poetry.org | python3 -
+poetry config virtualenvs.in-project true
+
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
 echo "■■■■■■■■■■"
