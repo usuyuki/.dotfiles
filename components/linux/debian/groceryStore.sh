@@ -8,8 +8,14 @@ echo "----------------------------"
 sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
 
 # aptだけで行けるやつ
-sudo apt install -y make htop peco ripgrep make software-properties-common
+sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common
 # software-properties-commonはapt-add-repositoryを使うために必要
+
+# asdfでpython入れるために必要なもの
+sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev ibncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev 
+
 
 # neovimインストール
 sh ~/.dotfiles/components/linux/debian/installer/neovim.sh
