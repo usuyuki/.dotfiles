@@ -16,6 +16,7 @@ sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev ibncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev 
 
+sudo apt autoremove -y
 
 # neovimインストール
 sh ~/.dotfiles/components/linux/debian/installer/neovim.sh

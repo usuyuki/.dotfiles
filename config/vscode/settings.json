@@ -37,10 +37,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "rust-analyzer.checkOnSave.command": "clippy",
   /* -------------------------------- general -------------------------------- */
   "security.workspace.trust.untrustedFiles": "open",
   /* -------------------------------- appearance -------------------------------- */
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Kanagawa",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -130,6 +131,10 @@
     "usuyuki-oracle-villa": "linux",
     "usuyuki-sakura-sou": "linux"
   },
+  /* -------------------------------- docker-container -------------------------------- */
+  "dotfiles.repository": "https://github.com/Usuyuki/dotfiles",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "~/dotfiles/setup/docker/setup.sh",
   /* -------------------------------- code-runner -------------------------------- */
   "code-runner.executorMap": {
     "ahk": "autohotkey",
