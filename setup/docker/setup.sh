@@ -6,6 +6,8 @@ sh ~/.dotfiles/components/linux/debian/settings.sh
 
 # 最低限のインストール(先にシンボリックリンクと設定させることでapt以外でエラー止まりでも最低限できるようにする)
 # (本当はコンポーネントで分けたいが、devContainerで必要なものが少ないのでここに)
+# dockerコンテナだとrootユーザーなのでsudoつけずにやる(というかsudoがないことが多い
+
 apt -y update
 apt -y upgrade
 apt -y install build-essential git curl peco

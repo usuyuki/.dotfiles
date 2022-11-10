@@ -4,6 +4,8 @@ settings.json に書かれた下記の設定により、DevContainer 起動時�
 
 ```
   "dotfiles.repository": "https://github.com/Usuyuki/.dotfiles",
-  "dotfiles.targetPath": "~/dotfiles",
-  "dotfiles.installCommand": "~/dotfiles/setup/docker/setup.sh",
+  "dotfiles.targetPath": "~/.dotfiles",
+  "dotfiles.installCommand": "~/.dotfiles/setup/docker/setup.sh",
 ```
+
+dc up -d のときには生成されず、VSCode で DevContainer に入って初めて生成される
