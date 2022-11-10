@@ -7,7 +7,7 @@
 ## 更新したい
 
 ```
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/update_dotfiles.sh)"
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
 または
 df-up
 ```
@@ -81,7 +81,7 @@ eval で読むシェルスクリプトはコメントアウトすると解析で
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
 
 ```
 
@@ -95,7 +95,7 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/indep
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
 
 ```
 
@@ -109,7 +109,7 @@ sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
+eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
 
 ```
 
