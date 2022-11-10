@@ -8,7 +8,7 @@ echo "----------------------------"
 sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
 
 # aptだけで行けるやつ
-sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common
+sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common tree
 # software-properties-commonはapt-add-repositoryを使うために必要
 
 # asdfでpython入れるために必要なもの
