@@ -11,6 +11,10 @@ sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
 sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common tree
 # software-properties-commonはapt-add-repositoryを使うために必要
 
+# ranger系
+sudo apt install -y ranger w3m lynx highlight atool mediainfo xpdf caca-utils
+
+
 # asdfでpython入れるために必要なもの
 sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev ibncurses5-dev libncursesw5-dev \
