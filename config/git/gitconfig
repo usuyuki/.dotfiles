@@ -16,7 +16,8 @@
 	cm- = commit --amend
 	cm-- = commit --amend --no-edit
 	b = branch
-	po = pull origin
+	po = push origin HEAD
+	pof = push --force-with-lease --force-if-includes origin HEAD
 	pr = pull --rebase
 	pom = pull origin main
 	psuh = push
