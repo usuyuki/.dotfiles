@@ -30,3 +30,20 @@
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
+	
+	
+# deltaによるgit diff モダン化用 https://github.com/dandavison/delta
+[core]
+    pager = delta
+# 一番使いたいgit add -pだが、使うとターミナルが固まるので使わない
+# [interactive]
+#     diffFilter = delta --color-only
+[delta]
+    navigate = true
+    light = false
+	side-by-side = true
+    line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default

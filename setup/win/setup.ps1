@@ -12,6 +12,11 @@ cinst noevim googlechrome brave git github-desktop 7zip visualstudiocode slack d
 # 更新
 choco upgrade all -y
 
+# モダンなやつ
+# git diff をモダンにする
+choco install delta -y
+
+
 # install paulirish/git-open
 function git-open { cmd /c "C:\Program Files\Git\usr\bin\bash.exe" "~/Documents/Scripts/git-open.sh" }
 Set-Alias -Name gop -Value git-open
