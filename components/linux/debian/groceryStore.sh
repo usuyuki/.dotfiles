@@ -8,7 +8,7 @@ echo "----------------------------"
 sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
 
 # aptだけで行けるやつ
-sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common tree
+sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make software-properties-common tree fd-find
 # software-properties-commonはapt-add-repositoryを使うために必要
 
 # ranger系
