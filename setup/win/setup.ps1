@@ -15,7 +15,8 @@ choco upgrade all -y
 # モダンなやつ
 # git diff をモダンにする
 choco install delta -y
-
+# Rust製のターミナル Alacritty をインストール
+choco install alacritty -y
 
 # install paulirish/git-open
 function git-open { cmd /c "C:\Program Files\Git\usr\bin\bash.exe" "~/Documents/Scripts/git-open.sh" }
