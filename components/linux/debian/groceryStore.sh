@@ -14,6 +14,10 @@ sudo apt install -y make wget curl llvm lbuild-essential htop peco ripgrep make 
 # ranger系
 sudo apt install -y ranger w3m lynx highlight atool mediainfo xpdf caca-utils
 
+# delta https://github.com/dandavison/delta のインストール
+wget https://github.com/dandavison/delta/releases/download/0.15.1/git-delta_0.15.1_amd64.deb
+sudo dpkg -i git-delta_0.15.1_amd64.deb
+rm -rf git-delta_0.15.1_amd64.deb
 
 # asdfでpython入れるために必要なもの
 sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
