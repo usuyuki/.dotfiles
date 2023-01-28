@@ -40,7 +40,17 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.cargo.allFeatures": true,
   "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.checkOnSave.extraArgs": [
+    "--",
+    "-A",
+    "clippy::needless_return"
+  ],
   /* -------------------------------- general -------------------------------- */
   "security.workspace.trust.untrustedFiles": "open",
   /* -------------------------------- appearance -------------------------------- */
@@ -284,6 +294,13 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "rust-analyzer.cargo.allFeatures": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.checkOnSave.extraArgs": [
+    "--",
+    "-A",
+    "clippy::needless_return"
+  ],
   // chocoでwinにphpインストールするとこのパスになる
   "php.validate.executablePath": "C:\\tools/php81/php.exe",
   "prettier.insertPragma": true
