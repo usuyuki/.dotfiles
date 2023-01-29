@@ -19,10 +19,21 @@ wget https://github.com/dandavison/delta/releases/download/0.15.1/git-delta_0.15
 sudo dpkg -i git-delta_0.15.1_amd64.deb
 rm -rf git-delta_0.15.1_amd64.deb
 
+# zellij(Rust製ターミナルマルチプレクサ)
+wget https://github.com/zellij-org/zellij/releases/download/v0.34.4/zellij-x86_64-unknown-linux-musl.tar.gz
+tar xf zellij-x86_64-unknown-linux-musl.tar.gz
+mkdir -p ~/.local/bin
+install -Dm755 zellij ~/.local/bin/zellij
+rm -rf zellij-x86_64-unknown-linux-musl.tar.gz
+rm -rf zellij
+
+
 # asdfでpython入れるために必要なもの
 sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev ibncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev 
+
+
 
 sudo apt autoremove -y
 
