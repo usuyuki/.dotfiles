@@ -28,6 +28,9 @@ alias ghci='stack ghci'
 alias ghc='stack ghc --'
 alias runghc='stack runghc --'
 
+# sudo hogeのときにもaliasが効くようにする
+alias sudo='sudo '
+
 # 略語
 alias dc='docker compose'
 alias k='kubectl'
