@@ -29,7 +29,7 @@ alias ghc='stack ghc --'
 alias runghc='stack runghc --'
 
 # 略語
-alias dc='docker-compose'
+alias dc='docker compose'
 alias k='kubectl'
 alias nv='nvim'
 alias g='git'
