@@ -33,6 +33,7 @@ alias sudo='sudo '
 
 # 略語
 alias dc='docker compose'
+alias dcup='docker compose -f compose-prod.yml up -d'
 alias k='kubectl'
 alias nv='nvim'
 alias g='git'
