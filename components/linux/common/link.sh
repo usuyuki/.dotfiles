@@ -22,8 +22,7 @@ ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
 ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
 
 # neovim系
-mkdir ~/.config
-ln -fnsv ~/.dotfiles/config/neovim ~/.config/nvim
+ln -fnsv ~/.dotfiles/config/neovim/astro ~/.config/nvim/lua/user
 
 #asdf系
 ln -fnsv ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
