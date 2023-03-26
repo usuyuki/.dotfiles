@@ -25,7 +25,7 @@ dc up -d
 dc exec ubuntu bash
 sh ~/.dotfiles/setup/docker/setup.sh
 exec $SHELL -l
-sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh
+sh ~/.dotfiles/components/linux/debian/getApplication/packages/asdf/lang_installer.sh
 
 ```
 
@@ -43,7 +43,7 @@ exec がうまく効かないので……
 ```
 
 dc down && dc up -d && dc exec ubuntu bash
-sh ~/.dotfiles/setup/docker/setup.sh
+sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
 
 ```
 
@@ -61,7 +61,9 @@ https://github.com/s3igo/dotfiles
 
 # ちゅうい ⚠
 
-eval で読むシェルスクリプトはコメントアウトすると解析できなくなるので注意。
+- eval で読むシェルスクリプトはコメントアウトすると解析できなくなるので注意。
+- sh での実行なのでパスをしっかり指定すること
+- →wget や curl で取ってくる場合は(cd ~/ && curl)のようにサブシェルで実行すること
 
 # すたーと 🍮
 

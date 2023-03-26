@@ -4,7 +4,7 @@ sh ~/.dotfiles/components/linux/arch/settings.sh
 sh ~/.dotfiles/components/linux/common/link.sh
 
 # 必要なものをインストール
-sh ~/.dotfiles/components/linux/debian/install/installer_daily.sh
+sh ~/.dotfiles/components/linux/debian/getApplication/installer_daily.sh
 
 
 

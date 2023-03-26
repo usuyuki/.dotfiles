@@ -21,8 +21,8 @@ ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
 # vim系
 ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
 
-# neovim系
-ln -fnsv ~/.dotfiles/config/neovim/astro ~/.config/nvim/lua/user
+# neovim astroNvimのuserに追加
+ln -fnsv ~/.dotfiles/config/neovim/astroNvimUser ~/.config/nvim/lua/user
 
 #asdf系
 ln -fnsv ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions

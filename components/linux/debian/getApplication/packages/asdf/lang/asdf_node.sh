@@ -5,5 +5,6 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs lts
 asdf global nodejs lts
 # yarnはnode経由が良さそう
-corepack enable
-asdf reshim nodejs
+# この2つはシェルスクリプトで実行できないので後でやるように催促する
+# corepack enable
+# asdf reshim nodejs

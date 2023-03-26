@@ -1,11 +1,13 @@
 #!/bin/bash -eu
-# apt-add-repositoryだと404エラーで怒られるので
+# neovimの準備
 jobName="Setup neovim"
 echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆";
 echo "----------------------------"
-# 現状直接インストールもバイナリで死ぬし、aptも古いので方法なし。一番マシなのがこれ
+sudo apt-add-repository ppa:neovim-ppa/stable
+sudo apt update
 sudo apt -y install neovim
+
 #packerインストール
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 

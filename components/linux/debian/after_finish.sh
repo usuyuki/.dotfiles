@@ -1,4 +1,6 @@
 echo "****************************"
 echo "setup.shが終わった後にやること"
-echo "exec $SHELL -l"
-echo "sh ~/.dotfiles/components/linux/debian/installer/lang_installer.sh"
+echo "exec \$SHELL -l"
+echo "sh ~/.dotfiles/components/linux/debian/getApplication/asdf_lang_installer.sh"
+echo "npm install -y tree-sitter-cli"
+echo "****************************"
