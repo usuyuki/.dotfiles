@@ -117,6 +117,8 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/inde
 
 apt-add-repository 系がことごとく失敗するので、普段使いはやめた
 
+→ それはそうでは。apt-key を使う方式はもはや非推奨
+
 ## 🐋
 
 [docker](setup/ubuntu_hosting/setup.md)

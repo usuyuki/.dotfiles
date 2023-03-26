@@ -21,7 +21,7 @@ psql --version
 sudo apt install -y redis-server
 sudo systemctl start redis-server
 sudo systemctl enable redis-server
-# nginx→serverStoreでインストール済み
+# nginx→install/installer_server.shでインストール済み
 
 
 #asdf設定(ユーザー単位で切られるので、dotfilesで全体に追加した後前提)
