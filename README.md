@@ -79,13 +79,20 @@ https://github.com/s3igo/dotfiles
 
 ### ubuntu_daily
 
-ぎりぎり動く
+ちゃんと動くようになってる。
 
 ```
 
 eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
 
 ```
+
+## 既知の不具合
+
+- asdf インストール前の必要ツールのインストールで使う apt install の対話シェルをうまく自動化できてない
+- asdf で node がうまくインストールされない(再実行するとうまくいく)
+- asdf で rust がうまくインストールされない(原因不明)
+- asdf で php がインストールされるが composer や cs-fixer がインストールされない
 
 > 普段使いで使う時の Ubuntu の設定
 

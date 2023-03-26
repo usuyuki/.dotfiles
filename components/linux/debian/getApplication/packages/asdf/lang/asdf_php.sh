@@ -1,6 +1,6 @@
 #!/bin/bash -eu
-echo "○ php ○"
-sudo apt -y install autoconf bison re2c
+echo "🧃 php 🧃"
+sudo apt -y install autoconf bison re2c libcurl4-openssl-dev libgd-dev
 asdf plugin add php https://github.com/asdf-community/asdf-php
 asdf install php latest
 asdf global php latest

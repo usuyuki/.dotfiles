@@ -1,5 +1,5 @@
 #!/bin/bash -eu
-echo "○ rust ○"
+echo "🧃 rust 🧃"
 asdf plugin add rust
 asdf install rust latest
 asdf global rust latest
