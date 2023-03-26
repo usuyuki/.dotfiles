@@ -3,3 +3,4 @@ yarn 1.22.19
 golang 1.20.2
 rust 1.63.0
 python 3.11.2
+lazydocker 0.20.0

@@ -38,8 +38,9 @@ alias k='kubectl'
 alias nv='nvim'
 alias g='git'
 alias gs='git status'
-alias fd='fd-find'
+alias fd='fdfind'
 alias ze='zellij'
+alias j=z
 
 # ヨシ!系
 alias cp='cp -i'

@@ -32,7 +32,7 @@ sudo apt full-upgrade -y
 
 # 最低限レベルのもの(curlとgitはこれを実行している時点で存在が確定しているので省略)
 echo "🎁 install essetial 🎁"
-sudo apt install -y make wget curl make tree 
+sudo apt install -y make wget curl make tree vim
 
 # software-properties-commonはapt-add-repositoryを使うために必要
 echo "software-properties-commonのインストール-🎁→🗃→🎉"
@@ -41,6 +41,7 @@ sudo apt install -y software-properties-common
 echo "🎁 install build-tool 🎁"
 sudo apt install -y build-essential llvm 
 
+sh ~/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/fd.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/ripgrep.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/htop.sh
@@ -50,6 +51,7 @@ sh ~/.dotfiles/components/linux/debian/getApplication/packages/delta.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/neovim/astroNvim.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/poetry.sh
+sh ~/.dotfiles/components/linux/debian/getApplication/packages/lazygit.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/asdf/asdf.sh
 
 

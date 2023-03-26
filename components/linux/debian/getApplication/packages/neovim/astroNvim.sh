@@ -26,6 +26,7 @@ git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
 
 # node→他でインストールするので不要
 # python→他でインストールするので不要
+# lazygit→別でインストールするので不要！
 
 #  nerd-fonts←全部入れるのは激重なので要調整
 # git clone https://github.com/ryanoasis/nerd-fonts
@@ -46,14 +47,6 @@ sudo apt install -y gdu
 (cd ~/ && curl -LO https://github.com/ClementTsang/bottom/releases/download/0.8.0/bottom_0.8.0_amd64.deb)
 sudo dpkg -i ~/bottom_0.8.0_amd64.deb
 rm -rf ~/bottom_0.8.0_amd64.deb
-
-# lazygiti
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-(cd ~/ && curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz")
-tar xf ~/lazygit.tar.gz lazygit
-sudo install ~/lazygit /usr/local/bin
-rm -rf ~/lazygit.tar.gz
-rm -rf ~/lazygit
 
 #
 # AstroNvimの依存系ここまで
