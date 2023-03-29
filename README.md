@@ -7,7 +7,7 @@ NeoVim の設定は別リポジトリ
 ## 更新したい
 
 ```
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
 または
 df-up
 ```
@@ -83,7 +83,7 @@ https://github.com/s3igo/dotfiles
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
 
 ```
 
@@ -104,7 +104,7 @@ eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/inde
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
 
 ```
 
@@ -118,7 +118,7 @@ sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
 
 ```
 

@@ -59,4 +59,7 @@ alias ll='ls -alF'
 alias rebash='exec $SHELL -l'
 
 # dotfiles更新
-alias df-up='eval "$(curl -L raw.githubusercontent.com/Usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"'
+alias df-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"'
+
+# astroNvimのユーザー設定gitリポジトリ更新
+alias nv-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_astroNvim.sh)"'

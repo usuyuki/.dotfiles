@@ -44,7 +44,7 @@ asdf global yarn latest
 # misskeyのインストール
 sudo su - misskey
 cd ~
-git clone https://github.com/Usuyuki/usuyukey.git
+git clone https://github.com/usuyuki/usuyukey.git
 cd usuyukey
 git submodule update --init
 yarn install
