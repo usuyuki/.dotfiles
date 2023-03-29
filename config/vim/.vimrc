@@ -1,6 +1,21 @@
 " 参考→https://qiita.com/ahiruman5/items/4f3c845500c172a02935
+" 参考2→https://itchyny.hatenablog.com/entry/2014/12/25/090000
 set encoding=utf-8
 scriptencoding utf-8
+
+" 数字の大小するやつを+,-に置き換える
+nnoremap + <C-a>
+nnoremap - <C-x>
+" Y大文字で今いる移行をヤンクできるようにする(DもCもできるのにYiだけできないので)
+nnoremap Y y$
+" ごめんねjj
+inoremap <silent> jj <ESC>
+
+" 文字多くても収まるようになる
+set display=lastline
+" でかすぎる補完を10行に納める
+set pumheight=10
+
 
 " 文字コード
 set fileencoding=utf-8 " 保存時の文字コード
