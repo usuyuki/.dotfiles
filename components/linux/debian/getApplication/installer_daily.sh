@@ -32,7 +32,7 @@ sudo apt full-upgrade -y
 
 # 最低限レベルのもの(curlとgitはこれを実行している時点で存在が確定しているので省略)
 echo "🎁 install essetial 🎁"
-sudo apt install -y make wget curl make tree vim
+sudo apt install -y make wget curl make tree vim tig
 
 # software-properties-commonはapt-add-repositoryを使うために必要
 echo "software-properties-commonのインストール-🎁→🗃→🎉"

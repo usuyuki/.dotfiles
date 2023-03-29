@@ -17,7 +17,10 @@ sudo mv ~/squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 # AstroNvimのダウンロード
-git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+
+# AstroNvimの個人用設定をダウンロード
+git clone https://github.com/usuyuki/AstroNvimUserSettings ~/.config/nvim/lua/user 
 
 #
 # AstroNvimの依存系ここから
