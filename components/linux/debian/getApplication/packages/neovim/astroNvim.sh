@@ -17,7 +17,7 @@ sudo mv ~/squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 # AstroNvimのダウンロード
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 # AstroNvimの個人用設定をダウンロード
 git clone https://github.com/usuyuki/AstroNvimUserSettings ~/.config/nvim/lua/user 
@@ -30,6 +30,7 @@ git clone https://github.com/usuyuki/AstroNvimUserSettings ~/.config/nvim/lua/us
 # node→他でインストールするので不要
 # python→他でインストールするので不要
 # lazygit→別でインストールするので不要！
+# bottom→別でインストールするので不要！
 
 #  nerd-fonts←全部入れるのは激重なので要調整
 # git clone https://github.com/ryanoasis/nerd-fonts
@@ -46,10 +47,6 @@ sudo apt install -y ripgrep
 # go DiskUsage()
 sudo apt install -y gdu
 
-# bottom(x86-64)
-(cd ~/ && curl -LO https://github.com/ClementTsang/bottom/releases/download/0.8.0/bottom_0.8.0_amd64.deb)
-sudo dpkg -i ~/bottom_0.8.0_amd64.deb
-rm -rf ~/bottom_0.8.0_amd64.deb
 
 #
 # AstroNvimの依存系ここまで

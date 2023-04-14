@@ -44,7 +44,7 @@ sudo apt install -y build-essential llvm
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/fd.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/ripgrep.sh
-sh ~/.dotfiles/components/linux/debian/getApplication/packages/gtop.sh
+sh ~/.dotfiles/components/linux/debian/getApplication/packages/bottom.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/peco.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/ranger.sh
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/delta.sh
