@@ -13,7 +13,6 @@ brew install neovim
 # astroNvim依存
 brew install ripgrep
 brew install jesseduffield/lazygit/lazygit
-brew install lazygit
 brew install bottom
 
 brew install -f gdu

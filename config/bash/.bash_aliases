@@ -40,6 +40,7 @@ alias g='git'
 alias gs='git status'
 alias fd='fdfind'
 alias ze='zellij'
+alias lg='lazygit'
 alias j=z
 
 # ヨシ!系
