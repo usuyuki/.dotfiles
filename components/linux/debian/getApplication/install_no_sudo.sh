@@ -7,4 +7,6 @@ sh /home/fss3/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/
 # brew系統
 brew install neovim
 brew install asdf
+brew install --cask alacritty
+
 # nodeを入れる
