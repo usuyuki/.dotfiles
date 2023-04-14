@@ -25,5 +25,9 @@ ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
 ln -fnsv ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
 ln -fnsv ~/.dotfiles/config/asdf/.asdfrc ~/.asdfrc
 
+#zellij
+mkdir -p ~/.config/zelli
+ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
 echo "■■■■■■■■■■"
