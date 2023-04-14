@@ -35,9 +35,9 @@
 # deltaによるgit diff モダン化用 https://github.com/dandavison/delta
 [core]
     pager = delta
-# 一番使いたいgit add -pだが、使うとターミナルが固まるので使わない
-# [interactive]
-#     diffFilter = delta --color-only
+# 一番使いたいgit add -pだが、wslだとターミナルが固まるので使わない
+[interactive]
+    diffFilter = delta --color-only
 [delta]
     navigate = true
     light = false

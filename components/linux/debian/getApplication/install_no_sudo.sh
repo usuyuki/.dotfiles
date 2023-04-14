@@ -9,6 +9,7 @@ brew install gtop
 brew install asdf
 brew install --cask alacritty
 brew install tig
+brew install git-delta
 
 brew install neovim
 # astroNvim依存
