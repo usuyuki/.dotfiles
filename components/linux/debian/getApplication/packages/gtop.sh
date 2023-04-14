@@ -1,4 +1,5 @@
 echo "gtopのインストール-🎁→🗃→🎉"
+# brewでもインストール可能
 npm install gtop -g
 
 << PACKAGE_INFO 
