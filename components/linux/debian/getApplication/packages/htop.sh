@@ -1,11 +1,13 @@
-echo "htopのインストール-🎁→🗃→🎉"
-sudo apt install -y htop
+echo "gtopのインストール-🎁→🗃→🎉"
+npm install gtop -g
 
 << PACKAGE_INFO 
-🎁パッケージ名: htop
-🐙GitHub: https://github.com/htop-dev/htop
+🎁パッケージ名: gtop
+🐙GitHub: https://github.com/aksakalli/gtop
 📰概要: CPU使用率など見やすくするやつ
 
 📒使い方・備考📒
 
-PACKAGE_INFO
+```
+gtop
+```

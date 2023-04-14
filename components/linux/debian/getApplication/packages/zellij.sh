@@ -6,6 +6,8 @@ install -Dm755 ~/zellij ~/.local/bin/zellij
 rm -rf ~/zellij-x86_64-unknown-linux-musl.tar.gz
 rm -rf ~/zellij
 
+# zellijをデフォルトで起動するようにする
+echo 'eval "$(zellij setup --generate-auto-start bash)"' >> ~/.bashrc
 << PACKAGE_INFO 
 🎁パッケージ名: z 
 🐙GitHub: https://github.com/zellij-org/zellij

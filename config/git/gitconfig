@@ -47,3 +47,8 @@
     conflictstyle = diff3
 [diff]
     colorMoved = default
+[credential]
+	helper = store --file ~/.git_credentials
+[user]
+	name = usuyuki
+	email = git@usuyuki.net
