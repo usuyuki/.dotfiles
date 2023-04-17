@@ -7,6 +7,7 @@ sh /home/fss3/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/
 # brew系統
 brew install gtop
 brew install asdf
+brew install cask
 brew install --cask alacritty
 brew install tig
 brew install git-delta
