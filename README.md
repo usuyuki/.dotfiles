@@ -75,7 +75,7 @@ https://github.com/s3igo/dotfiles
 > 📝PowerShell から Chocolatey 経由でぶちこむスタイル
 > が、現状できていないので、pie in the sky
 
-## 🐧
+## 🏡 日常用途
 
 ### ubuntu_daily
 
@@ -87,7 +87,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 ```
 
-## 既知の不具合
+#### 既知の不具合
 
 - asdf インストール前の必要ツールのインストールで使う apt install の対話シェルをうまく自動化できてない（一方はうまくいってるが、もう一方がうまくいかない)
 - asdf で node がうまくインストールされない(再実行するとうまくいく)
@@ -95,6 +95,16 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 - asdf で php がインストールされるが composer や cs-fixer がインストールされない、PHP もそもそも入ってないかも？
 
 > 普段使いで使う時の Ubuntu の設定
+
+### Arch Linux
+
+```
+
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/arch/setup.sh
+
+```
+
+## 📡(サーバー用途)
 
 ### ubuntu_hosting
 

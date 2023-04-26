@@ -1,15 +1,15 @@
-# 基本設定
-sh ~/.dotfiles/components/linux/arch/settings.sh
-# シンボリックリンク貼る
-sh ~/.dotfiles/components/linux/common/link.sh
+#
+# PGP鍵の生成やデフォルトユーザーの設定は済んでいる状態を想定
+# WSLの場合の参考→https://www.asobou.co.jp/blog/web/archilinux-on-wsl2
+#
 
-# 必要なものをインストール
-sh ~/.dotfiles/components/linux/debian/getApplication/installer_daily.sh
+# 国内サーバーへ
+sed -i.dist \
+    -e 's/^Server/#Server/g' \
+    -e 's!#Server = \(https\?://.*\?\.jp\)!Server = \1!g' \
+    /etc/pacman.d/mirrorlist
 
+# yayのインストール
+sudo pacman -Syyuu --needed git base-devel
+(git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si)
 
-
-# 必要事項のメッセージ
-sh ~/.dotfiles/components/linux/debian/after_finish.sh
-sudo apt -y autoremove
-#シェルの再起動
-exec $SHELL -l
