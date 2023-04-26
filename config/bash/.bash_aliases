@@ -40,6 +40,7 @@ alias g='git'
 alias gs='git status'
 alias ze='zellij'
 alias lg='lazygit'
+alias cati='ascii-image-converter'
 alias j=z
 
 # ヨシ!系
