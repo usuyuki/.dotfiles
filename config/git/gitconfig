@@ -51,4 +51,4 @@
 	helper = store --file ~/.git_credentials
 [user]
 	name = usuyuki
-	email = git@usuyuki.net
+	email = 63891531+usuyuki@users.noreply.github.com
