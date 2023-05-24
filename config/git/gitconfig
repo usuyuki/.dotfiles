@@ -4,6 +4,8 @@
 [alias]
 	f = fetch
 	po = push origin HEAD
+	pom = pull origin main
+	poma = pull origin master
 	s = status
 	l = log --graph
 	d = diff
@@ -19,7 +21,6 @@
 	po = push origin HEAD
 	pof = push --force-with-lease --force-if-includes origin HEAD
 	pr = pull --rebase
-	pom = pull origin main
 	psuh = push
 	r-b = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	risu = stash -u
@@ -27,9 +28,11 @@
 	rereset = reset --hard HEAD@{1}
 	urudo = commit --fixup
 	re = rebase origin/main
+	rea = rebase origin/master
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
+    gg = !git ad && git cm-- && git pof
 	
 	
 # deltaによるgit diff モダン化用 https://github.com/dandavison/delta
