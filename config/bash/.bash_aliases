@@ -45,6 +45,11 @@ alias m='make'
 alias cati='ascii-image-converter'
 alias j=z
 
+# 表示系
+# alias g-c='git config --get-regexp alias' ←スクロール出してくれるのが逆に厄介なので廃止
+alias gc="grep --color=never -Pzo '(?s)\[alias\].*?(?=\[core\])' ~/.gitconfig "
+alias sshc='cat ~/.ssh/config'
+
 # ヨシ!系
 alias cp='cp -i'
 alias mv='mv -i'

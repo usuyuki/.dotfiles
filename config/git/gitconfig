@@ -32,11 +32,9 @@
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
-    gg = !git ad && git cm-- && git pof
-	
-	
-# deltaによるgit diff モダン化用 https://github.com/dandavison/delta
+	gg = !git ad && git cm-- && git pof
 [core]
+# deltaによるgit diff モダン化用 https://github.com/dandavison/delta
     pager = delta
 # interactiveはWindowsのgit bashだと固まるのでコメントアウトすべき
 [interactive]
