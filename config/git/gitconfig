@@ -12,6 +12,7 @@
 	ds = diff --staged
 	c = checkout
 	c- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"
+    cp = cherry-pick
 	ad = add .
 	ap = add -p
 	cm = commit -m 
