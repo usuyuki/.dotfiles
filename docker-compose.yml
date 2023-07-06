@@ -1,9 +1,16 @@
 version: "3.9"
 services:
   ubuntu:
-    build: .
+    build:
+      dockerfile: ./sandbox/ubuntu/Dockerfile
     tty: true
     volumes:
       - ./:/home/usuyuki/.dotfiles
     # command: /sbin/init
     # privileged: true
+  arch:
+    build:
+      dockerfile: ./sandbox/arch/Dockerfile
+    tty: true
+    volumes:
+      - ./:/home/usuyuki/.dotfiles
