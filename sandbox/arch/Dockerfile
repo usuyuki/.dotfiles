@@ -1,15 +1,19 @@
-FROM archlinux:latest
+FROM archlinux
 
-RUN pacman -S git sudo
+# パッケージの更新と必要なツールのインストール
+RUN pacman -Syu --noconfirm \
+    && pacman -S --noconfirm sudo git
 
-RUN useradd -m -s /bin/bash usuyuki
-RUN echo 'Defaults visiblepw'            >> /etc/sudoers
-RUN echo 'docker ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+# ユーザーの作成
+RUN useradd -m usuyuki \
+    && echo 'usuyuki ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
-
-USER usuyuki
+# 作業ディレクトリの設定
 WORKDIR /home/usuyuki
 
+# ユーザーを切り替える
+USER usuyuki
 
-ENTRYPOINT ["bash", "-c", "echo editThisCommand."]
+# コンテナ実行時のデフォルトコマンド
+CMD ["/bin/bash"]
 
