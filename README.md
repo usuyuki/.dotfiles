@@ -77,7 +77,7 @@ https://github.com/s3igo/dotfiles
 
 ## 🏡 日常用途
 
-### ubuntu_daily
+### Ubuntu
 
 ちゃんと動くようになってる。
 
@@ -96,11 +96,15 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 > 普段使いで使う時の Ubuntu の設定
 
-### Arch Linux
+### EndeavourOS(Arch Linux)
+
+i3 の指定とインストール後の各種更新が終わった想定(Firefox は入ってない想定)
+
+<img width="430" alt="image" src="https://github.com/usuyuki/.dotfiles/assets/63891531/12694f4a-8acd-4fa2-bc9f-64d7e45b1890">
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/arch/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/endeavour_os/setup.sh
 
 ```
 
