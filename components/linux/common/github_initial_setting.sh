@@ -1,4 +1,4 @@
-ssh-keygen -t ed25519 -f ~/.ssh/github_connect_key
+ssh-keygen -t ed25519 -f ~/.ssh/github_connect_key -N ""
 entry="
 Host github.com
     IdentityFile ~/.ssh/connect_github
