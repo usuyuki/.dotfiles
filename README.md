@@ -18,6 +18,12 @@ df-up
 sh ~/.dotfiles/components/linux/common/link.sh
 ```
 
+## GitHub との接続の初期設定したい
+
+```
+sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
+```
+
 ## 設定が間違ってないか確認したい
 
 ```
