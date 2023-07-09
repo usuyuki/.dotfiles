@@ -69,7 +69,6 @@ sh ~/.dotfiles/components/linux/common/link.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential.sh
 logout
 
-echo 'eval "$(~/bin/rtx activate bash)"' >>~/.zshrc
 # zコマンドのインストール(fish上でないと実行できないのでシェルスクリプトでは無理)
 # fisher install jethrokuan/z
 

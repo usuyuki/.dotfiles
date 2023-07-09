@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # pluginsの追加
-Rtx plugin add rust
+rtx plugin add rust
 rtx plugin add python
 rtx plugin add golang https://github.com/kennyp/asdf-golang.git
 rtx plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
