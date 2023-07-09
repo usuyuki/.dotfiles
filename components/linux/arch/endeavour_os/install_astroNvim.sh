@@ -3,7 +3,7 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-sudo pacman -S neovim
+# neovimはpacmanで既に入っている想定
 
 # AstroNvim依存 https://github.com/AstroNvim/AstroNvim#-requirements
 cargo install tree-sitter-cli
