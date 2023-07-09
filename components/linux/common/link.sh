@@ -15,6 +15,8 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 #ln -fnsv ~/.dotfiles/config/bash/.bashrc ~/.bashrc
 
 # fish系
+# なければディレクトリ作る
+mkdir -p ~/.config/fish
 ln -fnsv ~/.dotfiles/config/aliases ~/.config/fish/aliases.fish
 ln -fnsv ~/.dotfiles/config/fish/config.fish ~/.config/fish/config.fish
 
