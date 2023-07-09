@@ -32,6 +32,26 @@ fishBoot="
 # fishをインタラクティブシェルとして使う
 if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi
 "
-
 #bashrcに追記
 echo "$fishBoot" >>~/.bashrc
+
+echo "bash_aliasesの読み込み設定"
+aliasLoad="
+# bash_aliases読み込み
+if [ -f ~/.bash_aliases ]; then                                                                                                                                                    
+. ~/.bash_aliases                                                                                                                                                          
+fi 
+"
+# ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き
+echo "$aliasLoad" >>~/.bashrc
+
+# ここからfishで実行
+fish
+
+# fisherのインストール
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+# zコマンドのインストール
+fisher install jethrokuan/z
+
+echo "˗ˋˏ '$jobName' success ˎˊ˗ "
+echo "■■■■■■■■■■"

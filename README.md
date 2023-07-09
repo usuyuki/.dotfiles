@@ -9,7 +9,8 @@ NeoVim の設定は別リポジトリに
 コンテナなど一時的に使う環境は# スタートにあるコマンドをそのまま実行して良いが、dotfiles を更新する想定の場合は
 
 ```
-git clone git@github.com:usuyuki/.dotfiles.git .dotfiles
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
+git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 ```
 
 で clone する
@@ -120,8 +121,8 @@ i3 の指定とインストール後の各種更新が終わった想定(Firefox
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)"
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential_before_logout.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
+git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 sh ~/.dotfiles/setup/endeavour_os/setup.sh
 
 
