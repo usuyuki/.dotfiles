@@ -1,4 +1,14 @@
 # 必要なものをインストール
+zshrc="
+eval \"$(~/bin/rtx activate bash)\"
+plugins=( 
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
+)
+"
+touch ~/.zshrc
+echo "$zshrc" >>~/.zshrc
 
 # 先にrtx入れて言語関係を楽にする
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx.sh
