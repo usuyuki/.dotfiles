@@ -26,6 +26,8 @@ sudo pacman -S re2c autoconf postgresql-libs libzip
 #
 echo "rtx install"
 rtx install
+# ↓でインストールしたものが使えるようになる
+/usr/bin/rtx activate zsh
 
 #
 # node関連

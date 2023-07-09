@@ -21,11 +21,8 @@ eval "$(/usr/bin/rtx activate zsh)"
 
 # bash_aliases読み込み
 if [ -f ~/.bash_aliases ]; then                                                                                                                                                    
-
-. ~/.bash_aliases                                                                                                                                                          
-
+    . ~/.bash_aliases                                                                                                                                                          
 fi 
-
 
 plugins=( 
     zsh-autosuggestions
@@ -43,8 +40,9 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases                                                                                                                                                          
 fi 
 "
-# ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き
+# ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き(zshは上で設定)
 echo "$aliasLoad" >>~/.bashrc
+touch ~/.zsh_history
 
 # 先にrtx入れて言語関係を楽にする
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx.sh
