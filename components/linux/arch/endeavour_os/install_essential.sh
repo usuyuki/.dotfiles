@@ -45,13 +45,5 @@ fi
 # ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き
 echo "$aliasLoad" >>~/.bashrc
 
-# ここからfishで実行
-fish
-
-# fisherのインストール
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-# zコマンドのインストール
-fisher install jethrokuan/z
-
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
