@@ -112,8 +112,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 - asdf で php がインストールされるが composer や cs-fixer がインストールされない、PHP もそもそも入ってないかも？
 
 > 普段使いで使う時の Ubuntu の設定
-
-### EndeavourOS(Arch Linux)
+> fi### EndeavourOS(Arch Linux)
 
 i3 の指定とインストール後の各種更新が終わった想定(Firefox は入ってない想定)
 
@@ -125,7 +124,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linu
 git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential.sh
 # fisherの導入がどう頑張ってもシェルスクリプトにできないので
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+# curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 source
 sh ~/.dotfiles/setup/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す

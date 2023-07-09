@@ -4,6 +4,8 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 # pacman管理のアップデートとアップグレード
 sudo pacman -Syyu
+yay -Syyu
+yay -Syyu
 
 #
 # 日本語入力できるようにする(設定はsettings.shにて)
@@ -25,7 +27,7 @@ echo "ログインし直すことで日本語入力環境が有効になりま�
 #
 # bashからzshへ変更
 #
-sudo pacman -S fish
+sudo pacman -S fish fisher
 # fishをデフォルトのシェルにするのはArchでは非推奨らしいので、インタラクティブシェルとして使う
 # chsh -s /bin/fish ←デフォルトのshellにする場合
 fishBoot="
