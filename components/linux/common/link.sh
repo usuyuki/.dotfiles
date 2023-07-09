@@ -11,7 +11,7 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 
 # zsh系
 # これどうにかしたい
-ln -fnsv ~/.dotfiles/config/aliases ~/.zsh_aliases
+# aliasesはbash_aliasesを流用
 # ln -fnsv ~/.dotfiles/config/zsh/zprofile ~/.zprofile
 
 # 元のbashrcを退避(日付付きの名前にしておくことで2回このスクリプトを走らせても最初のが辿れるようにする)

@@ -6,16 +6,6 @@ echo "----------------------------"
 sudo pacman -Syyu
 yay -Syyu
 
-echo "bash_aliasesの読み込み設定"
-aliasLoad="
-# bash_aliases読み込み
-if [ -f ~/.bash_aliases ]; then                                                                                                                                                    
-. ~/.bash_aliases                                                                                                                                                          
-fi 
-"
-# ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き
-echo "$aliasLoad" >>~/.bashrc
-
 #
 # 日本語入力できるようにする(設定はsettings.shにて)
 #
