@@ -36,4 +36,4 @@ fi
 "
 
 #bashrcに追記
-echo "$jaConfig" >>~/.bashrc
+echo "$fishBoot" >>~/.bashrc
