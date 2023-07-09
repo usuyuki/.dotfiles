@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # 最初から入ってる:git,yay,
-sudo pacman -S code vim neofetch neovim
+sudo pacman -S code vim neofetch neovim gnuplot
 
 # https://github.com/BurntSushi/ripgrep
 sudo pacman -S ripgrep
