@@ -35,6 +35,9 @@ rustup default stable
 yay -S rtx
 # bash用
 echo 'eval "$(~/bin/rtx activate bash)"' >>~/.bashrc
+
+sh ~/.dotfiles/components/linux/arch/endeavour_os/settings.sh
+
 # fish用はconfig.fishに直書きなのでconifで管理
 #
 # bashからzshへ変更
