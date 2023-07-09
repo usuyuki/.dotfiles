@@ -9,7 +9,10 @@ sudo pacman -S rustup
 rustup default stable
 # rtxの導入(rustでビルドされるっぽい)
 (git clone https://aur.archlinux.org/rtx.git && cd rtx && makepkg -si)
+# bash用
 echo 'eval "$(~/bin/rtx activate bash)"' >>~/.bashrc
+# fish用
+echo 'rtx activate fish | source' >>~/.config/fish/config.fish
 
 # rtxで各種言語をインストール
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx.sh
