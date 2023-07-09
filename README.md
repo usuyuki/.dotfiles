@@ -123,9 +123,11 @@ i3 の指定とインストール後の各種更新が終わった想定(Firefox
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential.sh
-# fisherの導入がどう頑張ってもシェルスクリプトにできないので
-# curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-source
+logout
+
+# zコマンドのインストール(fish上でないと実行できないのでシェルスクリプトでは無理)
+fisher install jethrokuan/z
+
 sh ~/.dotfiles/setup/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す
 logout
