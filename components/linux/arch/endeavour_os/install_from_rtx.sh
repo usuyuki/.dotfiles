@@ -3,24 +3,9 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-#
-# rtx自体のインストール
-#
-echo "Install rtx"
-# 種々の言語が依存しがちなので、先に言語のバージョン管理環境を整える
-# rtxがrust依存なのでrustだけは先に入れる
-sudo pacman -S rustup
-rustup default stable
-# rtxの導入(rustでビルドされるっぽい)
-yay -S rtx
-# bash用
-echo 'eval "$(~/bin/rtx activate bash)"' >>~/.bashrc
-# fish用
-echo 'rtx activate fish | source' >>~/.config/fish/config.fish
-
-echo "Install asdf plugin"
 # pluginsの追加
-# rust, pythonは不要
+rtx plugin add rust
+rtx plugin add python
 rtx plugin add golang https://github.com/kennyp/asdf-golang.git
 rtx plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 rtx plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
@@ -31,7 +16,7 @@ rtx install
 
 # node関連
 corepack enable
-asdf reshim nodejs
+rtx reshim nodejs
 
 echo "****************************"
 echo "バージョンチェック"
