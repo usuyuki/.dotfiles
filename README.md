@@ -2,7 +2,17 @@
 
 うすゆきてきとうかんきょう
 
-NeoVim の設定は別リポジトリ
+NeoVim の設定は別リポジトリに
+
+## Clone
+
+コンテナなど一時的に使う環境は# スタートにあるコマンドをそのまま実行して良いが、dotfiles を更新する想定の場合は
+
+```
+git clone git@github.com:usuyuki/.dotfiles.git .dotfiles
+```
+
+で clone する
 
 ## 更新したい
 
