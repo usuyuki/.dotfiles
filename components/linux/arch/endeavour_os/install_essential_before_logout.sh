@@ -25,8 +25,15 @@ echo "ログインし直すことで日本語入力環境が有効になりま�
 #
 # bashからzshへ変更
 #
-sudo pacman -S zsh
-chsh -s /bin/zsh
-echo "ログアウトして再ログインする"
-# zshrcが生成されてからでないと以降が積むのでここで一旦終わらせる
-logout
+sudo pacman -S fish
+# fishをデフォルトのシェルにするのはArchでは非推奨らしいので、インタラクティブシェルとして使う
+# chsh -s /bin/fish ←デフォルトのshellにする場合
+fishBoot="
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
+then
+	exec fish
+fi
+"
+
+#bashrcに追記
+echo "$jaConfig" >>~/.bashrc

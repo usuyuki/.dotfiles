@@ -120,7 +120,10 @@ i3 の指定とインストール後の各種更新が終わった想定(Firefox
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/endeavour_os/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)"
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential_before_logout.sh
+sh ~/.dotfiles/setup/endeavour_os/setup.sh
+
 
 ```
 

@@ -2,7 +2,7 @@
 # シンボリックリンク貼る
 jobName="Create symbolic link"
 echo "----------------------------"
-echo "⋆⸜ '$jobName' started ⸝⋆";
+echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # bash系
@@ -14,6 +14,8 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 # mv ~/.bashrc ~/.bashrc_old_`date '+%Y_%m_%d_%H_%M_%S'`
 #ln -fnsv ~/.dotfiles/config/bash/.bashrc ~/.bashrc
 
+# fish系
+ln -fnsv ~/.dotfiles/config/fish/config.fish ~/.config/fish/config.fish
 
 # git系
 ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
@@ -33,5 +35,5 @@ ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
 mkdir -p ~/.config/alacritty
 ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.yml ~/.config/alacritty/alacritty.yml
 
-echo "˗ˋˏ '$jobName' success ˎˊ˗ ";
+echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
