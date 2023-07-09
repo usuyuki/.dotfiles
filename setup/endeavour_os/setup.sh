@@ -6,6 +6,7 @@ sh ~/.dotfiles/components/linux/arch/settings.sh
 
 # 必要なものをインストール
 
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_fisher.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_pacman.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_neovim.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_yay.sh
