@@ -6,7 +6,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # bash系
-ln -fnsv ~/.dotfiles/config/bash/.bash_aliases ~/.bash_aliases
+ln -fnsv ~/.dotfiles/config/aliases ~/.bash_aliases
 ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 
 # 元のbashrcを退避(日付付きの名前にしておくことで2回このスクリプトを走らせても最初のが辿れるようにする)
@@ -15,6 +15,7 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 #ln -fnsv ~/.dotfiles/config/bash/.bashrc ~/.bashrc
 
 # fish系
+ln -fnsv ~/.dotfiles/config/aliases ~/.config/fish/aliases.fish
 ln -fnsv ~/.dotfiles/config/fish/config.fish ~/.config/fish/config.fish
 
 # git系
