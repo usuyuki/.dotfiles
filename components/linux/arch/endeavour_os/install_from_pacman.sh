@@ -9,7 +9,7 @@ sudo pacman -Syyu
 # 種々の言語が依存しがちなので、先に言語のバージョン管理環境を整える
 
 # 最初から入ってる:git,yay,
-sudo pacman -S code git
+sudo pacman -S code vim neofetch
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
