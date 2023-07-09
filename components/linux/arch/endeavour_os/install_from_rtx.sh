@@ -12,7 +12,7 @@ echo "Install rtx"
 sudo pacman -S rustup
 rustup default stable
 # rtxの導入(rustでビルドされるっぽい)
-(git clone https://aur.archlinux.org/rtx.git && cd rtx && makepkg -si)
+yay -S rtx
 # bash用
 echo 'eval "$(~/bin/rtx activate bash)"' >>~/.bashrc
 # fish用
