@@ -16,7 +16,11 @@ rustup default stable
 # rtxの導入(rustでビルドされるっぽい)
 (git clone https://aur.archlinux.org/rtx.git && cd rtx && makepkg -si)
 
-rtx install
+# rtxで各種言語をインストール
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx.sh
+
+# neovimのインストール
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_neovim.sh
 
 # 最初から入ってる:git,yay,
 sudo pacman -S code vim neofetch
