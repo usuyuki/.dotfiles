@@ -119,15 +119,17 @@ i3 の指定とインストール後の各種更新が終わった想定(Firefox
 <img width="430" alt="image" src="https://github.com/usuyuki/.dotfiles/assets/63891531/12694f4a-8acd-4fa2-bc9f-64d7e45b1890">
 
 ```bash
-
+# dotfiles導入
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
+# シンボリックリンク
+sh ~/.dotfiles/components/linux/common/link.sh
+# 日本語設定、rtxのインストール、zshへの変更が含まれる
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential.sh
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_rtx.sh
 logout
 
 # zコマンドのインストール(fish上でないと実行できないのでシェルスクリプトでは無理)
-fisher install jethrokuan/z
+# fisher install jethrokuan/z
 
 sh ~/.dotfiles/setup/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す

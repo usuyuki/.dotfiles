@@ -1,9 +1,3 @@
-# シンボリックリンク貼る
-sh ~/.dotfiles/components/linux/common/link.sh
-
-# 基本設定
-sh ~/.dotfiles/components/linux/arch/settings.sh
-
 # 必要なものをインストール
 
 # 先にrtx入れて言語関係を楽にする

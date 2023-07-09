@@ -9,6 +9,12 @@ echo "----------------------------"
 ln -fnsv ~/.dotfiles/config/aliases ~/.bash_aliases
 ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 
+# zsh系
+# これどうにかしたい
+ln -fnsv ~/.dotfiles/config/aliases ~/.zsh_aliases
+ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.zprofile
+ln -fnsv ~/.bashrc ~/.zshrc
+
 # 元のbashrcを退避(日付付きの名前にしておくことで2回このスクリプトを走らせても最初のが辿れるようにする)
 # と思ったが、環境の違いを吸いきれないので廃止(必要なら >> ~/.bashrcで渡す)
 # mv ~/.bashrc ~/.bashrc_old_`date '+%Y_%m_%d_%H_%M_%S'`
