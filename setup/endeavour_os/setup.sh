@@ -2,6 +2,7 @@
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx_after.sh
 
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_pacman.sh
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_fonts.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_z.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_yay.sh
 # neovimのインストール(AstroNvimの依存関係がpacmanとかで被るので先にそれらを使う)
