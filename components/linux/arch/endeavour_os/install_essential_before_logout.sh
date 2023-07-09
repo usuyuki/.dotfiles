@@ -29,10 +29,8 @@ sudo pacman -S fish
 # fishをデフォルトのシェルにするのはArchでは非推奨らしいので、インタラクティブシェルとして使う
 # chsh -s /bin/fish ←デフォルトのshellにする場合
 fishBoot="
-if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
-then
-	exec fish
-fi
+# fishをインタラクティブシェルとして使う
+if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi
 "
 
 #bashrcに追記
