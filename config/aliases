@@ -53,3 +53,7 @@ alias df-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/co
 
 # astroNvimのユーザー設定gitリポジトリ更新
 alias nv-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_astroNvim.sh)"'
+
+# シェルスクリプトのショートカット
+alias sukusyo='sh ~/.dotfiles/script/slop/screenshot.sh'
+
