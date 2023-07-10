@@ -1,4 +1,4 @@
-jobName="後の構成に必要な必須ソフトウェアの設定やインストール"
+いjobName="後の構成に必要な必須ソフトウェアの設定やインストール"
 echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
@@ -36,7 +36,13 @@ yay -S rtx
 # bash用
 echo 'eval "$(~/bin/rtx activate bash)"' >>~/.bashrc
 
+# 基本の設定
 sh ~/.dotfiles/components/linux/arch/endeavour_os/settings.sh
+
+# rtxの導入
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_rtx_before.sh
+
+
 
 # fish用はconfig.fishに直書きなのでconifで管理
 #
