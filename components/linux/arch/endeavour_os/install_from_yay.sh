@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # braveの自前ビルドは4,5時間かけてもbinをインストール
-yay -S google-chrome slack-desktop brave-bin xfluxd postman-bin cloud-sql-proxy-bin
+yay -S google-chrome slack-desktop brave-bin xfluxd postman-bin
 
 # xfluxdはナイトモードのやつ
 
@@ -15,4 +15,4 @@ yay -S google-chrome slack-desktop brave-bin xfluxd postman-bin cloud-sql-proxy-
 sudo yay -Yc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
-echo "■■■■■■■■■■"
+echo "■■■■■■■■■■oud
