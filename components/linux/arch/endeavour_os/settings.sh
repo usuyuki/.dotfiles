@@ -43,3 +43,7 @@ fi
 # ubuntuと違ってbash_aliases読み込みの項目がないのでbashrcに上書き(zshは上で設定)
 echo "$aliasLoad" >>~/.bashrc
 touch ~/.zsh_history
+
+#i3関連
+exec --no-startup-id sleep 7 && firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
+

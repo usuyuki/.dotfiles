@@ -46,6 +46,7 @@ ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.yml ~/.config/alacritty/al
 #i3wm
 mkdir -p ~/.config/i3
 ln -fnsv ~/.dotfiles/config/i3/config ~/.config/i3/config
+ln -fnsv ~/.dotfiles/config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
