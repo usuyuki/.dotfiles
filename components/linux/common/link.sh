@@ -43,5 +43,9 @@ ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
 mkdir -p ~/.config/alacritty
 ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+#i3wm
+mkdir -p ~/.config/i3
+ln -fnsv ~/.dotfiles/config/i3/config ~/.config/i3/config
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
