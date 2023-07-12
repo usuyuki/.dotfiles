@@ -4,8 +4,9 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # braveの自前ビルドは4,5時間かけてもbinをインストール
-yay -S yay-bin google-chrome slack-desktop brave-bin
+yay -S google-chrome slack-desktop brave-bin xfluxd
 
+# xfluxdはナイトモードのやつ
 
 # 不安定
 # yay -S docker-desktop brave
