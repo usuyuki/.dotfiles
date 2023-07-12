@@ -24,6 +24,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases                                                                                                                                                          
 fi 
 
+# direnv用
+eval "$(direnv hook zsh)"
+
 plugins=( 
     zsh-autosuggestions
     zsh-completions
