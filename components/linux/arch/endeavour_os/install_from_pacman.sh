@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # 最初から入ってる:git,yay,curl,make,wget,
-sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij imagemagick libreoffice-still slop xfce4-clipman-plugin blueberry alacritty direnv caddy
+sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij imagemagick libreoffice-still slop xfce4-clipman-plugin blueberry alacritty direnv caddy xclip redshift
 
 # https://github.com/BurntSushi/ripgrep
 # https://github.com/jesseduffield/lazygit
@@ -19,8 +19,10 @@ sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit
 # https://github.com/direnv/direnv 
 # https://github.com/alacritty/alacritty
 # xfce4-clipman-pluginはクリップボード履歴
-# blueberryはBluetooth用のやつ
-# xorg-xbacklightは明るさ調整
+# blueberryはBluetooth用のやつ(まだ使ってない)
+# xorg-xbacklightは明るさ調整(機能していない)
+# xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
+# redshiftはナイトモードのやつ(xfluxdは効果がなかった)
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
