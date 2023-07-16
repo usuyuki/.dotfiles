@@ -53,6 +53,8 @@ ln -fnsv ~/.dotfiles/config/redshift/redshift.conf ~/.config/redshift.conf
 
 # starship
 ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
+# xresouces
+ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
