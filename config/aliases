@@ -26,6 +26,7 @@ alias lg='lazygit'
 alias m='make'
 alias cati='ascii-image-converter'
 alias j=z
+alias fx='felix'
 
 # 表示系
 # alias g-c='git config --get-regexp alias' ←スクロール出してくれるのが逆に厄介なので廃止

@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # 最初から入ってる:git,yay,curl,make,wget,
-sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij
+sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij felix-rs
 
 # https://github.com/BurntSushi/ripgrep
 # https://github.com/jesseduffield/lazygit
@@ -15,6 +15,6 @@ sudo pacman -S code discord vim neofetch neovim gnuplot tree tig ripgrep lazygit
 # https://github.com/peco/peco
 # https://github.com/ranger/ranger
 # https://github.com/zellij-org/zellij
-
+# https://github.com/kyoheiu/felix
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
