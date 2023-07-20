@@ -28,6 +28,11 @@ alias cati='ascii-image-converter'
 alias j=z
 alias fx='felix'
 
+#mozc
+alias mozc-s='/usr/lib/mozc/mozc_tool --mode=config_dialog'
+alias mozc-d='/usr/lib/mozc/mozc_tool --mode=dictionary_tool'
+alias mozc-a='/usr/lib/mozc/mozc_tool --mode=word_register_dialog'
+
 # 表示系
 # alias g-c='git config --get-regexp alias' ←スクロール出してくれるのが逆に厄介なので廃止
 alias gc="grep --color=never -Pzo '(?s)\[alias\].*?(?=\[core\])' ~/.gitconfig "
@@ -47,6 +52,8 @@ alias cd_='cd $_'
 # ls
 alias ll='ls -alF'
 
+
+
 alias rebash='exec $SHELL -l'
 
 # dotfiles更新
@@ -54,3 +61,17 @@ alias df-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/co
 
 # astroNvimのユーザー設定gitリポジトリ更新
 alias nv-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_astroNvim.sh)"'
+
+# シェルスクリプトのショートカット i3wmではwin+shifth+sに割当
+alias sukusyo='sh ~/.dotfiles/script/slop/screenshot.sh'
+
+# クリップボードにコピー
+# Xセレクション
+alias cp-cx='xclip'
+# クリップボード
+alias cp-c='xclip -selection c'
+
+# EndeavourOS更新
+alias eos-up='sh ~/.dotfiles/setup/endeavour_os/update.sh'
+
+

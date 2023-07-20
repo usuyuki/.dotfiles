@@ -3,7 +3,10 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-yay -S google-chrome slack-desktop
+# braveの自前ビルドは4,5時間かけてもbinをインストール
+yay -S google-chrome slack-desktop brave-bin xfluxd postman-bin 
+
+
 # 不安定
 # yay -S docker-desktop brave
 
@@ -11,4 +14,4 @@ yay -S google-chrome slack-desktop
 sudo yay -Yc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
-echo "■■■■■■■■■■"
+echo "■■■■■■■■■■oud

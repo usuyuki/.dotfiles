@@ -1,0 +1,5 @@
+#!/bin/bash
+slop=$(slop -f "%g") || exit 1
+read -r G < <(echo $slop)
+import -window root -crop $G ~/myimage.png
+

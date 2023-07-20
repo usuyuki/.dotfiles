@@ -75,6 +75,11 @@ logout
 sh ~/.dotfiles/setup/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す
 logout
+
+
+git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
+sh ~/.dotfiles-secret/script/git-clone.sh
+sh ~/.dotfiles-secret/script/link.sh
 ```
 
 ### Ubuntu

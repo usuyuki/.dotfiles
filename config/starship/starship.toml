@@ -1,0 +1,3 @@
+[gcloud]
+# スクショできない情報が入るので無効化する
+disabled = true

@@ -43,5 +43,16 @@ ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
 mkdir -p ~/.config/alacritty
 ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+#i3wm
+mkdir -p ~/.config/i3
+ln -fnsv ~/.dotfiles/config/i3/config ~/.config/i3/config
+ln -fnsv ~/.dotfiles/config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+
+# redshift
+ln -fnsv ~/.dotfiles/config/redshift/redshift.conf ~/.config/redshift.conf
+
+# starship
+ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
