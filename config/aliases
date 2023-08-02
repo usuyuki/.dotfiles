@@ -74,4 +74,5 @@ alias cp-c='xclip -selection c'
 # EndeavourOS更新
 alias eos-up='sh ~/.dotfiles/setup/endeavour_os/update.sh'
 
-
+# automation
+alias luco-s='sh ~/.dotfiles-secret/automation/starLucoDev.sh'

@@ -55,7 +55,10 @@ sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
 
 ### EndeavourOS(Arch Linux)
 
-i3 の指定とインストール後の各種更新が終わった想定(Firefox は入ってない想定)
+i3 の指定とインストール後の各種更新が終わった想定(Firefox も入れる)
+
+画面の調整は 4kモニタと2kモニタのマルチなのでXresouceでdpiを140にして、xrandrで2kモニタを4kモニタとすることでHiDPI、Windowsで言うところの拡大率、Macで言うところのRetina Display対応をしている  
+(Xprofileにこのことを書きたいが、コメントアウトできないっぽいでのここに書く)
 
 <img width="430" alt="image" src="https://github.com/usuyuki/.dotfiles/assets/63891531/12694f4a-8acd-4fa2-bc9f-64d7e45b1890">
 
