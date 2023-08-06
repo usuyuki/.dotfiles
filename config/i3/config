@@ -397,7 +397,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill ~/.dotfiles-secret/background-image/ui-amya.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill ~/.dotfiles-secret/background-image/ui-short.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600

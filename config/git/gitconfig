@@ -16,8 +16,10 @@
 	ad = add .
 	ap = add -p
 	cm = commit -m 
+	cmwip = commit --no-verify -m 
 	cm- = commit --amend
 	cm-- = commit --amend --no-edit
+    wip = commit -m "wip" --no-verify
 	b = branch
 	po = push origin HEAD
 	pof = push --force-with-lease --force-if-includes origin HEAD
