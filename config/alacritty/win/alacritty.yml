@@ -1,5 +1,5 @@
 shell:
-  program: /Windows/System32/wsl.exe
+  program: /Windows/System32/wsl.exe ~ -d Ubuntu-20.04
   args:
     - --cd ~
 
