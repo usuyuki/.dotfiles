@@ -1,4 +1,4 @@
-node       18.16.1
+node       18.16.0
 python     3.11.4
 go         1.21
 rust       1.70.0
