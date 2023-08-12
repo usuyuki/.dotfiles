@@ -293,7 +293,7 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 bindsym $mod+w exec /usr/bin/brave
 bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
-bindsym $mod+shift+s exec sh ~/.dotfiles/script/slop/screenshot.sh
+bindsym $mod+shift+s exec --no-startup-id xfce4-screenshooter 
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+shift+p exec ~/.config/i3/scripts/power-profiles
