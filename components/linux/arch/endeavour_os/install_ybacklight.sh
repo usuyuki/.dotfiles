@@ -1,4 +1,4 @@
-# xbacklightで明るさの調整ができず、xrandrも一瞬しか反映されないのでybackghtをインストールする
+# Surface Laptop3においてxbacklightで明るさの調整ができず、xrandrも一瞬しか反映されないのでybackghtをインストールする
 # https://github.com/yath/ybacklight/tree/master
 yay -S ybacklight
 # Permission Error になるので権限付与
