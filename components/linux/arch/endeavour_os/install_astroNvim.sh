@@ -25,5 +25,10 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 # AstroNvimの個人用設定をダウンロード
 git clone git@github.com:usuyuki/AstroNvimUserSettings.git ~/.config/nvim/lua/user
 
+
+echo "やること"
+echo "1. :CopilotAuth"
+echo "2. :WakaTimeApiKey"
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"

@@ -21,7 +21,6 @@ sudo pacman -S discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu 
 # https://github.com/alacritty/alacritty
 # xfce4-clipman-pluginはクリップボード履歴
 # blueberryはBluetooth用のやつ(まだ使ってない)
-# xorg-xbacklightは明るさ調整(機能していない)
 # xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
 # redshiftはナイトモードのやつ(xfluxdは効果がなかった)
 
