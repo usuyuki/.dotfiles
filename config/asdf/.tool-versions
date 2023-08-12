@@ -3,4 +3,4 @@ python     3.11.4
 go         1.21
 rust       1.70.0
 lazydocker 0.20.0
-php        8.2.7
+php        8.2.8
