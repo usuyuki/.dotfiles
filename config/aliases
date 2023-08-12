@@ -77,6 +77,9 @@ alias eos-up='sh ~/.dotfiles/setup/endeavour_os/update.sh'
 # automation
 alias luco-s='sh ~/.dotfiles-secret/automation/starLucoDev.sh'
 
+# clouflare warp
+alias warp-c='warp-cli connect'
+alias warp-d='warp-cli disconnect'
 
 # 固有のやつ
 
