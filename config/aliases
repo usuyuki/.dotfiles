@@ -77,6 +77,10 @@ alias eos-up='sh ~/.dotfiles/setup/endeavour_os/update.sh'
 # automation
 alias luco-s='sh ~/.dotfiles-secret/automation/starLucoDev.sh'
 
+#squoosh-cli 該当ディレクトリで(FUJIFILM画像用)
+alias comp='sh ~/.dotfiles/script/imagemagic-jpeg-quality.sh'
+
+
 # clouflare warp
 alias warp-c='warp-cli connect'
 alias warp-d='warp-cli disconnect'
