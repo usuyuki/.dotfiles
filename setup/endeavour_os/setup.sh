@@ -5,7 +5,10 @@ sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_pacman.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_starship.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_fonts.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_z.sh
+
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_from_yay.sh
+
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_xfce4-screenshooter.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_docker-desktop.sh
 sh ~/.dotfiles/components/linux/arch/endeavour_os/install_cloudflare-warp.sh
 # Surface Laptop3(Intel内蔵グラフィックス)向け

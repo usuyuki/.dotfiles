@@ -4,8 +4,10 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # braveの自前ビルドは4,5時間かけてもbinをインストール
-yay -S google-chrome slack-desktop brave-bin xfluxd postman-bin zoom figma-linux-bin visual-studio-code-bin keybase-bin
+yay -S google-chrome slack-desktop brave-bin xfluxd  zoom figma-linux-bin visual-studio-code-bin 
 
+# optional
+# yay -S rpi-imager-bin postman-bin keybase-bin
 
 # 不安定
 # vscodeはpacmanでcodeを入れるとOSS版になるのだが、syncがうまく動かないのでMS版を入れる
