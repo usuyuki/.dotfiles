@@ -17,6 +17,7 @@ brew install ranger
 brew install tig
 brew install git-delta
 brew install starship
+brew install wabt
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 

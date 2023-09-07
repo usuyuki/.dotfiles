@@ -4,4 +4,4 @@ go         1.21
 rust       1.70.0
 lazydocker 0.20.0
 php        8.2.8
-deno       1.36.4
+deno 1.36.4
