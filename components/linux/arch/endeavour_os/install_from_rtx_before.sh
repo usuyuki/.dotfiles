@@ -10,6 +10,8 @@ rtx plugin add golang https://github.com/kennyp/asdf-golang.git
 rtx plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 rtx plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
 rtx plugin add php https://github.com/asdf-community/asdf-php.git
+rtx plugin add deno https://github.com/asdf-community/asdf-deno.git
+
 
 #
 # 依存解消
