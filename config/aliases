@@ -85,6 +85,9 @@ alias comp='sh ~/.dotfiles/script/imagemagic-jpeg-quality.sh'
 alias warp-c='warp-cli connect'
 alias warp-d='warp-cli disconnect'
 
+# tty-clokc
+alias clock='tty-clock -s -c -C6'
+
 # 固有のやつ
 
 # surface

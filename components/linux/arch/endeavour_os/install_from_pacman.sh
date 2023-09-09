@@ -17,7 +17,7 @@ sudo pacman -S discord vim neofetch neovim gnuplot tree tig ripgrep lazygit gdu 
 # https://github.com/zellij-org/zellij
 # https://github.com/kyoheiu/felix
 # https://github.com/naelstrof/slop スクショ撮るやつ
-# https://github.com/direnv/direnv 
+# https://github.com/direnv/direnv
 # https://github.com/alacritty/alacritty
 # xfce4-clipman-pluginはクリップボード履歴
 # blueberryはBluetooth用のやつ(まだ使ってない)
