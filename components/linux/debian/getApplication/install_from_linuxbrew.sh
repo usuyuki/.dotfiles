@@ -17,7 +17,12 @@ brew install ranger
 brew install tig
 brew install git-delta
 brew install starship
+# WebAssembly関連
 brew install wabt
+brew install wasmer
+# esp32ビルド関連
+brew install llvm
+
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
