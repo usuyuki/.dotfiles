@@ -32,6 +32,9 @@ plugins=(
     zsh-completions
     zsh-syntax-highlighting
 )
+
+# ctrl+rとか使えるようにする
+bindkey -e
 '
 touch ~/.zshrc
 echo "$zshrc" >>~/.zshrc
