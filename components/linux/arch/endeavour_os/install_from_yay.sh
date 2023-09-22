@@ -4,10 +4,11 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # braveの自前ビルドは4,5時間かけてもbinをインストール
-yay -S google-chrome slack-desktop brave-bin xfluxd  zoom figma-linux-bin visual-studio-code-bin tty-clock
+yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
+
 
 # optional
-# yay -S rpi-imager-bin postman-bin keybase-bin
+yay -S rpi-imager-bin postman-bin keybase-bin tty-clock zoom figma-linux-bin wps-office
 
 # tty-clock i3wmでよく見るCUIの時計
 

@@ -50,3 +50,5 @@ touch ~/.zsh_history
 #i3関連
 exec --no-startup-id sleep 7 && firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
 
+# 標準エディタの変更
+sh ~/.dotfiles/components/linux/common/change_default_editor.sh
