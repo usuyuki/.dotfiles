@@ -4,10 +4,10 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # 最初から入ってる:git,yay,curl,make,wget,
-sudo pacman -S discord vim neofetch neovim tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij imagemagick slop xfce4-clipman-plugin blueberry alacritty direnv xclip redshift felix-rs xdotool 
+sudo pacman -S discord vim neofetch neovim tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij imagemagick slop xfce4-clipman-plugin blueberry alacritty direnv xclip redshift felix-rs xdotool
 
 # opionally
-sudo pacman -S gnuplot inkscape gimp
+sudo pacman -S gnuplot inkscape gimp obs-studio
 
 # wasm関連
 sudo pacman -S llvm wasmer wabt
