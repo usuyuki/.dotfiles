@@ -8,7 +8,10 @@ yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
 
 
 # optional
-yay -S rpi-imager-bin postman-bin keybase-bin tty-clock zoom figma-linux-bin wps-office obs-studio-browser
+yay -S postman-bin keybase-bin tty-clock zoom figma-linux-bin wps-office
+
+# マイコン
+yay -S esp-idf rpi-imager-bin
 
 # tty-clock i3wmでよく見るCUIの時計
 
