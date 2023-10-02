@@ -88,6 +88,9 @@ alias warp-d='warp-cli disconnect'
 # tty-clokc
 alias clock='tty-clock -s -c -C6'
 
+# esp-idf
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
 # 固有のやつ
 
 # surface
