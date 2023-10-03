@@ -3,9 +3,9 @@
 
 
 
-# sh /home/fss3/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
+sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
 # z
-# sh /home/fss3/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/z.sh
+sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 
 # brew系統
 brew install gtop
@@ -22,6 +22,10 @@ brew install wabt
 brew install wasmer
 # esp32ビルド関連
 brew install llvm
+
+# esp-idf
+brew install cmake ninja dfu-util # 依存
+sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/esp-idf.sh
 
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
