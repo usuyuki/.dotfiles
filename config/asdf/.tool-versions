@@ -1,11 +1,11 @@
 node       18.16.0
 python     3.11.4
 go         1.21
-rust 1.72.1
+rust       1.72.1
 # rustのバージョンを上げたあとはrustup updateを実行することでrustcなどのバージョンも上がる
 lazydocker 0.20.0
 php        8.2.8
 # phpのバージョン上げた後はpecl install redisして　"extension=redis.so"　>> /home/usuyuki/.local/share/rtx/installs/php/8.2.10/conf.d/php.iniを実行する
-deno 1.36.4
+deno       1.36.4
 # bun 1.1
-zig 0.11.0
+zig        0.11.0

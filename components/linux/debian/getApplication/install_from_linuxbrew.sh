@@ -9,7 +9,7 @@ sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 
 # brew系統
 brew install gtop
-brew install asdf
+brew install rtx
 # linuxではcaskでGUIソフトウェア入れられない(mac専用)
 # brew install cask
 # brew install --cask alacritty
@@ -21,7 +21,7 @@ brew install starship
 brew install wabt
 brew install wasmer
 # esp32ビルド関連
-brew install llvm
+brew install llvm wasm-micro-runtime
 
 # esp-idf
 brew install cmake ninja dfu-util # 依存
