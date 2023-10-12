@@ -50,10 +50,10 @@ sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
 - →wget や curl で取ってくる場合は(cd ~/ && curl)のようにサブシェルで実行すること
 
 # 初期導入 🍮
+
 - 🟢→現在でもメンテナンスがされている
 - 🟡→以前はメンテナンスがされていたが、現在はメンテナンスされていない
 - ❌→未完成または不十分
-
 
 ## デスクトップ環境(実機日常用途) 🏡
 
@@ -85,15 +85,18 @@ sh ~/.dotfiles-secret/script/git-clone.sh
 sh ~/.dotfiles-secret/script/link.sh
 ```
 
-### Desktop no-privileged Ubuntu  🟡
+### Desktop no-privileged Ubuntu 🟡
+
 sudoが使えないUbuntu Desktop環境. LinuxBrewを用いる.
 
 ※LinuxBrew導入までが未整備
+
 ```
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/desktop/no-privileged-ubuntu/setup.sh
 ```
 
 ### Windows ❌
+
 メンテ不足, 要改修.
 
 [windows](setup/desktop/windows/setup.md)
@@ -107,6 +110,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 ### WSL Arch Linux 🟢
 
 #### Arch LinuxをWindowsへ導入
+
 https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
 
 #### dotfiles導入
@@ -127,8 +131,7 @@ logout
 
 # dotfiles-secret導入
 git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
-sh ~/.dotfiles-secret/script/git-clone.sh
-sh ~/.dotfiles-secret/script/link.sh
+sh ~/.dotfiles-secret/script/git-clone.sh && sh ~/.dotfiles-secret/script/link.sh
 ```
 
 ### WSL Ubuntu 🟡
@@ -147,6 +150,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 > 普段使いで使う時の Ubuntu の設定
 
 ## サーバー用途 📡
+
 GUI環境がない想定
 
 ### Ubuntu Server X86 ❌
@@ -166,6 +170,7 @@ sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
 ```
 
 ### Ubuntu Server Arm 🟡
+
 Raspberry PiでUbuntu Serverするとき用
 
 ```bash
@@ -173,10 +178,10 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 ```
 
 ## Docker 🐋 ❌
+
 メンテ不足
 
 [docker](setup/docker/setup.md)
-
 
 # Dockerを用いたお試し・検証
 
