@@ -10,7 +10,9 @@ echo "----------------------------"
 # https://astronvim.com/
 #
 # nerd-fonts無いと見た目がひどすぎる
-sudo pacman -S nerd-fonts
+# これはintall_fontsで設定
+# sudo pacman -S nerd-fonts
+
 # AstroNvim依存 https://github.com/AstroNvim/AstroNvim#-requirements
 cargo install tree-sitter-cli
 
@@ -24,7 +26,6 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 # AstroNvimの個人用設定をダウンロード
 git clone git@github.com:usuyuki/AstroNvimUserSettings.git ~/.config/nvim/lua/user
-
 
 echo "やること"
 echo "1. :CopilotAuth"

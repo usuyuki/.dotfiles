@@ -5,10 +5,6 @@ sh ~/.dotfiles/components/linux/arch/common/extra/install_z.sh
 
 sh ~/.dotfiles/components/linux/arch/common/yay_cui.sh
 
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_xfce4-screenshooter.sh
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_docker-desktop.sh
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_cloudflare-warp.sh
-
 # option
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_esp-idf.sh
 
