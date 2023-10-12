@@ -51,7 +51,7 @@ sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
 
 # 初期導入 🍮
 
-## 🏡 日常用途
+## デスクトップ環境(実機日常用途) 🏡
 
 ### EndeavourOS(Arch Linux)
 
@@ -75,7 +75,7 @@ logout
 # zコマンドのインストール(fish上でないと実行できないのでシェルスクリプトでは無理)
 # fisher install jethrokuan/z
 
-sh ~/.dotfiles/setup/endeavour_os/setup.sh
+sh ~/.dotfiles/setup/desktop/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す
 logout
 
@@ -85,14 +85,39 @@ sh ~/.dotfiles-secret/script/git-clone.sh
 sh ~/.dotfiles-secret/script/link.sh
 ```
 
-### Ubuntu
+### Desktop no-privileged Ubuntu 
+sudoが使えないUbuntu Desktop環境. LinuxBrewを用いる.
 
-ちゃんと動くようになってる。
-
+※LinuxBrew導入までが未整備
+```
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/desktop/no-privileged-ubuntu/setup.sh
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
+## Windows 🪟
+メンテ不足, 要改修.
 
+[windows](setup/desktop/windows/setup.md)
+
+> 普段使いで使う時の Windows の設定
+> 📝PowerShell から Chocolatey 経由でぶちこむスタイル
+> が、現状できていないので、pie in the sky
+
+## WSL用途 🪴
+
+### WSL Arch Linux
+
+#### Arch LinuxをWindowsへ導入
+https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
+
+#### dotfiles導入
+```
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/wsl/arch/setup.sh
+```
+
+### WSL Ubuntu
+
+```
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/wsl/ubuntu/setup.sh
 ```
 
 #### 既知の不具合
@@ -104,9 +129,10 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 > 普段使いで使う時の Ubuntu の設定
 
-## 📡(サーバー用途)
+## サーバー用途 📡
+GUI環境がない想定
 
-### ubuntu_hosting
+### Ubuntu Server X86
 
 未完成
 
@@ -114,7 +140,7 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/server/ubuntu-x86/setup.sh
 
 ```
 
@@ -124,37 +150,20 @@ nginx 設定
 sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
 ```
 
-### ubuntu_hosting_arm
-
+### Ubuntu Server Arm
+Raspberry PiでUbuntu Serverするとき用
 ```
 
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/ubuntu_hosting_arm/setup.sh
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/server/ubuntu-arm/setup.sh
 
 ```
+## Docker 🐋
+メンテ不足
 
-### Raspberry Pi
+[docker](setup/docker/setup.md)
 
-apt-add-repository 系がことごとく失敗するので、普段使いはやめた
 
-→ それはそうでは。apt-key を使う方式はもはや非推奨
-
-## 🐋
-
-[docker](setup/ubuntu_hosting/setup.md)
-
-```
-
-```
-
-## 🪟
-
-[windows](setup/win/setup.md)
-
-> 普段使いで使う時の Windows の設定
-> 📝PowerShell から Chocolatey 経由でぶちこむスタイル
-> が、現状できていないので、pie in the sky
-
-# メンテナンス
+# Dockerを用いたお試し・検証
 
 ## 設定が間違ってないか確認したい
 
