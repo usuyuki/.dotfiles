@@ -8,7 +8,7 @@ NeoVim の設定は別リポジトリに
 
 コンテナなど一時的に使う環境は# スタートにあるコマンドをそのまま実行して良いが、dotfiles を更新する想定の場合は
 
-```
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 ```
@@ -17,7 +17,7 @@ git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
 
 ## 更新したい
 
-```
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
 または
 df-up
@@ -25,13 +25,13 @@ df-up
 
 ## シンボリックリンクだけ貼る
 
-```
+```bash
 sh ~/.dotfiles/components/linux/common/link.sh
 ```
 
 ## GitHub との接続の初期設定したい
 
-```
+```bash
 sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
 ```
 
@@ -50,12 +50,16 @@ sh ~/.dotfiles/components/linux/common/github_initial_setting.sh
 - →wget や curl で取ってくる場合は(cd ~/ && curl)のようにサブシェルで実行すること
 
 # 初期導入 🍮
+- 🟢→現在でもメンテナンスがされている
+- 🟡→以前はメンテナンスがされていたが、現在はメンテナンスされていない
+- ❌→未完成または不十分
+
 
 ## デスクトップ環境(実機日常用途) 🏡
 
-### EndeavourOS(Arch Linux)
+### EndeavourOS(Arch Linux) 🟢
 
-i3 の指定とインストール後の各種更新が終わった想定(Firefox も入れる)
+i3 の指定とインストール後の各種更新が終わった想定(Firefox も入れる)であり, 素のArchと異なり最初からsudoなども入っている前提.
 
 画面の調整は 4kモニタと2kモニタのマルチなのでXresouceでdpiを140にして、xrandrで2kモニタを4kモニタとすることでHiDPI、Windowsで言うところの拡大率、Macで言うところのRetina Display対応をしている  
 (Xprofileにこのことを書きたいが、コメントアウトできないっぽいでのここに書く)
@@ -85,7 +89,7 @@ sh ~/.dotfiles-secret/script/git-clone.sh
 sh ~/.dotfiles-secret/script/link.sh
 ```
 
-### Desktop no-privileged Ubuntu 
+### Desktop no-privileged Ubuntu  🟡
 sudoが使えないUbuntu Desktop環境. LinuxBrewを用いる.
 
 ※LinuxBrew導入までが未整備
@@ -93,7 +97,7 @@ sudoが使えないUbuntu Desktop環境. LinuxBrewを用いる.
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/desktop/no-privileged-ubuntu/setup.sh
 ```
 
-## Windows 🪟
+### Windows ❌
 メンテ不足, 要改修.
 
 [windows](setup/desktop/windows/setup.md)
@@ -104,19 +108,20 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 ## WSL用途 🪴
 
-### WSL Arch Linux
+### WSL Arch Linux 🟢
 
 #### Arch LinuxをWindowsへ導入
 https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
 
 #### dotfiles導入
-```
+
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/wsl/arch/setup.sh
 ```
 
-### WSL Ubuntu
+### WSL Ubuntu 🟡
 
-```
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/wsl/ubuntu/setup.sh
 ```
 
@@ -132,32 +137,30 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 ## サーバー用途 📡
 GUI環境がない想定
 
-### Ubuntu Server X86
+### Ubuntu Server X86 ❌
 
-未完成
+未完成であるが、そもそもコンテナが基本になって不要になったという理由も大きい。
 
 > サーバー用で使う時の Ubuntu の設定
 
-```
-
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/server/ubuntu-x86/setup.sh
-
 ```
 
 nginx 設定
 
-```
+```bash
 sh ~/.dotfiles/components/linux/common/add_nginx_conf.sh
 ```
 
-### Ubuntu Server Arm
+### Ubuntu Server Arm 🟡
 Raspberry PiでUbuntu Serverするとき用
-```
 
+```bash
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/server/ubuntu-arm/setup.sh
-
 ```
-## Docker 🐋
+
+## Docker 🐋 ❌
 メンテ不足
 
 [docker](setup/docker/setup.md)
@@ -167,13 +170,12 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 ## 設定が間違ってないか確認したい
 
-```
+```bash
 dc up -d
 dc exec ubuntu bash
 sh ~/.dotfiles/setup/docker/setup.sh
 exec $SHELL -l
 sh ~/.dotfiles/components/linux/debian/getApplication/packages/asdf/lang_installer.sh
-
 ```
 
 exec がうまく効かないので……
@@ -187,9 +189,7 @@ exec がうまく効かないので……
 
 ### 作り直し
 
-```
-
+```bash
 dc down && dc up -d && dc exec ubuntu bash
 sh ~/.dotfiles/setup/ubuntu_daily/setup.sh
-
 ```
