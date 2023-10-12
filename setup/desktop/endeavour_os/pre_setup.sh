@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 # pacman管理のアップデートとアップグレード
 sudo pacman -Syu
-yay -Syyu
+yay -Syu
 
 # シンボリックリンク
 sh ~/.dotfiles/components/linux/common/link.sh

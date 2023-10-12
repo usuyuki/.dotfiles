@@ -10,6 +10,8 @@ sudo pacman -S vim
 # シンボリックリンク
 sh ~/.dotfiles/components/linux/common/link.sh
 
+# yayのインストール
+sh ~/.dotfiles/components/linux/arch/common/core/install_yay.sh
 # rtx自体のインストール
 sh ~/.dotfiles/components/linux/arch/common/core/install_rtx.sh
 
