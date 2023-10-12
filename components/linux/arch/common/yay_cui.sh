@@ -8,9 +8,6 @@ echo "----------------------------"
 # optional
 yay -S tty-clock 
 
-# マイコン
-yay -S esp-idf rpi-imager-bin
-
 # tty-clock i3wmでよく見るCUIの時計
 
 

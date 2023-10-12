@@ -5,7 +5,7 @@ echo "----------------------------"
 
 # pluginsの追加
 rtx plugin add rust
-rtx plugin add python
+# rtx plugin add python # pythonは不要っぽい？
 rtx plugin add golang https://github.com/kennyp/asdf-golang.git
 rtx plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 rtx plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
@@ -21,7 +21,7 @@ rtx plugin add zig https://github.com/asdf-community/asdf-zig.git
 sudo pacman -S tk
 
 #php
-sudo pacman -S re2c autoconf postgresql-libs libzip
+sudo pacman -S re2c autoconf postgresql-libs libzip gd oniguruma
 
 #
 # インストール
@@ -31,8 +31,6 @@ echo "rtx install"
 rtx install
 # ↓でインストールしたものが使えるようになる←ならない
 # /usr/bin/rtx activate zsh
-
-# この後動やっても一旦シェルを閉じないとできない
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"

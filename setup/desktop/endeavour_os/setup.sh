@@ -1,6 +1,3 @@
-# 先にrtx入れて言語関係を楽にする
-sh ~/.dotfiles/components/linux/arch/common/core/run_rtx.sh
-
 sh ~/.dotfiles/components/linux/arch/common/pacman_cui.sh
 sh ~/.dotfiles/components/linux/arch/common/pacman_gui.sh
 

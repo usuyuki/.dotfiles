@@ -5,10 +5,11 @@ echo "----------------------------"
 
 yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
 
-
 # optional
-yay -S postman-bin keybase-bin zoom figma-linux-bin wps-office
+yay -S keybase-bin zoom figma-linux-bin wps-office
 
+# さらにoptional
+yay -S postman-bin rpi-imager-bin
 
 # 不安定
 # vscodeはpacmanでcodeを入れるとOSS版になるのだが、syncがうまく動かないのでMS版を入れる

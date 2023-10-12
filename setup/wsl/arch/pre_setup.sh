@@ -12,6 +12,7 @@ sh ~/.dotfiles/components/linux/common/link.sh
 
 # yayのインストール
 sh ~/.dotfiles/components/linux/arch/common/core/install_yay.sh
+
 # rtx自体のインストール
 sh ~/.dotfiles/components/linux/arch/common/core/install_rtx.sh
 
@@ -19,7 +20,7 @@ sh ~/.dotfiles/components/linux/arch/common/core/install_rtx.sh
 sh ~/.dotfiles/components/linux/arch/common/settings.sh
 
 # rtxの導入
-sh ~/.dotfiles/components/linux/arch/common/core/install_from_rtx_before.sh
+sh ~/.dotfiles/components/linux/arch/common/core/run_rtx.sh
 
 # zshの導入()
 sh ~/.dotfiles/components/linux/arch/common/core/install_zsh.sh
