@@ -1,3 +1,4 @@
+# これ不要では
 jobName="Install From rtx(asdf)"
 echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
@@ -10,7 +11,7 @@ corepack enable
 rtx reshim nodejs
 
 #
-# pathの設定→不要っぽい？
+# pathの設定→不要
 #
 # go
 # export GOPATH=$HOME/goi

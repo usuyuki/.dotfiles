@@ -25,7 +25,7 @@ sudo pacman -S re2c autoconf postgresql-libs libzip
 
 #
 # インストール
-# .tool-versionがあるのでそれを下に指定バージョンをインストール
+# .tool-versionがあるのでそれを元にいい感じにしてくれる
 #
 echo "rtx install"
 rtx install

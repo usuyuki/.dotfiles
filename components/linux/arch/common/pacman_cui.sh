@@ -1,13 +1,13 @@
-jobName="Install From Pacman"
+jobName="Install From Pacman CUI App"
 echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-# 最初から入ってる:git,yay,curl,make,wget,
-sudo pacman -S discord vim neofetch neovim tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger zellij imagemagick slop xfce4-clipman-plugin blueberry alacritty direnv xclip redshift felix-rs xdotool
+# これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
+sudo pacman -S wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool
 
 # opionally
-sudo pacman -S gnuplot inkscape gimp
+sudo pacman -S direnv
 
 # wasm関連
 sudo pacman -S llvm wasmer wabt
@@ -22,13 +22,9 @@ sudo pacman -S llvm wasmer wabt
 # https://github.com/ranger/ranger
 # https://github.com/zellij-org/zellij
 # https://github.com/kyoheiu/felix
-# https://github.com/naelstrof/slop スクショ撮るやつ
 # https://github.com/direnv/direnv
-# https://github.com/alacritty/alacritty
-# xfce4-clipman-pluginはクリップボード履歴
-# blueberryはBluetooth用のやつ(まだ使ってない)
+# felix-rs https://github.com/kyoheiu/felix vimライクな操作ができるファイルマネージャー
 # xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
-# redshiftはナイトモードのやつ(xfluxdは効果がなかった)
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"

@@ -70,20 +70,16 @@ i3 の指定とインストール後の各種更新が終わった想定(Firefox
 # dotfiles導入
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
-# シンボリックリンク
-sh ~/.dotfiles/components/linux/common/link.sh
-# 日本語設定、rtxのインストール、zshへの変更が含まれる
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_essential.sh
+
+# セットアップ
+sh ~/.dotfiles/setup/desktop/endeavour_os/pre_setup.sh
 logout
-
-# zコマンドのインストール(fish上でないと実行できないのでシェルスクリプトでは無理)
-# fisher install jethrokuan/z
-
 sh ~/.dotfiles/setup/desktop/endeavour_os/setup.sh
 # mozkなどの兼ね合いでログインし直す
 logout
 
 
+# dotfiles-secret導入
 git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
 sh ~/.dotfiles-secret/script/git-clone.sh
 sh ~/.dotfiles-secret/script/link.sh
@@ -116,7 +112,23 @@ https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
 #### dotfiles導入
 
 ```bash
-eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/wsl/arch/setup.sh
+# gitとSSH鍵交換するための準備
+sudo pacman -S openssh git
+# dotfiles導入
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
+git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
+
+# セットアップ
+sh ~/.dotfiles/setup/wsl/arch/pre_setup.sh
+logout
+sh ~/.dotfiles/setup/wsl/arch/setup.sh
+logout
+
+
+# dotfiles-secret導入
+git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
+sh ~/.dotfiles-secret/script/git-clone.sh
+sh ~/.dotfiles-secret/script/link.sh
 ```
 
 ### WSL Ubuntu 🟡
