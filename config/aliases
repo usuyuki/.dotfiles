@@ -89,7 +89,7 @@ alias warp-d='warp-cli disconnect'
 alias clock='tty-clock -s -c -C6'
 
 # esp-idf
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias get_idf='. /opt/usuyuki/esp/esp-idf-511/export.sh'
 
 # 固有のやつ
 
