@@ -3,15 +3,15 @@
 # ホスト名を取得
 HOSTNAME=$(hostname)
 
-# OS判定
+# OS判定 連想配列だと一部の環境で動かないので条件分岐に変更
 OS_NAME="$(uname -s)"
-declare -A OS_MAP=(["Darwin"]="macOS" ["Linux"]="Linux" ["CYGWIN"]="Windows" ["MINGW32"]="Windows" ["MSYS"]="Windows")
-
-for key in "${!OS_MAP[@]}"; do
-	if [[ $OS_NAME == $key* ]]; then
-		OS=${OS_MAP[$key]}
-	fi
-done
+if [[ $OS_NAME == "Darwin"* ]]; then
+	OS="macOS"
+elif [[ $OS_NAME == "Linux"* ]]; then
+	OS="Linux"
+elif [[ $OS_NAME == "CYGWIN"* ]] || [[ $OS_NAME == "MINGW32"* ]] || [[ $OS_NAME == "MSYS"* ]]; then
+	OS="Windows"
+fi
 
 # Linuxのときはディストリビューションも判定
 if [ "$OS" == "Linux" ] && [ -f /etc/os-release ]; then
