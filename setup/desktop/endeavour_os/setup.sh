@@ -16,7 +16,6 @@ sh ~/.dotfiles/components/linux/arch/endeavour_os/install_cloudflare-warp.sh
 
 # option
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_esp-idf.sh
-# sh ~/.dotfiles/components/linux/arch/endeavour_os/install_obs.sh
 
 # Surface Laptop3(Intel内蔵グラフィックス)向け
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_ybacklight.sh
