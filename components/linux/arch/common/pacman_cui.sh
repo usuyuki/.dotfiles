@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool
+sudo pacman -S inetutils wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool
 
 # opionally
 sudo pacman -S direnv
@@ -12,6 +12,7 @@ sudo pacman -S direnv
 # wasm関連
 sudo pacman -S llvm wasmer wabt
 
+# inetutilsはpingやhostnameなどの基本セットが入ってるやつ
 # https://github.com/BurntSushi/ripgrep
 # https://github.com/jesseduffield/lazygit
 # https://github.com/dundee/gdu
