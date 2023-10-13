@@ -18,6 +18,7 @@ sh ~/.dotfiles/components/linux/arch/common/core/install_rtx.sh
 
 # Arch基本の設定
 sh ~/.dotfiles/components/linux/arch/common/settings.sh
+sh ~/.dotfiles/components/linux/arch/wsl/settings.sh
 
 # rtxの導入
 sh ~/.dotfiles/components/linux/arch/common/core/run_rtx.sh
