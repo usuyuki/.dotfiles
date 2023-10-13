@@ -27,6 +27,12 @@ brew install llvm wasm-micro-runtime
 brew install cmake ninja dfu-util # 依存
 sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/esp-idf.sh
 
+# tinygo
+brew install avrdude
+
+# platformio
+brew install platformio
+
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
