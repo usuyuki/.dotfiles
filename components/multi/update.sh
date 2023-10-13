@@ -19,9 +19,13 @@ if [ "$OS" == "Linux" ] && [ -f /etc/os-release ]; then
 fi
 
 # 共通の処理
+echo "==================================================="
 echo "OS: $OS | DISTRO: $DISTRO | HOSTNAME🏠: $HOSTNAME"
+echo "==================================================="
+echo "Update .dotfiles"
 # dotfiles更新
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
+echo "==================================================="
 
 # OSとディストリビューション, ホスト名に基づいて処理を分岐
 case $OS in
@@ -31,8 +35,6 @@ macOS)
 	brew upgrade
 	;;
 Linux)
-	echo "Linux"
-	echo "Distribution: $DISTRO"
 	# ディストリビューションに基づいて処理を分岐
 	case $DISTRO in
 	Ubuntu)
@@ -49,6 +51,16 @@ Linux)
 			sudo apt full-upgrade -y
 			;;
 		esac
+		;;
+	"Arch Linux")
+		echo "pacman, yayを実行します."
+		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
+		# 3世代前まで残しておく
+		yay -Syu --nodiffmenu
+		# パッケージのキャッシュで一番新しい3つのバージョンを残して後を全て削除
+		paccache -r
+		# アンインストールしたパッケージのキャッシュを全て削除
+		paccache -ruk0
 		;;
 	EndeavourOS)
 		echo "pacman, yay, eos-updateを実行します."

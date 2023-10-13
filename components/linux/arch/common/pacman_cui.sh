@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S inetutils wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool
+sudo pacman -S inetutils wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib
 
 # opionally
 sudo pacman -S direnv
@@ -26,6 +26,7 @@ sudo pacman -S llvm wasmer wabt
 # https://github.com/direnv/direnv
 # felix-rs https://github.com/kyoheiu/felix vimライクな操作ができるファイルマネージャー
 # xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
+# pacman-contrib はpaccacheを使うために必要
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
