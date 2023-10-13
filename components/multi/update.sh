@@ -5,11 +5,11 @@ HOSTNAME=$(hostname)
 
 # OS判定 連想配列だと一部の環境で動かないので条件分岐に変更
 OS_NAME="$(uname -s)"
-if [[ $OS_NAME == "Darwin"* ]]; then
+if [ "$OS_NAME" == "Darwin" ]; then
 	OS="macOS"
-elif [[ $OS_NAME == "Linux"* ]]; then
+elif [ "$OS_NAME" == "Linux" ]; then
 	OS="Linux"
-elif [[ $OS_NAME == "CYGWIN"* ]] || [[ $OS_NAME == "MINGW32"* ]] || [[ $OS_NAME == "MSYS"* ]]; then
+elif [ "$OS_NAME" == "CYGWIN" ] || [ "$OS_NAME" == "MINGW32" ] || [ "$OS_NAME" == "MSYS" ]; then
 	OS="Windows"
 fi
 
@@ -21,7 +21,8 @@ fi
 
 # 共通の処理
 echo "OS: $OS | DISTRO: $DISTRO | HOSTNAME🏠: $HOSTNAME"
-df-up
+# dotfiles更新
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"
 
 # OSとディストリビューション, ホスト名に基づいて処理を分岐
 case $OS in
