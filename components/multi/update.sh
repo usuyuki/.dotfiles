@@ -5,15 +5,6 @@ HOSTNAME=$(hostname)
 
 # OS判定
 OS_NAME="$(uname -s)"
-declare -A OS_MAP=(["Darwin"]="macOS" ["Linux"]="Linux" ["CYGWIN*"]="Windows" ["MINGW32*"]="Windows" ["MSYS*"]="Windows")
-
-#!/bin/bash
-
-# ホスト名を取得
-HOSTNAME=$(hostname)
-
-# OS判定
-OS_NAME="$(uname -s)"
 declare -A OS_MAP=(["Darwin"]="macOS" ["Linux"]="Linux" ["CYGWIN"]="Windows" ["MINGW32"]="Windows" ["MSYS"]="Windows")
 
 for key in "${!OS_MAP[@]}"; do
@@ -27,6 +18,10 @@ if [ "$OS" == "Linux" ] && [ -f /etc/os-release ]; then
 	. /etc/os-release
 	DISTRO=$NAME
 fi
+
+# 共通の処理
+echo "OS: $OS | DISTRO: $DISTRO | HOSTNAME🏠: $HOSTNAME"
+df-up
 
 # OSとディストリビューション, ホスト名に基づいて処理を分岐
 case $OS in
@@ -43,11 +38,15 @@ Linux)
 	Ubuntu)
 		echo "Ubuntu"
 		case $HOSTNAME in
-		server01)
-			echo "You are on server01."
+		kanata)
+			echo "sudoが使えないのでbrewで更新します."
+			brew update
+			brew upgrade
 			;;
 		*)
-			echo "You are not on server01."
+			echo "sudoが使えるのでaptで更新します."
+			sudo apt update -y
+			sudo apt full-upgrade -y
 			;;
 		esac
 		;;
