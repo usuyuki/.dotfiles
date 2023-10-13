@@ -5,13 +5,12 @@ HOSTNAME=$(hostname)
 
 # OS判定 連想配列だと一部の環境で動かないので条件分岐に変更
 OS_NAME="$(uname -s)"
-if [ "$OS_NAME" == "Darwin" ]; then
-	OS="macOS"
-elif [ "$OS_NAME" == "Linux" ]; then
-	OS="Linux"
-elif [ "$OS_NAME" == "CYGWIN" ] || [ "$OS_NAME" == "MINGW32" ] || [ "$OS_NAME" == "MSYS" ]; then
-	OS="Windows"
-fi
+case "$OS_NAME" in
+Darwin*) OS="macOS" ;;
+Linux*) OS="Linux" ;;
+CYGWIN* | MINGW32* | MSYS*) OS="Windows" ;;
+*) OS="Unknown" ;;
+esac
 
 # Linuxのときはディストリビューションも判定
 if [ "$OS" == "Linux" ] && [ -f /etc/os-release ]; then
