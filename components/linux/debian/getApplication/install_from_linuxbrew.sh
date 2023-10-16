@@ -33,6 +33,10 @@ brew install avrdude
 # platformio
 brew install platformio
 
+#tinygo環境
+brew tap tinygo-org/tools
+brew install tinygo
+
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
