@@ -3,7 +3,7 @@
 sudo pacman -S --needed gcc git make flex bison gperf python cmake ninja ccache dfu-util libusb
 (mkdir -p ~/esp &&
 	cd ~/esp &&
-	git clone -b v5.1.1 --recursive https://github.com/espressif/esp-idf.git)
-(cd ~/esp/esp-idf &&
+	git clone -b v5.1.1 --recursive https://github.com/espressif/esp-idf.git esp-511)
+(cd ~/esp/esp-511 &&
 	./install.sh all)
 # 使う時→　get_idf →　idf.py build →　idf.py -p /dev/ttyACM1 flash
