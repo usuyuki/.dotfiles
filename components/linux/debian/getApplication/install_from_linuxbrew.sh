@@ -21,7 +21,11 @@ brew install starship
 brew install wabt
 brew install wasmer
 # esp32ビルド関連
-brew install llvm wasm-micro-runtime
+brew install llvm wasm-micro-runtime 
+
+# esp32 rust
+brew tap riscv-software-src/riscv
+brew install riscv-tools
 
 # esp-idf
 brew install cmake ninja dfu-util # 依存
@@ -38,7 +42,8 @@ brew tap tinygo-org/tools
 brew install tinygo
 
 # micropython
-brew install micropython
+# pip install adafruit-ampy esptool
+brew install picocom #シリアル通信でメッセージ遅れるやつ
 
 # mruby
 brew install mruby
