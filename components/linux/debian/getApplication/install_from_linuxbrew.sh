@@ -37,6 +37,12 @@ brew install platformio
 brew tap tinygo-org/tools
 brew install tinygo
 
+# micropython
+brew install micropython
+
+# mruby
+brew install mruby
+
 # starshipのパスの追加
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
