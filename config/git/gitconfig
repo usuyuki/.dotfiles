@@ -41,7 +41,6 @@
 [core]
 # deltaによるgit diff モダン化用 https://github.com/dandavison/delta
     pager = delta
-# interactiveはWindowsのgit bashだと固まるのでコメントアウトすべき
 [interactive]
     diffFilter = delta --color-only
 [delta]
