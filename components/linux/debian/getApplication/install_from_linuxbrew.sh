@@ -17,6 +17,9 @@ brew install rtx
 brew install ranger
 brew install tig peco
 
+# vidirとかvipeがセットになったmoreutils(逆にvidir単体ではbrew installできない)
+brew install moreutils
+
 # 対話シェルを実現するfzf https://github.com/junegunn/fzf
 # リッチなRust製cat https://github.com/sharkdp/bat
 brew install fzf brew bat
