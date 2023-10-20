@@ -15,6 +15,7 @@ brew install rtx
 # brew install --cask alacritty
 brew install ranger
 brew install tig
+brew install peco
 brew install git-delta
 brew install starship
 # WebAssembly関連
