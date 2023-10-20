@@ -7,11 +7,13 @@
 	pom = pull origin main
 	poma = pull origin master
 	s = status
-	l = log --graph
+    l = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	d = diff
 	ds = diff --staged
 	c = checkout
-	c- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"
+	c- = !git checkout "$(git branch | fzf | cut -d'*' -f2 | xargs)"
+    # peco版も残しておく
+	c-- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"
     cp = cherry-pick
 	ad = add .
 	ap = add -p

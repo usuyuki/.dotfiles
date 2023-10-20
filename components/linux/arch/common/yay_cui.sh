@@ -3,7 +3,8 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-# optionalでないものはない
+yay -S vidir
+# vidir vimでディレクトリ内のファイル名をまとめて変えられるやつ https://github.com/trapd00r/vidir
 
 # optional
 yay -S tty-clock 

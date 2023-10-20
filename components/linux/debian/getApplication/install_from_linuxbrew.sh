@@ -1,5 +1,6 @@
 # sudoが使えないLinux環境で最低限どの生活をするためのシェルスクリプト
-# homebrewを入れる
+# homebrewは導入済み前提
+# また，ここだけすべて.bashrc前提
 
 
 
@@ -14,8 +15,15 @@ brew install rtx
 # brew install cask
 # brew install --cask alacritty
 brew install ranger
-brew install tig
-brew install peco
+brew install tig peco
+
+# 対話シェルを実現するfzf https://github.com/junegunn/fzf
+# リッチなRust製cat https://github.com/sharkdp/bat
+brew install fzf brew bat
+$(brew --prefix)/opt/fzf/install
+echo 'export FZF_CTRL_T_COMMAND="rg --files --hidden --follow --glob \"!.git/*\""' >> ~/.bashrc
+echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,grid --line-range :100 {}\""' >> ~/.bashrc
+
 brew install git-delta
 brew install starship
 # WebAssembly関連

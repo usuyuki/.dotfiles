@@ -23,6 +23,7 @@ sudo pacman -S direnv
 # https://github.com/kyoheiu/felix
 # https://github.com/direnv/direnv
 # felix-rs https://github.com/kyoheiu/felix vimライクな操作ができるファイルマネージャー
+# fzf ll | fzf とかでさがせる https://github.com/junegunn/fzf 
 # xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
 # pacman-contrib はpaccacheを使うために必要
 
