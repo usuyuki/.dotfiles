@@ -11,7 +11,7 @@ yay -S tty-clock
 # tty-clock i3wmでよく見るCUIの時計
 
 # platfomrio依存
-yay -S platformio
+yay -S platformio-git
 sudo pip install Click semantic_version requests bottle colorama marshmallow pyelftools pyserial starlette tabulate uvicorn wsproto pyelftools 
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
