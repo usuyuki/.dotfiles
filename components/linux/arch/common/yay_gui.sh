@@ -6,7 +6,10 @@ echo "----------------------------"
 yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
 
 # optional
-yay -S keybase-bin zoom figma-linux-bin wps-office
+yay -S keybase-bin zoom figma-linux-bin 
+
+# ↓WPS Officeだとフォントが中華フォント優先になってしまう上に設定が永遠に開けないバグがある
+# yay -S wps-office
 
 # さらにoptional
 # yay -S postman-bin rpi-imager-bin  obs-studio-browser

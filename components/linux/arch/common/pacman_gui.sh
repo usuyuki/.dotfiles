@@ -7,7 +7,7 @@ echo "----------------------------"
 sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry alacritty redshift
 
 # opionally
-sudo pacman -S gnuplot inkscape gimp direnv
+sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh
 
 # https://github.com/naelstrof/slop スクショ撮るやつ
 # https://github.com/alacritty/alacritty
