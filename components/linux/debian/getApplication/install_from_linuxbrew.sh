@@ -19,6 +19,8 @@ brew install tig peco
 
 # vidirとかvipeがセットになったmoreutils(逆にvidir単体ではbrew installできない)
 brew install moreutils
+# CLIでmarkdownをきれいに見れるやつ https://github.com/charmbracelet/glow
+brew install glow
 
 # 対話シェルを実現するfzf https://github.com/junegunn/fzf
 # リッチなRust製cat https://github.com/sharkdp/bat
