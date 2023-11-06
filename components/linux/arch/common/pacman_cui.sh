@@ -4,7 +4,8 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib
+sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie
+# cronie crontab的なやつ
 
 # opionally
 sudo pacman -S direnv terraform

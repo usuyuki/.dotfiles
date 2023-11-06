@@ -13,6 +13,8 @@
 	dc = diff HEAD^
 	dcn = diff HEAD^  --name-only
 	c = checkout
+    shokan = checkout main -- 
+    shokana = checkout master -- 
 	c- = !git checkout "$(git branch | fzf | cut -d'*' -f2 | xargs)"
     # peco版も残しておく
 	c-- = !git checkout "$(git branch | peco | cut -d'*' -f2 | xargs)"

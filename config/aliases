@@ -91,6 +91,9 @@ alias clock='tty-clock -s -c -C6'
 # esp-idf
 alias get_idf='. /opt/usuyuki/esp/esp-idf-511/export.sh'
 
+#terraform
+alias tf='terraform'
+
 # 固有のやつ
 
 # surface
