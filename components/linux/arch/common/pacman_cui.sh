@@ -5,7 +5,7 @@ echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
 sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie
-# cronie crontab的なやつ
+# cronie crontab的なやつ systemctl start cronie で起動必要
 
 # opionally
 sudo pacman -S direnv terraform
