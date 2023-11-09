@@ -7,5 +7,5 @@ lazydocker 0.20.0
 php        8.2.11
 # phpのバージョン上げた後はpecl install redisして　echo "extension=redis.so"　>> /home/usuyuki/.local/share/rtx/installs/php/8.2.11/conf.d/php.iniを実行する
 deno       1.36.4
-# bun 1.1
+bun        1.0.11
 zig        0.11.0
