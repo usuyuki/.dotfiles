@@ -94,6 +94,11 @@ alias get_idf='. /opt/usuyuki/esp/esp-idf-511/export.sh'
 #terraform
 alias tf='terraform'
 
+# proxyman
+alias proxy-s='~/.proxyman/proxyman set'
+alias pearlab-c='~/.proxyman/proxyman load pearlab'
+alias proxy-d='~/.proxyman/proxyman unset'
+
 # 固有のやつ
 
 # surface

@@ -3,8 +3,9 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-yay -S vidir
+yay -S vidir proxyman-git
 # vidir vimでディレクトリ内のファイル名をまとめて変えられるやつ https://github.com/trapd00r/vidir
+# proxyman プロキシをかんたんに設定できるやつ https://github.com/himanshub16/ProxyMan
 
 # optional
 yay -S tty-clock 
