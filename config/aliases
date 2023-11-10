@@ -52,10 +52,10 @@ alias cd_='cd $_'
 # ls
 alias ll='ls -alF'
 
-
-
+#
+# ショートカット
+#
 alias rebash='exec $SHELL -l'
-
 # dotfiles更新
 alias df-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/update_dotfiles.sh)"'
 
@@ -64,6 +64,7 @@ alias nv-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/co
 
 # シェルスクリプトのショートカット i3wmではwin+shifth+sに割当
 alias sukusyo='sh ~/.dotfiles/script/slop/screenshot.sh'
+
 
 # クリップボードにコピー
 # Xセレクション
@@ -76,6 +77,10 @@ alias d-up='bash ~/.dotfiles/components/multi/update.sh'
 
 # automation
 alias luco-s='sh ~/.dotfiles-secret/automation/starLucoDev.sh'
+# 開発ショートカット
+alias luco-php='composer cs-fixer-fix && composer rector-fix && composer phpstan'
+alias luco-up-b='g poma && composer i'
+alias luco-up-f='g poma && pnpm i'
 
 #squoosh-cli 該当ディレクトリで(FUJIFILM画像用)
 alias comp='sh ~/.dotfiles/script/imagemagic-jpeg-quality.sh'
@@ -98,6 +103,9 @@ alias tf='terraform'
 alias proxy-s='~/.proxyman/proxyman set'
 alias pearlab-c='~/.proxyman/proxyman load pearlab'
 alias proxy-d='~/.proxyman/proxyman unset'
+
+# bunxはbun xのaliasでrtx経由だとインストールされないのでエイリアスで貼っておく
+alias bunx='bun x'
 
 # 固有のやつ
 
