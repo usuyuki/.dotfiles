@@ -10,6 +10,9 @@ sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep
 # opionally
 sudo pacman -S direnv terraform
 
+# android実機デバッグするなら
+sudo pacman -S android-udev
+
 # inetutilsはpingやhostnameなどの基本セットが入ってるやつ
 # https://github.com/BurntSushi/ripgrep
 # https://github.com/jesseduffield/lazygit

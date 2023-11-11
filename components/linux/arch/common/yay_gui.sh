@@ -9,7 +9,7 @@ yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
 yay -S keybase-bin zoom figma-linux-bin 
 
 # さらにoptional 
-# yay -S postman-bin rpi-imager-bin  obs-studio
+# yay -S postman-bin rpi-imager-bin  obs-studio android-studio  
 
 # 不安定
 # vscodeはpacmanでcodeを入れるとOSS版になるのだが、syncがうまく動かないのでMS版を入れる
