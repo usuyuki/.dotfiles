@@ -34,6 +34,7 @@
 	r-b = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	risu = stash -u
 	risu- = stash pop
+	res = reset
 	rereset = reset --hard HEAD@{1}
 	urudo = commit --fixup
 	re = rebase origin/main
