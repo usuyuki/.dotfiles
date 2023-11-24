@@ -10,7 +10,8 @@ sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 
 # brew系統
 brew install gtop
-brew install rtx
+brew install rtx jq
+# rtxが内部でjq使うことあるのでjqも入れる
 # linuxではcaskでGUIソフトウェア入れられない(mac専用)
 # brew install cask
 # brew install --cask alacritty
