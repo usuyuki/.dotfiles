@@ -101,9 +101,10 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 
 [windows](setup/desktop/windows/setup.md)
 
-> 普段使いで使う時の Windows の設定
-> 📝PowerShell から Chocolatey 経由でぶちこむスタイル
-> が、現状できていないので、pie in the sky
+- winget経由でGUIソフトのインストール(原則CUIはWSLで全部やる) https://dev.classmethod.jp/articles/use_windows_package_manager_winget/
+- WSLの設定とDocker Desktopの設定
+- (Arch Linux) https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
+- AlacrittyとVSCodeの設定
 
 ## WSL用途 🪴
 

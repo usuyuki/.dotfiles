@@ -27,6 +27,7 @@ alias m='make'
 alias cati='ascii-image-converter'
 alias j=z
 alias fx='felix'
+alias cv='progress'
 
 #mozc
 alias mozc-s='/usr/lib/mozc/mozc_tool --mode=config_dialog'
@@ -94,7 +95,8 @@ alias warp-d='warp-cli disconnect'
 alias clock='tty-clock -s -c -C6'
 
 # esp-idf
-alias get_idf='. /opt/usuyuki/esp/esp-idf-511/export.sh'
+alias get_idfu='. /opt/usuyuki/esp/esp-idf-511/export.sh'
+alias get_idfa='. /home/usuyuki/esp/esp-idf/export.sh'
 
 #terraform
 alias tf='terraform'

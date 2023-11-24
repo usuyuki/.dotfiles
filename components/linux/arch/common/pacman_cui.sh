@@ -8,10 +8,13 @@ sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep
 # cronie crontab的なやつ systemctl start cronie で起動必要
 
 # opionally
-sudo pacman -S direnv terraform
+sudo pacman -S direnv terraform progress
+# progress→cvコマンドで実行中のcpの進捗が見れるようになる
 
 # android実機デバッグするなら
 sudo pacman -S android-udev
+# tinygo
+sudo pacman -S tinygo
 
 # inetutilsはpingやhostnameなどの基本セットが入ってるやつ
 # https://github.com/BurntSushi/ripgrep
