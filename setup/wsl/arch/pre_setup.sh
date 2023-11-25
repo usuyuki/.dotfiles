@@ -4,8 +4,8 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 # pacman管理のアップデートとアップグレード
 sudo pacman -Syu
-# デフォルトのエディタをvimにするので先に入れておく
-sudo pacman -S vim
+# デフォルトのエディタをvimにするので先に入れておく rtxでunzip使う言語いるのでunzip
+sudo pacman -S vim unzip
 
 # シンボリックリンク
 sh ~/.dotfiles/components/linux/common/link.sh
