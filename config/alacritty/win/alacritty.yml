@@ -1,11 +1,13 @@
 shell:
-  program: /Windows/System32/wsl.exe ~ -d Ubuntu-20.04
+  program: /Windows/System32/wsl.exe ~ -d Arch -u usuyuki
   args:
     - --cd ~
+key_bindings:
+  - { key: Minus, mods: Command|Shift, action: IncreaseFontSize }
 
-font:
-  normal:
-    family: "UDEV Gothic 35NF"
+#font:
+#  normal:
+#    family: "UDEV Gothic 35NF"
 
 # Colors (Hyper)
 colors:
