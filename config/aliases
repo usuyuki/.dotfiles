@@ -30,8 +30,18 @@ alias fx='felix'
 alias cv='progress'
 alias reito='tar -zcvf'
 alias caito='tar -xvf'
+alias speed='speedtest-cli'
 
+# 置換
 alias cat='bat'
+alias man='tldr'
+alias grep='rg' # 正規表現がデフォで有効だったり、ファイルが多いと遅い説もあるがよい、そもそもrgのほうが短いのでたぶん使わない
+alias ls='exa --git'
+# アイコンはむしろ見にくい
+# alias ls='exa --icons --git'
+alias lt='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
+alias llt='exa -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
+
 
 #mozc
 alias mozc-s='/usr/lib/mozc/mozc_tool --mode=config_dialog'
@@ -54,8 +64,6 @@ alias cd..='cd ../..'
 alias cd...='cd ../../..'
 alias cd_='cd $_'
 
-# ls
-alias ll='ls -alF'
 
 #
 # ショートカット

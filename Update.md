@@ -2,7 +2,7 @@
 
 ## arch
 
-- sudo pacman -S thefuck zoxide
+- sudo pacman -S thefuck zoxide tldr exa bandwhich speedtest-cli figlet
 
 ```
 echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
@@ -12,7 +12,7 @@ echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
 
 ## brew
 
-- brew install thefuck zoxide
+- brew install thefuck zoxide tlrc exa bandwhich speedtest-cli figlet
 
 ```
 echo 'eval "$(zoxide init zsh)"' >>~/.bashrc

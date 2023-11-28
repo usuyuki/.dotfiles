@@ -75,5 +75,6 @@ brew install jesseduffield/lazygit/lazygit
 brew install bottom
 brew install -f gdu
 
-brew install thefuck zoxide
+# 便利ツール系
+brew install thefuck zoxide tlrc exa bandwhich speedtest-cli figlet
 # nodeを入れる
