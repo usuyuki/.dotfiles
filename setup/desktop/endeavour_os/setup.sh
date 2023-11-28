@@ -5,7 +5,7 @@ sh ~/.dotfiles/components/linux/arch/common/pacman_gui.sh
 
 sh ~/.dotfiles/components/linux/arch/common/extra/install_starship.sh
 sh ~/.dotfiles/components/linux/arch/common/core/install_fonts.sh
-sh ~/.dotfiles/components/linux/arch/common/extra/install_z.sh
+sh ~/.dotfiles/components/linux/arch/common/extra/install_zoxide.sh
 sh ~/.dotfiles/components/linux/arch/common/extra/install_fzf.sh
 
 sh ~/.dotfiles/components/linux/arch/common/yay_cui.sh

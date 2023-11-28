@@ -5,8 +5,6 @@
 
 
 sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
-# z
-sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/z.sh
 
 # brew系統
 brew install gtop
@@ -77,4 +75,5 @@ brew install jesseduffield/lazygit/lazygit
 brew install bottom
 brew install -f gdu
 
+brew install thefuck zoxide
 # nodeを入れる

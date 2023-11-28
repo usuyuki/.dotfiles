@@ -4,8 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less
-# cronie crontab的なやつ systemctl start cronie で起動必要
+sudo pacman -S inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less thefuck
 
 # opionally
 sudo pacman -S direnv terraform progress
@@ -32,6 +31,8 @@ sudo pacman -S tinygo
 # fzf ll | fzf とかでさがせる https://github.com/junegunn/fzf
 # xclipはneovimとOSのクリップボード共有のために使用 https://github.com/astrand/xclip
 # pacman-contrib はpaccacheを使うために必要
+# https://github.com/nvbn/thefuck  thefuck コマンドタイプミス後にfuckとうつと修正版を実行してくれる
+# cronie crontab的なやつ systemctl start cronie で起動必要
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
