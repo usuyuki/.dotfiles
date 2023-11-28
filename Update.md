@@ -2,10 +2,10 @@
 
 ## arch
 
-- sudo pacman -S thefuck zoxide tldr exa bandwhich speedtest-cli figlet
+<!-- - sudo pacman -S thefuck zoxide tldr exa bandwhich speedtest-cli figlet -->
 
 ```
-echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
+ <!-- echo 'eval "$(zoxide init zsh)"' >>~/.zshrc -->
 ```
 
 をzshrcに追加
