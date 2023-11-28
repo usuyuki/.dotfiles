@@ -133,6 +133,10 @@ logout
 # dotfiles-secret導入
 git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
 sh ~/.dotfiles-secret/script/git-clone.sh && sh ~/.dotfiles-secret/script/link.sh
+
+# 日本語は<ffff>に文字化けするので、下記スクリプトを見つつ対応(自前でglibcの中身を拾ってコピーする必要がある)
+sh ~/.dotfiles/setup/wsl/arch/ja_jp.sh
+
 ```
 
 ### WSL Ubuntu 🟡
