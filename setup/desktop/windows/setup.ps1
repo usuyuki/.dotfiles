@@ -8,5 +8,5 @@ wsl --install
 
 # Wingetを使う
 winget upgrade --all
-winget install 
+winget import -i winget.json
 
