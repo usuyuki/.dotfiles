@@ -1,5 +1,7 @@
 # 必要なものをインストール
 zshrc='
+export LANG=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
 # 履歴ファイルの保存先
 export HISTFILE=${HOME}/.zsh_history
 

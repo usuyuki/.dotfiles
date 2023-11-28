@@ -18,11 +18,13 @@ rtx plugin add zig https://github.com/asdf-community/asdf-zig.git
 #
 # 依存解消
 #
+# いろいろな言語
+sudo pacman -S unzip
 # python
 sudo pacman -S tk
 
 #php
-sudo pacman -S re2c autoconf postgresql-libs libzip gd oniguruma
+sudo pacman -S re2c autoconf postgresql-libs libzip gd oniguruma libxml2
 
 #
 # インストール

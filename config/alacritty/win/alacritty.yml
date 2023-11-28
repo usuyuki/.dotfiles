@@ -5,9 +5,9 @@ shell:
 key_bindings:
   - { key: Minus, mods: Command|Shift, action: IncreaseFontSize }
 
-#font:
-#  normal:
-#    family: "UDEV Gothic 35NF"
+font:
+  normal:
+    family: "UDEV Gothic 35NF"
 
 # Colors (Hyper)
 colors:
