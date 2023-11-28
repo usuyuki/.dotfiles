@@ -28,6 +28,8 @@ alias cati='ascii-image-converter'
 alias j=z
 alias fx='felix'
 alias cv='progress'
+alias reito='tar -zcvf'
+alias caito='tar -xvf'
 
 #mozc
 alias mozc-s='/usr/lib/mozc/mozc_tool --mode=config_dialog'
