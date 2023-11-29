@@ -2,8 +2,6 @@
 # homebrewは導入済み前提
 # また，ここだけすべて.bashrc前提
 
-
-
 sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
 
 # brew系統
@@ -25,8 +23,8 @@ brew install glow
 # リッチなRust製cat https://github.com/sharkdp/bat
 brew install fzf brew bat
 $(brew --prefix)/opt/fzf/install
-echo 'export FZF_CTRL_T_COMMAND="rg --files --hidden --follow --glob \"!.git/*\""' >> ~/.bashrc
-echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,grid --line-range :100 {}\""' >> ~/.bashrc
+echo 'export FZF_CTRL_T_COMMAND="rg --files --hidden --follow --glob \"!.git/*\""' >>~/.bashrc
+echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,grid --line-range :100 {}\""' >>~/.bashrc
 
 brew install git-delta
 brew install starship
@@ -34,7 +32,7 @@ brew install starship
 brew install wabt
 brew install wasmer
 # esp32ビルド関連
-brew install llvm wasm-micro-runtime 
+brew install llvm wasm-micro-runtime
 
 # esp32 rust
 brew tap riscv-software-src/riscv
@@ -62,7 +60,7 @@ brew install picocom #シリアル通信でメッセージ遅れるやつ
 brew install mruby
 
 # starshipのパスの追加
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
+echo 'eval "$(starship init bash)"' >>~/.bashrc
 
 # linuxでもbrewでfontを入れたい
 brew tap homebrew/linux-fonts
@@ -77,4 +75,6 @@ brew install -f gdu
 
 # 便利ツール系
 brew install thefuck zoxide tlrc exa bandwhich speedtest-cli figlet
+# thefuckの追加
+echo 'eval "$(thefuck --alias)"' >>~/.bashrc
 # nodeを入れる
