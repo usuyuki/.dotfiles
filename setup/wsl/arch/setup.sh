@@ -1,6 +1,8 @@
 sh ~/.dotfiles/components/linux/arch/common/pacman_cui.sh
 
 sh ~/.dotfiles/components/linux/arch/common/extra/install_starship.sh
+# fontは不ように見えるがWSL経由でLinux GUIアプリ使うときに必要 install_fonts.shほどはいらないが最低限必要。vimとかの表示はWin側のフォントなのでNerd Fontは不要
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji
 sh ~/.dotfiles/components/linux/arch/common/extra/install_zoxide.sh
 sh ~/.dotfiles/components/linux/arch/common/extra/install_thefuck.sh
 sh ~/.dotfiles/components/linux/arch/common/extra/install_fzf.sh
