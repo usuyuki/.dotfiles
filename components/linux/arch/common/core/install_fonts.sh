@@ -1,2 +1,2 @@
-sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji nerd-fonts
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji
 yay -S ttf-udev-gothic
