@@ -64,7 +64,7 @@ echo 'eval "$(starship init bash)"' >>~/.bashrc
 
 # linuxでもbrewでfontを入れたい
 brew tap homebrew/linux-fonts
-brew install font-udev-gothic
+brew install font-udev-gothic-nf
 
 brew install neovim
 # astroNvim依存
