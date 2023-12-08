@@ -13,6 +13,8 @@ sudo pacman -S direnv terraform progress bandwhich figlet glow
 sudo pacman -S android-udev
 # tinygo
 sudo pacman -S tinygo
+# WebAssembly研究関連
+sudo pacman -S wabt platformio-core
 
 # inetutilsはpingやhostnameなどの基本セットが入ってるやつ
 # https://github.com/BurntSushi/ripgrep
