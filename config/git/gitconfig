@@ -4,8 +4,7 @@
 [alias]
 	f = fetch
 	po = push origin HEAD
-	pom = pull origin main
-	poma = pull origin master
+	pom = !git pull origin "$(git branch --show-current)"
 	s = status
     l = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	d = diff
