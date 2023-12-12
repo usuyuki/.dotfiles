@@ -62,3 +62,5 @@
 [user]
 	name = usuyuki
 	email = 63891531+usuyuki@users.noreply.github.com
+[pull]
+	rebase = true
