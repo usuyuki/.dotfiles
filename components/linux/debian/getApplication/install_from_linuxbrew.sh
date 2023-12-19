@@ -5,6 +5,7 @@
 sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
 
 # brew系統
+brew install tree
 brew install gtop
 brew install rtx jq
 # rtxが内部でjq使うことあるのでjqも入れる
