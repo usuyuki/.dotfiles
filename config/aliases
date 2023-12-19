@@ -32,6 +32,8 @@ alias cv='progress'
 alias reito='tar -zcvf'
 alias caito='tar -xvf'
 alias speed='speedtest-cli'
+# ↓これaliasにしたけど -iを先にもってこないと行けないので無理
+# alias gif='ffmpeg -i input.mp4 -r 5 -vf scale=320:-1 output.gif'
 
 # 置換
 alias cat='bat'
@@ -121,6 +123,9 @@ alias proxy-d='~/.proxyman/proxyman unset'
 
 # bunxはbun xのaliasでrtx経由だとインストールされないのでエイリアスで貼っておく
 alias bunx='bun x'
+
+# Arch Linux with i3 wm
+alias open='thunar'
 
 # 固有のやつ
 

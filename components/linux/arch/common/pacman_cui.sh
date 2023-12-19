@@ -15,6 +15,8 @@ sudo pacman -S android-udev
 sudo pacman -S tinygo
 # WebAssembly研究関連
 sudo pacman -S wabt platformio-core
+# 何かと使うffmpeg
+# sudo pacman -S ffmpeg
 
 # inetutilsはpingやhostnameなどの基本セットが入ってるやつ
 # https://github.com/BurntSushi/ripgrep
