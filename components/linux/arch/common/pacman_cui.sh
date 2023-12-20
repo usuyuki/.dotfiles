@@ -15,6 +15,8 @@ sudo pacman -S android-udev
 sudo pacman -S tinygo
 # WebAssembly研究関連
 sudo pacman -S wabt platformio-core
+# シリアルポートの権限を付与(Archではdialoutがない)
+sudo usermod -a -G uucp $USER
 # 何かと使うffmpeg
 # sudo pacman -S ffmpeg
 
