@@ -5,7 +5,7 @@ echo "----------------------------"
 # pacman管理のアップデートとアップグレード
 sudo pacman -Syu
 # デフォルトのエディタをvimにするので先に入れておく rtxでunzip使う言語いるのでunzip
-sudo pacman -S vim unzip
+sudo pacman -S vi vim unzip
 
 # シンボリックリンク
 sh ~/.dotfiles/components/linux/common/link.sh

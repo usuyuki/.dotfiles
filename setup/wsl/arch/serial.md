@@ -11,7 +11,10 @@ sudo pacman -S usbip hwdata
 power shell
 
 ```
+winget install usbipd
 usbip list
 usbipd bind -b <busid>
 usbipd attach -w Arch -b <busid>
 ```
+
+これで/dev/ttyUSBとかに出てくるようになる。
