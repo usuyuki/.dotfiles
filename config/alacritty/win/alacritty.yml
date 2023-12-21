@@ -42,7 +42,7 @@ colors:
     white: "0xFFFFFF"
 
 window:
-  opacity: 0.9
+  opacity: 1.0
 
 mouse:
   double_click: { threshold: 300 }
