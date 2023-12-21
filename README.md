@@ -95,24 +95,14 @@ sudoが使えないUbuntu Desktop環境. LinuxBrewを用いる.
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/independency/init.sh)" && sh ~/.dotfiles/setup/desktop/no-privileged-ubuntu/setup.sh
 ```
 
-### Windows ❌
+### Windows 🟢
+[windows](setup/desktop/windows/README.md)
 
-メンテ不足, 要改修.
 
-[windows](setup/desktop/windows/setup.md)
-
-- winget経由でGUIソフトのインストール(原則CUIはWSLで全部やる) https://dev.classmethod.jp/articles/use_windows_package_manager_winget/
-- WSLの設定とDocker Desktopの設定
-- (Arch Linux) https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
-- AlacrittyとVSCodeの設定
 
 ## WSL用途 🪴
 
 ### WSL Arch Linux 🟢
-
-#### Arch LinuxをWindowsへ導入
-
-https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
 
 #### dotfiles導入
 
