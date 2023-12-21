@@ -24,7 +24,10 @@ https://github.com/usuyuki/.dotfiles-secret/tree/main/fonts
 https://github.com/usuyuki/.dotfiles/blob/main/config/alacritty/win/alacritty.yml  
 を
 ```
-%APPDATA%\alacritty\alacritty.toml
+%APPDATA%\alacritty\alacritty.yml
 ```
 に配置
 ## wsl arch
+https://zenn.dev/rayfiyo/articles/20231009-arch_linux_on_wsl2
+
+中の設定はトップのREADMEにあり
