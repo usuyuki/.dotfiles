@@ -14,6 +14,7 @@ echo "----------------------------"
 # sudo pacman -S nerd-fonts
 
 # AstroNvim依存 https://github.com/AstroNvim/AstroNvim#-requirements
+rustup default stable
 cargo install tree-sitter-cli
 
 # node→他でインストールするので不要
