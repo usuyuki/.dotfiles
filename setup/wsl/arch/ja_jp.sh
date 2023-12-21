@@ -6,5 +6,6 @@ mkdir glibc
 # glibcのバージョンに合わせる
 cp /var/cache/pacman/pkg/glibc-2.35-2-x86_64.pkg.tar.zst ./
 tar xvf ./glibc-2.35-2-x86_64.pkg.tar.zst -C ./glibc
+cd glibc
 sudo cp usr/share/i18n/locales/ja_JP /usr/share/i18n/locales/
 sudo locale-gen
