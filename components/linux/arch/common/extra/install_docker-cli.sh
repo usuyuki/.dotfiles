@@ -9,3 +9,5 @@ sudo systemctl restart docker
 # が出た場合
 # https://stackoverflow.com/questions/65896681/exec-docker-credential-desktop-exe-executable-file-not-found-in-path
 # sudo vi ~/.docker/config.json でcredsStoreをcredStoreにすると解決する
+
+# rebootする(しないとpermission errorになる)
