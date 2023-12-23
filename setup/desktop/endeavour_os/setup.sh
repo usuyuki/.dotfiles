@@ -12,14 +12,15 @@ sh ~/.dotfiles/components/linux/arch/common/extra/install_fzf.sh
 sh ~/.dotfiles/components/linux/arch/common/yay_cui.sh
 sh ~/.dotfiles/components/linux/arch/common/yay_gui.sh
 
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_xfce4-screenshooter.sh
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_docker-desktop.sh
-sh ~/.dotfiles/components/linux/arch/endeavour_os/install_cloudflare-warp.sh
+sh ~/.dotfiles/components/linux/arch/common/extra/install_docker-cli.sh
+sh ~/.dotfiles/components/linux/arch/common/extra/install_cloudflare-warp.sh
 
+sh ~/.dotfiles/components/linux/arch/endeavour_os/install_xfce4-screenshooter.sh
 # option
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_esp-idf.sh
 
-# Surface Laptop3(Intel内蔵グラフィックス)向け
+# Surface Laptop3(Intel内蔵グラフィックス)向け←AMDは無理なのでxbacklightを使う
+# そもそもxbacklightで賄えるのでこれ不要
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_ybacklight.sh
 # sh ~/.dotfiles/components/linux/arch/endeavour_os/install_google-cloud-cli.sh
 

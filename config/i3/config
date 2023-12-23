@@ -198,9 +198,18 @@ bindsym F1 exec ~/.config/i3/scripts/keyhint-2
 # keybinding list in editor:
 # bindsym $mod+F1 exec xed ~/.config/i3/keybindings
 
+
+# バックライトはxfce4-power-manager経由で動かすので不要
+
 # バックライト系は全体的に効かないのでxrandrを使う
-bindsym XF86MonBrightnessUp exec ybacklight +10 && notify-send "Brightness - $(ybacklight -get | cut -d '.' -f 1)%"
-bindsym XF86MonBrightnessDown exec ybacklight -10 && notify-send "Brightness - $(ybacklight -get | cut -d '.' -f 1)%"
+# bindsym XF86MonBrightnessUp exec ~/.dotfiles/script/laptop-backlight.sh Up
+# bindsym XF86MonBrightnessDown exec ~/.dotfiles/script/laptop-backlight.sh Down
+
+# Surface Laptop3(Intel内蔵グラフィックス)向け←AMDは無理なのでxbacklightを使う
+# そもそもxbacklightで賄えるのでこれ不要
+# bindsym XF86MonBrightnessUp exec ybacklight +10 && notify-send "Brightness - $(ybacklight -get | cut -d '.' -f 1)%"
+# bindsym XF86MonBrightnessDown exec ybacklight -10 && notify-send "Brightness - $(ybacklight -get | cut -d '.' -f 1)%"
+
 # Backlight control
 # bindsym XF86MonBrightnessUp exec xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 # bindsym XF86MonBrightnessDown exec xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"

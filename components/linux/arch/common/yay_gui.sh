@@ -3,7 +3,7 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd
+yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd xfce4-power-manager
 
 # optional
 yay -S keybase-bin zoom figma-linux-bin 
@@ -17,6 +17,8 @@ yay -S keybase-bin zoom figma-linux-bin
 
 # obs-studio-browserでないとOBSのソースにブラウザ使えないが、毎回ビルドするので除外
 # yay -S obs-studio-browser
+#
+# # xfce4-power-manager 蓋閉じてスリープなど
 
 
 # ↓WPS Officeだとフォントが中華フォント優先になってしまう上に設定が永遠に開けないバグがある, さらにwps-office-mui-ja-jpが消えている
