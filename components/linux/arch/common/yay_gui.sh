@@ -8,6 +8,7 @@ yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd xfce4
 # optional
 yay -S keybase-bin zoom figma-linux-bin 
 
+
 # さらにoptional 
 # yay -S postman-bin rpi-imager-bin  obs-studio android-studio  
 
@@ -18,7 +19,7 @@ yay -S keybase-bin zoom figma-linux-bin
 # obs-studio-browserでないとOBSのソースにブラウザ使えないが、毎回ビルドするので除外
 # yay -S obs-studio-browser
 #
-# # xfce4-power-manager 蓋閉じてスリープなど
+# # xfce4-power-manager 蓋閉じてスリープとか，電力管理とか，接続デバイスの電池とかも管理してくれる
 
 
 # ↓WPS Officeだとフォントが中華フォント優先になってしまう上に設定が永遠に開けないバグがある, さらにwps-office-mui-ja-jpが消えている

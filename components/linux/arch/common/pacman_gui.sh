@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry alacritty redshift
+sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry alacritty redshift evince
 
 # opionally
 sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-ja
@@ -14,6 +14,7 @@ sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-
 # xfce4-clipman-pluginはクリップボード履歴
 # blueberryはBluetooth用のやつ(まだ使ってない)
 # redshiftはナイトモードのやつ(xfluxdは効果がなかった)
+# evinceはPDFビューワー なぜかArchのブラウザ全部でPDFのコメントや注釈が読めないので入れる
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
