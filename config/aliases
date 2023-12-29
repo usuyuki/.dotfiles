@@ -37,6 +37,7 @@ alias speed='speedtest-cli'
 # alias gif='ffmpeg -i input.mp4 -r 5 -vf scale=320:-1 output.gif'
 
 # 置換
+alias diff='difft'
 alias cat='bat'
 alias man='tldr'
 alias grep='rg' # 正規表現がデフォで有効だったり、ファイルが多いと遅い説もあるがよい、そもそもrgのほうが短いのでたぶん使わない
