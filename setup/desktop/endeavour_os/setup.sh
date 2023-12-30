@@ -29,3 +29,6 @@ sh ~/.dotfiles/components/linux/arch/common/extra/install_astroNvim.sh
 
 # 必要事項のメッセージ
 sh ~/.dotfiles/components/linux/arch/common/after_finish.sh
+
+# デュアルブートの時計ズレ解消のため、Linuxでローカルタイムを使うようにする
+sudo timedatectl set-local-rtc true
