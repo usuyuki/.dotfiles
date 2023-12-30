@@ -41,7 +41,7 @@ ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
 
 #alacritty
 mkdir -p ~/.config/alacritty
-ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 #i3wm
 mkdir -p ~/.config/i3
