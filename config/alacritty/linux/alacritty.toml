@@ -1,3 +1,5 @@
+# 色はデフォが綺麗なのでデフォにする
+# https://github.com/alacritty/alacritty-theme?tab=readme-ov-file
 # [colors.bright]
 # black = "0x808080"
 # blue = "0x0066ff"
