@@ -6,6 +6,7 @@ sh ~/usuyuki/.dotfiles/components/linux/debian/getApplication/packages/zellij.sh
 
 # brew系統
 brew install difftastic # diff綺麗にする
+brew install neofetch
 brew install tree
 brew install gtop
 brew install rtx jq

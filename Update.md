@@ -2,8 +2,4 @@
 
 ## arch
 
-sudo pacman -S evince difftastic
-
 ## brew
-
-brew install difftastic
