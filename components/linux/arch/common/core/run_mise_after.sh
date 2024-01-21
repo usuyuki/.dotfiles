@@ -1,5 +1,5 @@
 # これ不要では
-jobName="Install From rtx(asdf)"
+jobName="Install From mise(asdf)"
 echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
@@ -8,7 +8,7 @@ echo "----------------------------"
 # node関連
 #
 corepack enable
-rtx reshim nodejs
+mise reshim nodejs
 
 #
 # pathの設定→不要

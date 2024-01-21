@@ -9,8 +9,8 @@ brew install difftastic # diff綺麗にする
 brew install neofetch
 brew install tree
 brew install gtop
-brew install rtx jq
-# rtxが内部でjq使うことあるのでjqも入れる
+brew install mise jq
+# miseが内部でjq使うことあるのでjqも入れる
 # linuxではcaskでGUIソフトウェア入れられない(mac専用)
 # brew install cask
 # brew install --cask alacritty

@@ -19,7 +19,7 @@ setopt hist_ignore_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
 
-eval "$(/usr/bin/rtx activate zsh)"
+eval "$(/usr/bin/mise activate zsh)"
 
 # bash_aliases読み込み
 if [ -f ~/.bash_aliases ]; then                                                                                                                                                    

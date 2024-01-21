@@ -123,7 +123,7 @@ alias proxy-s='~/.proxyman/proxyman set'
 alias pearlab-c='~/.proxyman/proxyman load pearlab'
 alias proxy-d='~/.proxyman/proxyman unset'
 
-# bunxはbun xのaliasでrtx経由だとインストールされないのでエイリアスで貼っておく
+# bunxはbun xのaliasでmise経由だとインストールされないのでエイリアスで貼っておく
 alias bunx='bun x'
 
 # Arch Linux with i3 wm

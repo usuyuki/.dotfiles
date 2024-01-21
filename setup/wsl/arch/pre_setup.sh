@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 # pacman管理のアップデートとアップグレード
 sudo pacman -Syu
-# デフォルトのエディタをvimにするので先に入れておく rtxでunzip使う言語いるのでunzip
+# デフォルトのエディタをvimにするので先に入れておく miseでunzip使う言語いるのでunzip
 sudo pacman -S vi vim unzip
 
 # シンボリックリンク
@@ -13,15 +13,15 @@ sh ~/.dotfiles/components/linux/common/link.sh
 # yayのインストール
 sh ~/.dotfiles/components/linux/arch/common/core/install_yay.sh
 
-# rtx自体のインストール
-sh ~/.dotfiles/components/linux/arch/common/core/install_rtx.sh
+# mise自体のインストール
+sh ~/.dotfiles/components/linux/arch/common/core/install_mise.sh
 
 # Arch基本の設定
 sh ~/.dotfiles/components/linux/arch/common/settings.sh
 sh ~/.dotfiles/components/linux/arch/wsl/settings.sh
 
-# rtxの導入
-sh ~/.dotfiles/components/linux/arch/common/core/run_rtx.sh
+# miseの導入
+sh ~/.dotfiles/components/linux/arch/common/core/run_mise.sh
 
 # zshの導入()
 sh ~/.dotfiles/components/linux/arch/common/core/install_zsh.sh
