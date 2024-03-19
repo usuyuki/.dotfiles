@@ -1,7 +1,7 @@
 # bash,zsh.fish共通のaliases
 # シンボリックリンクで紐付ける
 
-alias ll='ls -alFh'
+alias ll='ls -alh'
 alias la='ls -A'
 alias l='ls -CF'
 
