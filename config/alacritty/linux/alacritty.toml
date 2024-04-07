@@ -33,6 +33,8 @@ text = "0xF81CE5"
 background = "0x2e2e2e"
 foreground = "0xdedede"
 
+[font]
+size = 14
 [font.normal]
 family = "UDEV Gothic 35NF"
 
