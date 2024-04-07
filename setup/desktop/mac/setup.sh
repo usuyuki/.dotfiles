@@ -49,21 +49,16 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 touch ~/.zshrc
 echo "$zshrc" >>~/.zshrc
 
+# シンボリックリンク
+sh ~/.dotfiles/components/linux/common/link.sh
+
 # Homebrewの導入　https://brew.sh/ja/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-# シンボリックリンク
-sh ~/.dotfiles/components/linux/common/link.sh
+# Homebrew関連のインストール
+brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 
-# mise自体のインストール
-sh ~/.dotfiles/components/linux/arch/common/core/install_mise.sh
-
-# miseの導入
-sh ~/.dotfiles/components/linux/arch/common/core/run_mise.sh
-
-# # zshの導入
-# sh ~/.dotfiles/components/linux/arch/common/core/install_zsh.sh
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
