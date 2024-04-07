@@ -23,7 +23,7 @@ cargo install tree-sitter-cli
 # bottom→別でインストールするので不要
 
 # AstroNvim
-git clone git@github.com/usuyuki/astronvim_usuyuki ~/.config/nvim
+git clone git@github.com:usuyuki/astronvim_usuyuki.git ~/.config/nvim
 
 echo "やること"
 echo "1. :CopilotAuth"
