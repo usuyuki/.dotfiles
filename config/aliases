@@ -41,11 +41,11 @@ alias diff='difft'
 alias cat='bat'
 alias man='tldr'
 alias grep='rg' # 正規表現がデフォで有効だったり、ファイルが多いと遅い説もあるがよい、そもそもrgのほうが短いのでたぶん使わない
-# alias ls='exa --git'
+# alias ls='eza --git'
 # アイコンはむしろ見にくい
-alias ls='exa --icons --git'
-alias lt='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
-alias llt='exa -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
+alias ls='eza --icons --git'
+alias lt='eza -T -L 3 -a -I "node_modules|.git|.cache" --icons'
+alias llt='eza -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
 
 
 #mozc

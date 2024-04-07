@@ -3,7 +3,7 @@ python     3.11.4
 go         1.21
 rust       1.72.3
 # rustのバージョンを上げたあとはrustup update -> rustup default stableを実行することでrustcなどのバージョンも上がる
-lazydocker 0.20.0
+; lazydocker 0.20.0
 php        8.3.4
 # phpのバージョン上げた後はpecl install redisして　echo "extension=redis.so" >> $(mise where php)/conf.d/php.iniを実行する
 deno       1.36.4
