@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+brew "trash"
+cask "alacritty"
+cask "arc"
+cask "monitorcontrol"
+cask "orbstack"
+cask "raycast"
+cask "visual-studio-code"
