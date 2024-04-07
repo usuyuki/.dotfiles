@@ -1,6 +1,7 @@
 [core]
 	symlinks = true
 	autocrlf = false
+    editor = vim
 [alias]
 	f = fetch
 	po = push origin HEAD
