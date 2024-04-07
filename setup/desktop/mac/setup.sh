@@ -5,6 +5,7 @@ echo "----------------------------"
 # Homebrewの導入
 # https://brew.sh/ja/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # シンボリックリンク
 sh ~/.dotfiles/components/linux/common/link.sh
