@@ -23,7 +23,7 @@ cargo install tree-sitter-cli
 # bottom→別でインストールするので不要
 
 # AstroNvimのダウンロード
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 
 # AstroNvimの個人用設定をダウンロード
 git clone git@github.com:usuyuki/AstroNvimUserSettings.git ~/.config/nvim/lua/user
