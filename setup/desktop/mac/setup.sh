@@ -74,8 +74,11 @@ echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,gri
 # thefuck
 echo 'eval "$(thefuck --alias)"' >>~/.zshrc
 
-#zoxide
+# zoxide
 echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
+
+# neovim
+sh ~/.dotfiles/components/linux/arch/common/extra/install_astroNvim.sh
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
