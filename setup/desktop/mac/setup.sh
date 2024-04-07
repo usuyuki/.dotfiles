@@ -61,6 +61,7 @@ brew tap homebrew/linux-fonts
 
 # Homebrew関連のインストール
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
+# →吐き出しはbrew bundle dump
 
 # starship
 echo 'eval "$(starship init bash)"' >>~/.zshrc
@@ -71,10 +72,10 @@ echo 'export FZF_CTRL_T_COMMAND="rg --files --hidden --follow --glob \"!.git/*\"
 echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,grid --line-range :100 {}\""' >>~/.zshrc
 
 # thefuck
-echo 'eval "$(thefuck --alias)"' >>~/.bashrc
+echo 'eval "$(thefuck --alias)"' >>~/.zshrc
 
 #zoxide
-echo 'eval "$(zoxide init zsh)"' >>~/.bashrc
+echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
