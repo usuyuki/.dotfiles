@@ -1,3 +1,8 @@
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+
 # 色はデフォが綺麗なのでデフォにする
 # https://github.com/alacritty/alacritty-theme?tab=readme-ov-file
 # [colors.bright]
