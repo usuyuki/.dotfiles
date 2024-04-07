@@ -55,10 +55,23 @@ sh ~/.dotfiles/components/linux/common/link.sh
 # Homebrewの導入　https://brew.sh/ja/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# brew事前設定
+brew tap homebrew/linux-fonts
+
 
 # Homebrew関連のインストール
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 
+# starship
+echo 'eval "$(starship init bash)"' >>~/.zshrc
+
+# fzf
+$(brew --prefix)/opt/fzf/install
+echo 'export FZF_CTRL_T_COMMAND="rg --files --hidden --follow --glob \"!.git/*\""' >>~/.zshrc
+echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,grid --line-range :100 {}\""' >>~/.zshrc
+
+# thefuck
+echo 'eval "$(thefuck --alias)"' >>~/.bashrc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
