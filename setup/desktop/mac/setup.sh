@@ -73,5 +73,8 @@ echo 'export FZF_CTRL_T_OPTS="--preview \"bat  --color=always --style=header,gri
 # thefuck
 echo 'eval "$(thefuck --alias)"' >>~/.bashrc
 
+#zoxide
+echo 'eval "$(zoxide init zsh)"' >>~/.bashrc
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
