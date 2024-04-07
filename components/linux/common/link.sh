@@ -27,6 +27,8 @@ ln -fnsv ~/.dotfiles/config/fish/config.fish ~/.config/fish/config.fish
 
 # git系
 ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
+mkdir -p ~/.config/git
+ln -fnsv ~/.dotfiles/config/git/gitignore ~/.config/git/ignore
 
 # vim系
 ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
