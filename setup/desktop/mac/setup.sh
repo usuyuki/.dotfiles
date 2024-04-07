@@ -63,6 +63,19 @@ brew tap homebrew/linux-fonts
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 # →吐き出しはbrew bundle dump
 
+# mise
+mise plugin add rust
+mise plugin add golang https://github.com/kennyp/asdf-golang.git
+mise plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+mise plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
+mise plugin add php https://github.com/asdf-community/asdf-php.git
+mise plugin add deno https://github.com/asdf-community/asdf-deno.git
+mise plugin add bun
+mise plugin add flutter
+mise plugin add zig https://github.com/asdf-community/asdf-zig.git
+
+mise install
+
 # starship
 echo 'eval "$(starship init bash)"' >>~/.zshrc
 
