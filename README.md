@@ -96,9 +96,24 @@ eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/inde
 ```
 
 ### Windows 🟢
+
 [windows](setup/desktop/windows/README.md)
 
+### Mac 🟢
 
+```bash
+# dotfiles導入
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
+git clone git@github.com:usuyuki/.dotfiles.git ~/.dotfiles
+
+# セットアップ
+sh ~/.dotfiles/setup/desktop/mac/setup.sh
+
+# dotfiles-secret導入
+git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
+sh ~/.dotfiles-secret/script/git-clone.sh
+sh ~/.dotfiles-secret/script/link.sh
+```
 
 ## WSL用途 🪴
 
