@@ -22,11 +22,8 @@ cargo install tree-sitter-cli
 # lazygit→別でインストールするので不要
 # bottom→別でインストールするので不要
 
-# AstroNvimのダウンロード
-git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
-
-# AstroNvimの個人用設定をダウンロード
-git clone git@github.com:usuyuki/AstroNvimUserSettings.git ~/.config/nvim/lua/user
+# AstroNvim
+git clone git@github.com/usuyuki/astronvim_usuyuki ~/.config/nvim
 
 echo "やること"
 echo "1. :CopilotAuth"
