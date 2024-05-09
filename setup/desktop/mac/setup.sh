@@ -5,6 +5,9 @@ echo "----------------------------"
 
 # 必要なものをインストール
 zshrc='
+# chshできないので無理やり帰る(これしないとastroNvimのシェルがshになる)
+export SHELL=/bin/zsh
+
 export LANG=ja_JP.UTF-8
 export LC_CTYPE=ja_JP.UTF-8
 # 履歴ファイルの保存先
