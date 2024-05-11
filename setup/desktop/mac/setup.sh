@@ -96,5 +96,12 @@ echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
 # neovim
 sh ~/.dotfiles/components/linux/arch/common/extra/install_astroNvim.sh
 
+# brewでインストールしたサービスの起動
+# i3ふうにするためのyabaiとskhd
+yabai --start-service
+skhd --start-service
+# brew services start skhd
+# brew services start yabai
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"

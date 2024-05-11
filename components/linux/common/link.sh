@@ -58,5 +58,12 @@ ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 # xresouces
 ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 
+
+# Macのみ必要
+# yabai
+ln -fnsv ~/.dotfiles/config/yabai/yabairc ~/.yabairc
+# skhd
+ln -fnsv ~/.dotfiles/config/skhd/skhdrc ~/.skhdrc
+
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
