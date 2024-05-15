@@ -61,7 +61,6 @@ sh ~/.dotfiles/components/linux/common/link.sh
 # brew事前設定
 brew tap homebrew/linux-fonts
 
-
 # Homebrew関連のインストール
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 # →吐き出しはbrew bundle dump
@@ -92,6 +91,10 @@ echo 'eval "$(thefuck --alias)"' >>~/.zshrc
 
 # zoxide
 echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
+
+# google cloud cli https://zenn.dev/rabee/articles/gcloud-setup-with-homebrew-on-mac
+echo 'source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"' >>~/.zshrc
+echo 'source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"' >>~/.zshrc
 
 # neovim
 sh ~/.dotfiles/components/linux/arch/common/extra/install_astroNvim.sh
