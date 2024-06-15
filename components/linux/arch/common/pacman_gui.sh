@@ -7,7 +7,7 @@ echo "----------------------------"
 sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry alacritty redshift evince
 
 # opionally
-sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-ja
+sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-ja xfce4-power-manager
 
 # https://github.com/naelstrof/slop スクショ撮るやつ
 # https://github.com/alacritty/alacritty
@@ -15,6 +15,7 @@ sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-
 # blueberryはBluetooth用のやつ(まだ使ってない)
 # redshiftはナイトモードのやつ(xfluxdは効果がなかった)
 # evinceはPDFビューワー なぜかArchのブラウザ全部でPDFのコメントや注釈が読めないので入れる
+# xfce4-power-manager 蓋閉じてスリープとか，電力管理とか，接続デバイスの電池(バッテリー)とか、画面の明るさも管理してくれる
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
