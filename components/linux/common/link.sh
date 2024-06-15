@@ -58,7 +58,6 @@ ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 # xresouces
 ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 
-
 # Macのみ必要
 # yabai
 ln -fnsv ~/.dotfiles/config/yabai/yabairc ~/.yabairc
