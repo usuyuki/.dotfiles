@@ -14,7 +14,7 @@ alias runghc='stack runghc --'
 alias sudo='sudo '
 
 # 略語
-alias dd='sudo systemctl start docker'
+alias ds='sudo systemctl start docker'
 alias dc='docker compose'
 alias dcup='docker compose -f compose-prod.yml up -d'
 alias k='kubectl'
