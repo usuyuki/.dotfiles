@@ -115,6 +115,14 @@ sh ~/.dotfiles-secret/script/git-clone.sh
 sh ~/.dotfiles-secret/script/link.sh
 ```
 
+## LCX用途 📦
+
+proxmoxなどのLXCで使う想定
+
+```bash
+eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/setup/lxc/setup.sh)"
+```
+
 ## WSL用途 🪴
 
 ### WSL Arch Linux 🟢
