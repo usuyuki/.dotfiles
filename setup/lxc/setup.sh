@@ -8,7 +8,7 @@
 # fi
 #####
 apt update && apt upgrade
-apt install curl tree git neovim -y
+apt install curl tree git neovim rsync -y
 
 # dotfiles cloneせずaliasだけ保存
 curl -L -o ~/.bash_aliases https://raw.githubusercontent.com/usuyuki/.dotfiles/main/config/aliases
