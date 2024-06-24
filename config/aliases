@@ -38,7 +38,7 @@ alias speed='speedtest-cli'
 
 # 置換
 alias diff='difft'
-alias cat='bat'
+# alias cat='bat'
 alias man='tldr'
 alias grep='rg' # 正規表現がデフォで有効だったり、ファイルが多いと遅い説もあるがよい、そもそもrgのほうが短いのでたぶん使わない
 # alias ls='eza --git'
