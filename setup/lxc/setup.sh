@@ -18,6 +18,9 @@ curl -L -o ~/.gitconfig https://raw.githubusercontent.com/usuyuki/.dotfiles/main
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
+# git initial setting
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
+
+# ssh
 
 source ~/.bashrc
