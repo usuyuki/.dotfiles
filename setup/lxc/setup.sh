@@ -2,6 +2,10 @@
 # Docker環境とその操作を行うための諸々セットアップ
 # 使い捨て環境なのでdotfilesは入れず必要なファイルはcurlで取得
 # alpineだとget-dockerが使えないしarchは普通にでかい
+# ↓ubuntuならあるけどdebianにはない.bashrcの読み込み
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
 #####
 apt update && apt upgrade
 apt install curl tree git neovim -y
