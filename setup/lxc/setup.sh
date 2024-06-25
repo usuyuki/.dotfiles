@@ -22,5 +22,6 @@ sh get-docker.sh
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 
 # ssh
+# →server_backup/scriptへ
 
 source ~/.bashrc
