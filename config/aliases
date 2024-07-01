@@ -102,8 +102,10 @@ alias luco-up-f='g poma && pnpm i'
 alias comp='sh ~/.dotfiles/script/imagemagic-jpeg-quality.sh'
 
 # clouflare warp
-alias warp-c='warp-cli connect'
-alias warp-d='warp-cli disconnect'
+# 初回はwarp-cli registration newが必要
+alias warp-c='warp-cli mode warp+doh'
+# warp-cli disconnectすると名前解決ごと死ぬのでdns only modeにする
+alias warp-d='warp-cli mode doh'
 
 # tty-clokc
 alias clock='tty-clock -s -c -C6'
