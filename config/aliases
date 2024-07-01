@@ -1,5 +1,6 @@
 # bash,zsh.fish共通のaliases
 # シンボリックリンクで紐付ける
+alias di-h='sh /home/usuyuki/.dotfiles/config/xrandr/default.sh'
 
 alias ll='ls -alh'
 alias la='ls -A'
@@ -31,7 +32,7 @@ alias fx='felix'
 alias cv='progress'
 # 圧縮ファイル名 圧縮ディレクトリ 例: reito hoge.tar.gz hoge
 alias reito='tar -zcvf'
-alias caito='tar -xvf'
+alias kaito='tar -xvf'
 alias speed='speedtest-cli'
 # ↓これaliasにしたけど -iを先にもってこないと行けないので無理
 # alias gif='ffmpeg -i input.mp4 -r 5 -vf scale=320:-1 output.gif'
@@ -46,7 +47,6 @@ alias grep='rg' # 正規表現がデフォで有効だったり、ファイル�
 alias ls='eza --icons --git'
 alias lt='eza -T -L 3 -a -I "node_modules|.git|.cache" --icons'
 alias llt='eza -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
-
 
 #mozc
 alias mozc-s='/usr/lib/mozc/mozc_tool --mode=config_dialog'
@@ -69,7 +69,6 @@ alias cd..='cd ../..'
 alias cd...='cd ../../..'
 alias cd_='cd $_'
 
-
 #
 # ショートカット
 #
@@ -82,7 +81,6 @@ alias nv-up='eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/co
 
 # シェルスクリプトのショートカット i3wmではwin+shifth+sに割当
 alias sukusyo='sh ~/.dotfiles/script/slop/screenshot.sh'
-
 
 # クリップボードにコピー
 # Xセレクション
@@ -102,7 +100,6 @@ alias luco-up-f='g poma && pnpm i'
 
 #squoosh-cli 該当ディレクトリで(FUJIFILM画像用)
 alias comp='sh ~/.dotfiles/script/imagemagic-jpeg-quality.sh'
-
 
 # clouflare warp
 alias warp-c='warp-cli connect'
@@ -132,4 +129,3 @@ alias open='thunar'
 # 固有のやつ
 
 # surface
-
