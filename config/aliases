@@ -116,6 +116,8 @@ alias get_idfa='. /home/usuyuki/esp/esp-idf/export.sh'
 
 #terraform
 alias tf='terraform'
+alias tfp='terraform plan'
+alias tfa='terraform apply'
 
 # proxyman
 alias proxy-s='~/.proxyman/proxyman set'
