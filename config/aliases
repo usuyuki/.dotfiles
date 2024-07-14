@@ -30,6 +30,7 @@ alias cati='ascii-image-converter'
 alias j=z
 alias fx='felix'
 alias cv='progress'
+alias ts='tailscale'
 # 圧縮ファイル名 圧縮ディレクトリ 例: reito hoge.tar.gz hoge
 alias reito='tar -zcvf'
 alias kaito='tar -xvf'
