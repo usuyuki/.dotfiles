@@ -53,7 +53,9 @@ Linux)
 		esac
 		;;
 	"Arch Linux")
-		echo "pacman, yayを実行します."
+		echo "rustup, pacman, yayを実行します."
+		# rustcの更新することでmiseに必要な依存を解消する
+		rustup update
 		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
 		# 3世代前まで残しておく
 		yay -Syu --nodiffmenu
@@ -63,7 +65,9 @@ Linux)
 		paccache -ruk0
 		;;
 	EndeavourOS)
-		echo "pacman, yay, eos-updateを実行します."
+		echo "rustup, pacman, yay, eos-updateを実行します."
+		# rustcの更新することでmiseに必要な依存を解消する
+		rustup update
 		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
 		# 3世代前まで残しておく
 		yay -Syu --diffmenu=false
