@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S vim inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less tldr exa speedtest-cli difftastic archlinux-keyring fcitx-configtool tailscale nmap
+sudo pacman -S vim inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less tldr exa speedtest-cli difftastic archlinux-keyring fcitx-configtool tailscale nmap kwallet-pam
 
 # opionally
 sudo pacman -S direnv terraform progress bandwhich figlet glow
@@ -44,6 +44,7 @@ sudo usermod -a -G uucp $USER
 
 # option
 # glow https://github.com/charmbracelet/glow markdown綺麗に見るやつ
+# kwallet-pam キーの自動ログインに必要Z(braveなど)
 
 # progress→cvコマンドで実行中のcpの進捗が見れるようになる
 # ネットワークの速度とかを細かく見れる https://github.com/imsnif/bandwhich
