@@ -6,6 +6,7 @@
 # if [ -f ~/.bash_aliases ]; then
 #     . ~/.bash_aliases
 # fi
+# 先にsshでつなげるようにする(server_backup/scriptを参考)
 #####
 apt update && apt upgrade
 apt install curl tree git neovim rsync -y
