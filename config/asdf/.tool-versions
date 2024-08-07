@@ -1,6 +1,6 @@
 node       20
 python     3.11.4
-go         1.22.3
+go         1.22.5
 rust       1.72.3
 # rustのバージョンを上げたあとはrustup update -> rustup default stableを実行することでrustcなどのバージョンも上がる
 lazydocker 0.20.0b
