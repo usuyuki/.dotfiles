@@ -39,6 +39,7 @@
 	urudo = commit --fixup
 	re = rebase origin/main
 	rea = rebase origin/master
+	red = rebase origin/develop
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
