@@ -129,8 +129,10 @@ alias proxy-d='~/.proxyman/proxyman unset'
 # bunxはbun xのaliasでmise経由だとインストールされないのでエイリアスで貼っておく
 alias bunx='bun x'
 
+alias zed="zeditor"
+
 # Arch Linux with i3 wm
-alias open='thunar'
+alias nautilus='thunar'
 
 # 固有のやつ
 
