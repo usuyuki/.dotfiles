@@ -15,6 +15,7 @@ alias runghc='stack runghc --'
 alias sudo='sudo '
 
 # 略語
+alias cs='colima start'
 alias ds='sudo systemctl start docker'
 alias dc='docker compose'
 alias dcup='docker compose -f compose-prod.yml up -d'
@@ -125,6 +126,10 @@ alias tfs='terraform show'
 alias proxy-s='~/.proxyman/proxyman set'
 alias pearlab-c='~/.proxyman/proxyman load pearlab'
 alias proxy-d='~/.proxyman/proxyman unset'
+
+# openapi-generatorはバージョン変更が多く破壊的変更しまくりなのでbrewで入れずにnpmで入れてバージョン変更しやすいようにする
+alias openapi-generator='openapi-generator-cli'
+alias openapi-generator-list='openapi-generator-cli version-manager list'
 
 # bunxはbun xのaliasでmise経由だとインストールされないのでエイリアスで貼っておく
 alias bunx='bun x'

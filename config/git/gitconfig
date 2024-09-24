@@ -42,6 +42,7 @@
 	red = rebase origin/develop
 	sukurudo = rebase --autosquash -i origin/main
 	furidasi = reset --soft HEAD
+	cf = clean -f
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
 	gg = !git ad && git cm-- && git pof
 [core]
