@@ -57,6 +57,8 @@ ln -fnsv ~/.dotfiles/config/redshift/redshift.conf ~/.config/redshift.conf
 ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 # xresouces
 ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
+# xmodmap
+ln -fnsv ~/.dotfiles/config/xmodmap/xmodmap ~/.Xmodmap
 
 # Macのみ必要
 # yabai
