@@ -22,6 +22,8 @@ sh get-docker.sh
 # git initial setting
 eval "$(curl -L raw.githubusercontent.com/usuyuki/.dotfiles/main/components/linux/common/github_initial_setting.sh)"
 
+timedatectl set-timezone Asia/Tokyo
+
 # ssh
 # →server_backup/scriptへ
 

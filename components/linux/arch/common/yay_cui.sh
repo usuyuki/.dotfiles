@@ -8,9 +8,10 @@ yay -S vidir proxyman-git
 # proxyman プロキシをかんたんに設定できるやつ https://github.com/himanshub16/ProxyMan
 
 # optional
-yay -S tty-clock rustscan
+yay -S tty-clock rustscan xo-cli
 # tty-clock i3wmでよく見るCUIの時計
 # rustscan portスキャン https://github.com/RustScan/RustScan
+# xo-cli GoのORMライブラリxoのためのツール
 
 # platfomrio依存←pacmanのextraにpio復活してる
 # yay -S platformio-git

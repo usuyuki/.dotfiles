@@ -136,6 +136,13 @@ alias bunx='bun x'
 
 alias zed="zeditor"
 
+# tailscale
+alias tsup='sudo tailscale up'
+## tailscaleで家のネットワークに接続(この結果で指定されたコマンドを入れる)
+alias tsh='tailscale exit-node suggest'
+## デフォルトに戻す↓
+alias tsd='sudo tailscale up --exit-node=  --ssh'
+
 # Arch Linux with i3 wm
 alias nautilus='thunar'
 
