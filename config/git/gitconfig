@@ -31,7 +31,10 @@
 	pof = push --force-with-lease --force-if-includes origin HEAD
 	pr = pull --rebase
 	psuh = push
+# マージ済みのブランチ消す
 	r-b = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+# 今いるブランチ以外全部消す
+    d-all = !git branch | xargs git branch -D
 	risu = stash -u
 	risu- = stash pop
 	res = reset
