@@ -19,5 +19,9 @@ sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-
 # kwalletmanager kwalletの鍵登録に必要
 # zedは最近話題のエディタ
 
+# Bluetoothはyayでblueberry入れるだけでなくて下記も必要
+# sudo systemctl start bluetooth
+# sudo systemctl eanble bluetooth
+#
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
