@@ -143,6 +143,10 @@ alias tsh='tailscale exit-node suggest'
 ## デフォルトに戻す↓
 alias tsd='sudo tailscale up --exit-node=  --ssh'
 
+# gcloud
+alias gauth='gcloud auth login'
+alias gup='gcloud components update'
+
 # Arch Linux with i3 wm
 alias nautilus='thunar'
 
