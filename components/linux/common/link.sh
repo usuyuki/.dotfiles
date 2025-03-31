@@ -59,6 +59,8 @@ ln -fnsv ~/.dotfiles/config/starship/starship.toml ~/.config/starship.toml
 ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 # xmodmap
 ln -fnsv ~/.dotfiles/config/xmodmap/xmodmap ~/.Xmodmap
+# ghostty
+ln -fnsv ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 
 # Macのみ必要
 # yabai
