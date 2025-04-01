@@ -15,3 +15,6 @@ export XMODIFIERS=@im=fcitx5
 echo "$jaConfig" >~/.xprofile
 
 echo "ログインし直すことで日本語入力環境が有効になります。"
+
+# 変換無変換をIME有効無効切り替えにするやつ
+# https://qiita.com/Usuyuki/items/8f8cb3c43ee0080d1e4f
