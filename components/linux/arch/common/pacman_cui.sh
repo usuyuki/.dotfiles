@@ -4,7 +4,7 @@ echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
 # これが入る前に入っていることが期待されるソフトウェア:git,curl,vim
-sudo pacman -S vim inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less tldr exa speedtest-cli difftastic archlinux-keyring fcitx-configtool tailscale nmap kwallet-pam xorg-xmodmap gvfs gvfs-smb sshfs
+sudo pacman -S vim inetutils unzip wget make neofetch neovim zellij tree tig ripgrep lazygit gdu bottom git-delta fd peco ranger imagemagick xclip felix-rs xdotool xdotool pacman-contrib cronie less tldr exa speedtest-cli difftastic archlinux-keyring tailscale nmap kwallet-pam xorg-xmodmap gvfs gvfs-smb sshfs
 
 # thunarでsmb(NAS)を使うために必要
 sudo pacman -S samba gvfs gvfs-smb sshfs samba
@@ -52,7 +52,6 @@ sudo usermod -a -G uucp $USER
 # tldr manを見やすくしたやつ https://github.com/tldr-pages/tldr
 # exa ls見やすく https://github.com/ogham/exa
 # difftastic diffを見やすく
-# fcitx-configtoolはIMEの設定UIに必要
 # xmodmap キーマップ変更 CapsLockをCtrlにする
 # option
 # glow https://github.com/charmbracelet/glow markdown綺麗に見るやつ
