@@ -17,15 +17,16 @@ sudo pacman -S samba gvfs gvfs-smb sshfs samba
 echo 'xmodmap "$HOME/.Xmodmap"' >>~/.zshrc
 
 # opionally
-sudo pacman -S direnv terraform progress bandwhich figlet glow protobuf grpc-cli
+sudo pacman -S direnv terraform progress bandwhich figlet glow protobuf grpc-cli solaar
 # protobuf→protoc
+# solaar ロジクールのマウスとかの設定(Logi Options+がLinuxにはないのでサードパティ)
 
 # android実機デバッグするなら
-sudo pacman -S android-udev
+# sudo pacman -S android-udev
 # tinygo
-sudo pacman -S tinygo
+# sudo pacman -S tinygo
 # WebAssembly研究関連
-sudo pacman -S wabt platformio-core
+# sudo pacman -S wabt platformio-core
 # シリアルポートの権限を付与(Archではdialoutがない)
 sudo usermod -a -G uucp $USER
 # 何かと使うffmpeg
