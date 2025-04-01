@@ -63,10 +63,6 @@ ln -fnsv ~/.dotfiles/config/xmodmap/xmodmap ~/.Xmodmap
 ln -fnsv ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 
 # Macのみ必要
-# yabai
-ln -fnsv ~/.dotfiles/config/yabai/yabairc ~/.yabairc
-# skhd
-ln -fnsv ~/.dotfiles/config/skhd/skhdrc ~/.skhdrc
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
