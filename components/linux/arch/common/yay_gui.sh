@@ -3,10 +3,11 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-yay -S visual-studio-code-bin google-chrome slack-desktop brave-bin xfluxd 
+yay -S visual-studio-code-bin brave-bin xfluxd 
 
 # optional
-yay -S keybase-bin zoom figma-linux-bin 
+yay -S keybase-bin
+# yay -S google-chrome slack-desktop zoom figma-linux-bin
 
 
 # さらにoptional 
