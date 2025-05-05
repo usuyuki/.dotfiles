@@ -141,7 +141,7 @@ alias tsup='sudo tailscale up'
 ## tailscaleで家のネットワークに接続(この結果で指定されたコマンドを入れる)
 alias tsh='tailscale exit-node suggest'
 ## デフォルトに戻す↓
-alias tsd='sudo tailscale up --exit-node=  --ssh'
+alias tsd='sudo tailscale up --accept-routes --ssh'
 
 # gcloud
 alias gauth='gcloud auth login'
