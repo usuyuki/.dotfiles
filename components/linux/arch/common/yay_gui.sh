@@ -3,15 +3,14 @@ echo "----------------------------"
 echo "⋆⸜ '$jobName' started ⸝⋆"
 echo "----------------------------"
 
-yay -S visual-studio-code-bin brave-bin xfluxd 
+yay -S visual-studio-code-bin brave-bin xfluxd
 
 # optional
-yay -S keybase-bin
+yay -S keybase-bin cursor-bin
 # yay -S google-chrome slack-desktop zoom figma-linux-bin
 
-
-# さらにoptional 
-# yay -S postman-bin rpi-imager-bin  obs-studio android-studio  
+# さらにoptional
+# yay -S postman-bin rpi-imager-bin  obs-studio android-studio
 
 # 不安定
 # vscodeはpacmanでcodeを入れるとOSS版になるのだが、syncがうまく動かないのでMS版を入れる
@@ -20,10 +19,7 @@ yay -S keybase-bin
 # obs-studio-browserでないとOBSのソースにブラウザ使えないが、毎回ビルドするので除外
 # yay -S obs-studio-browser
 
-
 # ↓WPS Officeだとフォントが中華フォント優先になってしまう上に設定が永遠に開けないバグがある, さらにwps-office-mui-ja-jpが消えている
-# yay -S wps-office 
+# yay -S wps-office
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
-echo "■■■■■■■■■■oud
-
