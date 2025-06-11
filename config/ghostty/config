@@ -3,3 +3,4 @@ theme = "Kanagawa Dragon"
 font-family = "UDEV Gothic 35NF"
 font-feature = -dlig
 font-feature = -calt
+keybind = shift+enter=text:\n
