@@ -148,7 +148,7 @@ alias gauth='gcloud auth login'
 alias gup='gcloud components update'
 
 # ai
-alias c='cluude'
+alias c='claude'
 
 # Arch Linux with i3 wm
 alias nautilus='thunar'
