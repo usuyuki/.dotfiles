@@ -9,7 +9,8 @@
 # 先にsshでつなげるようにする(server_backup/scriptを参考)
 #####
 apt update && apt upgrade -y
-apt install curl tree git rsync vim -y
+# vimだと日本語死ぬのでneovimいれる
+apt install curl tree git rsync neovim -y
 
 # dotfiles cloneせずaliasだけ保存
 curl -L -o ~/.bash_aliases https://raw.githubusercontent.com/usuyuki/.dotfiles/main/config/aliases
