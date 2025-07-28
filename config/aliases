@@ -152,6 +152,8 @@ alias c='claude'
 
 # Arch Linux with i3 wm
 alias nautilus='thunar'
+# yay+pacmanのキャッシュ消す↓
+alias yay-cache-clear='yay -Scc'
 
 # 固有のやつ
 
