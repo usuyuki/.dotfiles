@@ -1,0 +1,27 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(make:*)",
+			"Bash(find:*)",
+			"Bash(cat:*)",
+			"Bash(mkdir:*)",
+			"Bash(rg:*)",
+			"Bash(gh:*)",
+			"Bash(curl:*)",
+			"Bash(docker compose exec:*)",
+			"Bash(docker compose logs:*)",
+			"Bash(docker compose:*)",
+			"Bash(ls:*)",
+			"WebFetch(domain:github.com)"
+		],
+		"deny": [
+			"Bash(perl:*)",
+			"Bash(git push:*)",
+			"Bash(git rebase:*)",
+			"Bash(git reset:*)",
+			"Bash(id_rsa)",
+			"Bash(id_ed25519)"
+		],
+		"defaultMode": "additionalDirectorie"
+	}
+}

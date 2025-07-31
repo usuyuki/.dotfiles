@@ -61,6 +61,8 @@ ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 ln -fnsv ~/.dotfiles/config/xmodmap/xmodmap ~/.Xmodmap
 # ghostty
 ln -fnsv ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
+# Claude Code
+ln -fnsv ~/.dotfiles/config/claude/settings.json ~/.claude/settings.json
 
 # Macのみ必要
 
