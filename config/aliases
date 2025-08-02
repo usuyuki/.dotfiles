@@ -149,6 +149,7 @@ alias gup='gcloud components update'
 
 # ai
 alias c='claude'
+alias ge='gemini'
 
 # Arch Linux with i3 wm
 alias nautilus='thunar'
