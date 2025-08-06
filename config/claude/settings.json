@@ -22,6 +22,6 @@
 			"Bash(id_rsa)",
 			"Bash(id_ed25519)"
 		],
-		"defaultMode": "additionalDirectorie"
+		"defaultMode": "acceptEdits"
 	}
 }
