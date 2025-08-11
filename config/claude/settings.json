@@ -23,5 +23,18 @@
 			"Bash(id_ed25519)"
 		],
 		"defaultMode": "acceptEdits"
+	},
+	"hooks": {
+		"Stop": [
+			{
+				"matcher": "",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "/usr/bin/paplay $HOME/.dotfiles-secret/ei.mp3"
+					}
+				]
+			}
+		]
 	}
 }
