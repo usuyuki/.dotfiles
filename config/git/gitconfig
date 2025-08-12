@@ -48,6 +48,8 @@
 	cf = clean -f
 	PR = "!f() { git fetch origin \"pull/$1/head:PR-$1\"; }; f"
 	gg = !git ad && git cm-- && git pof
+	wa = worktree add
+	wr = worktree remove
 [core]
 # deltaによるgit diff モダン化用 https://github.com/dandavison/delta
     pager = delta
