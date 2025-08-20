@@ -150,11 +150,14 @@ alias gup='gcloud components update'
 # ai
 alias c='claude'
 alias ge='gemini'
+alias ccu='npx ccusage@latest'
+alias ccb='npx ccusage@latest blocks --live'
 
 # Arch Linux with i3 wm
 alias nautilus='thunar'
 # yay+pacmanのキャッシュ消す↓
 alias yay-cache-clear='yay -Scc'
+
 
 # 固有のやつ
 
