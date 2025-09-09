@@ -50,6 +50,7 @@
 	gg = !git ad && git cm-- && git pof
 	wa = worktree add
 	wr = worktree remove
+	risu-- =  reset --merge
 [core]
 # deltaによるgit diff モダン化用 https://github.com/dandavison/delta
     pager = delta
