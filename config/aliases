@@ -143,7 +143,8 @@ alias tsh='tailscale exit-node suggest'
 alias tsd='sudo tailscale up --accept-routes --ssh'
 
 # gcloud
-alias gauth='gcloud auth login'
+alias ga='gcloud auth login'
+alias gad=' gcloud auth application-default login'
 alias gup='gcloud components update'
 
 # ai
@@ -156,7 +157,6 @@ alias ccb='npx ccusage@latest blocks --live'
 alias nautilus='thunar'
 # yay+pacmanのキャッシュ消す↓
 alias yay-cache-clear='yay -Scc'
-
 
 # 固有のやつ
 
