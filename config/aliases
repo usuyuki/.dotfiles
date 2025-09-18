@@ -143,7 +143,7 @@ alias tsh='tailscale exit-node suggest'
 alias tsd='sudo tailscale up --accept-routes --ssh'
 
 # gcloud
-alias ga='gcloud auth login'
+alias gau='gcloud auth login'
 alias gad=' gcloud auth application-default login'
 alias gup='gcloud components update'
 
