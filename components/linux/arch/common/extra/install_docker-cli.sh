@@ -1,4 +1,4 @@
-sudo pacman -S docker docker-compose
+sudo pacman -S docker docker-compose docker-buildx
 sudo gpasswd -a $USER docker
 # sudo systemctl start docker
 # sudo systemctl enable docker
