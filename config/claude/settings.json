@@ -12,7 +12,8 @@
 			"Bash(docker compose logs:*)",
 			"Bash(docker compose:*)",
 			"Bash(ls:*)",
-			"WebFetch(domain:github.com)"
+			"WebFetch(domain:github.com)",
+			"mcp__chrome-devtools"
 		],
 		"deny": [
 			"Bash(perl:*)",
