@@ -6,7 +6,7 @@ echo "----------------------------"
 yay -S visual-studio-code-bin brave-bin xfluxd
 
 # optional
-yay -S keybase-bin cursor-bin google-chrome
+yay -S keybase-bin cursor-bin google-chrome xp-pen-tablet
 # ChromeはChrome MCP用で必要
 # yay -S slack-desktop zoom figma-linux-bin
 
