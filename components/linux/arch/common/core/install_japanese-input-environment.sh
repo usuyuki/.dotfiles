@@ -3,7 +3,13 @@
 #
 echo "日本語環境のためのxprofileの設定"
 
-sudo pacman -S fcitx5-gtk fcitx5-im fcitx5-mozc fcitx5-configtool
+sudo pacman -S fcitx5-gtk fcitx5-im fcitx5-configtool
+# fcitx5-hazkey-binでいらない説もあるが、まだ辞書ツールがなかったりするのでこちらも入れておく
+sudo pacman -S fcitx5-mozc
+
+# https://hazkey.hiira.dev/docs/install/archlinux/
+yay -S fcitx5-hazkey-bin
+# →fcitx5 -rdでHazkey登録が必要
 
 jaConfig="
 export GTK_IM_MODULE=fcitx5
