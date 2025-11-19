@@ -8,7 +8,7 @@ sudo pacman -S fcitx5-gtk fcitx5-im fcitx5-configtool
 sudo pacman -S fcitx5-mozc
 
 # https://hazkey.hiira.dev/docs/install/archlinux/
-yay -S fcitx5-hazkey-bin
+yay -S fcitx5-hazkey-bin hazkey-zenzai-vulkan
 # →fcitx5 -rdでHazkey登録が必要
 
 jaConfig="
