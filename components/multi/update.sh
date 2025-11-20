@@ -69,13 +69,14 @@ Linux)
 		# rustcの更新することでmiseに必要な依存を解消する
 		rustup update
 		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
-		# 3世代前まで残しておく
-		yay -Syu --diffmenu=false
-		# パッケージのキャッシュで一番新しい3つのバージョンを残して後を全て削除
-		paccache -r
+		# yay -Syu --diffmenu=false
+
+		# EndeavourOS側でアプデを走らせる
+		eos-update
 		# アンインストールしたパッケージのキャッシュを全て削除
 		paccache -ruk0
-		eos-update
+		# インストール済みのソフトウェアのキャッシュは2世代前まで残す
+		paccache -r -k2
 		;;
 	*)
 		echo "usuyuki/.dotfilesがサポートしていないディストリビューションです."
