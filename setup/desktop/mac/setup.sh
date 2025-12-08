@@ -63,7 +63,8 @@ brew tap homebrew/linux-fonts
 
 # Homebrew関連のインストール
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
-# →吐き出しはbrew bundle dump
+# →吐き出しはbrew bundle dump --global -f
+# ln -s ~/.dotfiles/config/brew/Brewfile ~/.Brewfile
 
 # mise
 mise plugin add rust
