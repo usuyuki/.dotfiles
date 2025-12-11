@@ -7,7 +7,8 @@ echo "----------------------------"
 sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry redshift evince ghostty
 
 # opionally
-sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-ja xfce4-power-manager kwalletmanager zed
+sudo pacman -S gimp direnv xfce4-power-manager kwalletmanager peek kooha
+# sudo pacman -S gnuplot inkscape libreoffice-fresh libreoffice-fresh-ja xfce4-power-manager kwalletmanager zed
 
 # https://github.com/naelstrof/slop スクショ撮るやつ
 # xfce4-clipman-pluginはクリップボード履歴
@@ -18,6 +19,8 @@ sudo pacman -S gnuplot inkscape gimp direnv libreoffice-fresh libreoffice-fresh-
 # kwalletmanager kwalletの鍵登録に必要
 # zedは最近話題のエディタ
 # ghostty ターミナル
+# peek gif画面キャプチャ
+# kooha 画面録画
 
 # Bluetoothはyayでblueberry入れるだけでなくて下記も必要
 # sudo systemctl start bluetooth
