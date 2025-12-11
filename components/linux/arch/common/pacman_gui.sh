@@ -7,7 +7,7 @@ echo "----------------------------"
 sudo pacman -S discord imagemagick slop xfce4-clipman-plugin blueberry redshift evince ghostty
 
 # opionally
-sudo pacman -S gimp direnv xfce4-power-manager kwalletmanager peek kooha
+sudo pacman -S gimp direnv xfce4-power-manager kwalletmanager peek
 # sudo pacman -S gnuplot inkscape libreoffice-fresh libreoffice-fresh-ja xfce4-power-manager kwalletmanager zed
 
 # https://github.com/naelstrof/slop スクショ撮るやつ
@@ -20,7 +20,6 @@ sudo pacman -S gimp direnv xfce4-power-manager kwalletmanager peek kooha
 # zedは最近話題のエディタ
 # ghostty ターミナル
 # peek gif画面キャプチャ
-# kooha 画面録画
 
 # Bluetoothはyayでblueberry入れるだけでなくて下記も必要
 # sudo systemctl start bluetooth
