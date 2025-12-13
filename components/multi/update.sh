@@ -58,7 +58,7 @@ Linux)
 		rustup update
 		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
 		# 3世代前まで残しておく
-		yay -Syu --nodiffmenu
+		yay -Syu --diffmenu=false
 		# パッケージのキャッシュで一番新しい3つのバージョンを残して後を全て削除
 		paccache -r
 		# アンインストールしたパッケージのキャッシュを全て削除
@@ -73,6 +73,8 @@ Linux)
 
 		# EndeavourOS側でアプデを走らせる
 		eos-update
+		# AURは別で更新
+		yay -Syu --diffmenu=false
 		# アンインストールしたパッケージのキャッシュを全て削除
 		paccache -ruk0
 		# インストール済みのソフトウェアのキャッシュは2世代前まで残す
