@@ -6,10 +6,11 @@ echo "----------------------------"
 yay -S visual-studio-code-bin brave-bin xfluxd
 
 # optional
-yay -S keybase-bin cursor-bin google-chrome xp-pen-tablet simplescreenrecorder
+yay -S keybase-bin cursor-bin google-chrome xp-pen-tablet simplescreenrecorder input-remapper-bin
 # ChromeはChrome MCP用で必要
 # yay -S slack-desktop zoom figma-linux-bin
 # simplescreenrecorder 画面録画、binary版は失敗する。Arch Linux関連で唯一動いたもの。
+# input-remapper-bin ctrl e, ctrl oの設定用
 
 # さらにoptional
 # yay -S postman-bin rpi-imager-bin  obs-studio android-studio
