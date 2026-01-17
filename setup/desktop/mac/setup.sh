@@ -101,14 +101,6 @@ echo 'source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"' >>~/.
 sh ~/.dotfiles/components/linux/arch/common/extra/install_astroNvim.sh
 
 # brewでインストールしたサービスの起動
-# i3ふうにするためのyabaiとskhd
-# 参考：https://qiita.com/psyashes/items/68ac40659ddbe04f8f7f
-# 参考：https://qiita.com/hann-solo/items/0d8dbda76ee9f22c3ae4
-yabai --start-service
-skhd --start-service
-# ↓なんか壊れるので除外
-# brew services start skhd
-# brew services start yabai
 
 echo "˗ˋˏ '$jobName' success ˎˊ˗ "
 echo "■■■■■■■■■■"
