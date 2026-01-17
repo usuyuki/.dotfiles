@@ -62,6 +62,8 @@ sh ~/.dotfiles/components/linux/common/link.sh
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 # →吐き出しはbrew bundle dump --global -f
 # ln -s ~/.dotfiles/config/brew/Brewfile ~/.Brewfile
+# Mac側にある差分を消したい場合↓
+# brew bundle --cleanup --file=~/.dotfiles/config/brew/Brewfile
 
 # mise
 mise plugin add rust
