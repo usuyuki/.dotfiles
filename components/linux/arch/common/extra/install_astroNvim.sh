@@ -24,6 +24,8 @@ cargo install tree-sitter-cli
 
 # AstroNvim
 git clone git@github.com:usuyuki/astronvim_usuyuki.git ~/.config/nvim
+# dotfiles-secretも一緒にいれる
+git clone git@github.com:usuyuki/.dotfiles-secret.git ~/.dotfiles-secret
 
 echo "やること"
 echo "1. :CopilotAuth"
