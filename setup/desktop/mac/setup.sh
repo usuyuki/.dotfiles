@@ -58,9 +58,6 @@ sh ~/.dotfiles/components/linux/common/link.sh
 # Homebrewの導入　https://brew.sh/ja/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# brew事前設定
-brew tap homebrew/linux-fonts
-
 # Homebrew関連のインストール
 brew bundle install --file=~/.dotfiles/config/brew/Brewfile
 # →吐き出しはbrew bundle dump --global -f
