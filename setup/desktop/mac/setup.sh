@@ -79,7 +79,7 @@ mise plugin add zig https://github.com/asdf-community/asdf-zig.git
 mise install
 
 # starship
-echo 'eval "$(starship init bash)"' >>~/.zshrc
+echo 'eval "$(starship init zsh)"' >>~/.zshrc
 
 # fzf
 $(brew --prefix)/opt/fzf/install
