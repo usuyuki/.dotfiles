@@ -19,12 +19,6 @@ ln -fnsv ~/.dotfiles/config/bash/.bash_profile ~/.bash_profile
 # mv ~/.bashrc ~/.bashrc_old_`date '+%Y_%m_%d_%H_%M_%S'`
 #ln -fnsv ~/.dotfiles/config/bash/.bashrc ~/.bashrc
 
-# fish系
-# なければディレクトリ作る
-mkdir -p ~/.config/fish
-ln -fnsv ~/.dotfiles/config/aliases ~/.config/fish/aliases.fish
-ln -fnsv ~/.dotfiles/config/fish/config.fish ~/.config/fish/config.fish
-
 # git系
 ln -fnsv ~/.dotfiles/config/git/gitconfig ~/.gitconfig
 mkdir -p ~/.config/git
@@ -36,14 +30,6 @@ ln -fnsv ~/.dotfiles/config/vim/.vimrc ~/.vimrc
 #asdf系
 ln -fnsv ~/.dotfiles/config/asdf/.tool-versions ~/.tool-versions
 ln -fnsv ~/.dotfiles/config/asdf/.asdfrc ~/.asdfrc
-
-#zellij
-mkdir -p ~/.config/zellij
-ln -fnsv ~/.dotfiles/config/zellij/config.kdl ~/.config/zellij/config.kdl
-
-#alacritty
-mkdir -p ~/.config/alacritty
-ln -fnsv ~/.dotfiles/config/alacritty/linux/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 #i3wm
 mkdir -p ~/.config/i3
@@ -60,8 +46,10 @@ ln -fnsv ~/.dotfiles/config/Xresources/Xresources ~/.Xresources
 # xmodmap
 ln -fnsv ~/.dotfiles/config/xmodmap/xmodmap ~/.Xmodmap
 # ghostty
+mkdir -p ~/.config/ghostty
 ln -fnsv ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 # Claude Code
+mkdir -p ~/.claude
 ln -fnsv ~/.dotfiles/config/claude/settings.json ~/.claude/settings.json
 
 # Macのみ必要
