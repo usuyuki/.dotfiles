@@ -1,5 +1,4 @@
 {
-  "language": "japanese",
   "permissions": {
     "allow": [
       "Bash(make:*)",
@@ -39,5 +38,7 @@
       }
     ]
   },
-  "alwaysThinkingEnabled": false
+  "language": "japanese",
+  "alwaysThinkingEnabled": false,
+  "preferredNotifChannel": "terminal_bell"
 }
