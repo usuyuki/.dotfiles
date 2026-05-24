@@ -57,8 +57,8 @@ Linux)
 		# rustcの更新することでmiseに必要な依存を解消する
 		rustup update
 		# sudo pacman -Syu # yay側の内部でpacman -Syuも実行されるので不要
-		# 3世代前まで残しておく
-		yay -Syu --diffmenu=false
+		# 3世代前まで残しておく。ビルドでpython依存あるとmise使ってバージョン違いでコケるので意図的にPATHを消す
+		PATH=/usr/bin:$PATH yay -Syu --diffmenu=false
 		# パッケージのキャッシュで一番新しい3つのバージョンを残して後を全て削除
 		paccache -r
 		# アンインストールしたパッケージのキャッシュを全て削除
