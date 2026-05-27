@@ -10,13 +10,16 @@ F13 & d::Send "{Delete}"
 
 vk1D:: {
     if IME_GetStatus() {
-        Send("{Enter}")
+        static sending := false
+        if sending
+            return
+        sending := true
         Send("{vkF3}")
+        sending := false
     } else {
         Send("{vk1D}")
     }
 }
-
 IME_GetStatus() {
     hwnd := WinGetID("A")
     defaultIME := DllCall("imm32\ImmGetDefaultIMEWnd", "Ptr", hwnd, "Ptr")
