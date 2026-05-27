@@ -99,22 +99,8 @@ CapsLock（英数キー）がIMEに横取りされないよう設定する。
 
 ## Step 4: AutoHotkeyスクリプトの作成
 
-以下の内容で `mac-key.ahk` を作成する。
-
-```ahk
-#Requires AutoHotkey v2.0
-#SingleInstance Force
-
-F13 & e::Send "{End}"
-F13 & a::Send "{Home}"
-F13 & f::Send "{Right}"
-F13 & b::Send "{Left}"
-F13 & p::Send "{Up}"
-F13 & n::Send "{Down}"
-F13 & d::Send "{Delete}"
-```
-
----
+このディレクトリにある`mak-key.ahk`を使う。
+これにはGoogle日本語入力で変換中に「無変換」押したら変換候補を残したまま無変換に行ける変更も入ってる。
 
 ## Step 5: スタートアップへの登録
 
