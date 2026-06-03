@@ -38,7 +38,10 @@
       }
     ]
   },
-  "language": "japanese",
   "alwaysThinkingEnabled": false,
-  "preferredNotifChannel": "terminal_bell"
+  "preferredNotifChannel": "terminal_bell",
+  "language": "japanese",
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  }
 }
