@@ -51,6 +51,7 @@ ln -fnsv ~/.dotfiles/config/ghostty/config ~/.config/ghostty/config
 # Claude Code
 mkdir -p ~/.claude
 ln -fnsv ~/.dotfiles/config/claude/settings.json ~/.claude/settings.json
+ln -fnsv ~/.dotfiles/config/claude/CLAUDE.md ~/.claude/CLAUDE.md
 
 # Macのみ必要
 
